@@ -9,10 +9,10 @@ import PopularClasses from "./PopularClasses";
 import TopTrainers from "./TopTrainers";
 import UserReviews from "./UserReviews";
 import WorkoutSessions from "./WorkoutSessions";
-
+import "./styles.css";
 const Landing = () => {
   return (
-    <>
+    <div className="landingContainer">
       <Home />
       <LiveClass />
       <AboutUs />
@@ -23,7 +23,7 @@ const Landing = () => {
       <UserReviews />
       <GetStarted />
       <Footer />
-    </>
+    </div>
   );
 };
 
