@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "./styles.css"
 const LiveClass = () => {
   return (
-    <div>LiveClass</div>
+    <div className="liveClassContainer">LiveClass</div>
   )
 }
 

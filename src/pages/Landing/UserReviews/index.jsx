@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "./styles.css"
 const UserReviews = () => {
   return (
-    <div>UserReviews</div>
+    <div className='userReviewsContainer'>UserReviews</div>
   )
 }
 

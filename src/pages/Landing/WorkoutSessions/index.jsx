@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "./styles.css"
 const WorkoutSessions = () => {
   return (
-    <div>WorkoutSessions</div>
+    <div className="workoutSessionContainer">WorkoutSessions</div>
   )
 }
 

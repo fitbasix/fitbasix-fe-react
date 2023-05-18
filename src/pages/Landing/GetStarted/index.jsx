@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "./styles.css"
 const GetStarted = () => {
   return (
-    <div>GetStarted</div>
+    <div  className='getStartedContainer'>GetStarted</div>
   )
 }
 

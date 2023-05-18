@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "./styles.css"
 const PopularClasses = () => {
   return (
-    <div>PopularClasses</div>
+    <div className="popularClassesContainer">PopularClasses</div>
   )
 }
 

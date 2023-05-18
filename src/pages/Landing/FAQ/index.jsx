@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "./styles.css"
 const FAQ = () => {
   return (
-    <div>FAQ</div>
+    <div className='FAQContainer'>FAQ</div>
   )
 }
 

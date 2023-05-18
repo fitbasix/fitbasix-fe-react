@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "./styles.css"
 const TopTrainers = () => {
   return (
-    <div>TopTrainers</div>
+    <div className='topTrainersContainer'>TopTrainers</div>
   )
 }
 
