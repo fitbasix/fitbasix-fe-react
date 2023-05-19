@@ -13,7 +13,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation } from "swiper";
+import { EffectFade, Navigation } from "swiper";
 
 const TopTrainers = () => {
   return (
