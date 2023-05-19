@@ -1,0 +1,24 @@
+.TrainerCard--Container{
+
+    padding: 1rem;
+    padding-top: 0;
+    height:70vh;
+    width:10vw;
+   
+    display: flex;
+    flex-direction: column;
+}
+
+.TrainerCard--Image img{
+    width: 170px;
+    height: 280px;
+    background-image: url("../../../../assets/Trainers/ellipse.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.TrainerCard--ratingContainer{
+    display:flex;
+    justify-content: space-between;
+}

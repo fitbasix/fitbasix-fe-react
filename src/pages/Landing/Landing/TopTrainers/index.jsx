@@ -13,7 +13,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation } from "swiper";
+import { EffectFade, Navigation } from "swiper";
+import { trustedTypes } from "trusted-types";
 
 const TopTrainers = () => {
   return (
@@ -30,7 +31,7 @@ const TopTrainers = () => {
           sx={{ textAlign: "center", marginTop: "1rem", width: "30rem" }}
         >
           Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut
-          deserunt quia et ducimus voluptatem.{" "}
+          deserunt quia et ducimus voluptatem.
         </Typography>
       </div>
       <div className="topTrainersContainer--bottom">
@@ -40,6 +41,7 @@ const TopTrainers = () => {
           speed={1000}
           className="mySwiper"
           effect={"fade"}
+          loop={true}
         >
           <SwiperSlide>
             <div className="SwiperSlide">
