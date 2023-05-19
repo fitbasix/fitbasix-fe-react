@@ -1,4 +1,10 @@
 .BMIContainer {
   height: 35vh;
-  width: 98vh;
+  /* width: 98vh; */
+  background-image: url("../../../assets/BMBGImage.png");
+}
+
+.textField {
+  background-color: #fff;
+  color: #fff;
 }
