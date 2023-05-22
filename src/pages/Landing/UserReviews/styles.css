@@ -1,4 +1,50 @@
 .userReviewsContainer {
-  height: 60vh;
+  height: 70vh;
   width: 98vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.userReviewsContainer--Top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.userReviewsContainer--Bottom{
+  margin-top: 4rem;
+}
+.SwiperSlide{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+ 
+}
+
+.userReviewsContainer--Bottom .swiper-button-prev{
+  background-color: #92c095 ;
+  border-radius: 50%;
+  width: 2.8rem;
+}
+
+
+
+
+.userReviewsContainer--Bottom .swiper-button-prev::after{
+  font-size: 20px;
+  color:#022405
+}
+
+.userReviewsContainer--Bottom  .swiper-button-next{
+  background-color: #92c095 ;
+  border-radius: 50%;
+  width: 2.8rem;
+
+}
+.userReviewsContainer--Bottom  .swiper-button-next::after{
+  font-size: 20px;
+  color:#022405
 }

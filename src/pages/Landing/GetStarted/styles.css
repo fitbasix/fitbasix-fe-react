@@ -1,4 +1,51 @@
-.getStartedContainer {
-  height: 50vh;
-  width: 98vw;
+.GetStarted--Container {
+  height: 60vh;
+  /* width: 98vw; */
+  display:flex
+}
+
+.GetStarted--Left{
+width:50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.GetStarted--Right{
+width:50%;
+display: flex;
+justify-content: space-between;
+padding-right: 5rem;
+}
+
+.GetStarted--RightButtonContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.TextFieldContainer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.TextFieldContainer .MuiFilledInput-input{
+  height: 1rem !important;
+  border-radius: 10px;
+}
+
+.TextFieldContainer .MuiOutlinedInput-notchedOutline{
+  border: none !important;
+ background: none !important;
+}
+
+
+
+
+.GetStarted--Left--Container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

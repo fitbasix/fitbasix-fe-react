@@ -41,6 +41,24 @@ const PopularClasses = () => {
         "Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut deserunt quia et ducimus voluptatem",
       image: cardImage,
     },
+    {
+      name: "Yoga Session",
+      rating: "4.5",
+      duration: "30 min",
+      coach: "Shein Tsemda",
+      description:
+        "Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut deserunt quia et ducimus voluptatem",
+      image: cardImage,
+    },
+    {
+      name: "Yoga Session",
+      rating: "4.5",
+      duration: "30 min",
+      coach: "Shein Tsemda",
+      description:
+        "Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut deserunt quia et ducimus voluptatem",
+      image: cardImage,
+    },
   ];
   return (
     <div className="popularClassesContainer">
@@ -81,7 +99,7 @@ const PopularClasses = () => {
                   fadeDistance={0.1}
                   height={500}
                 />{" "}
-                <Button
+                {/* <Button
                   endIcon={<ArrowCircleLeftIcon />}
                   style={{
                     position: "absolute",
@@ -108,7 +126,7 @@ const PopularClasses = () => {
                   }}
                 >
                   next
-                </Button>
+                </Button> */}
               </>
             );
           }}

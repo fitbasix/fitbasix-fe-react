@@ -1,10 +1,23 @@
 .BMIContainer {
   height: 35vh;
   /* width: 98vh; */
-  background-image: url("../../../assets/BMBGImage.png");
+  background-image: url("../../../assets/BMIBGIMAGE.svg");
+
 }
 
 .textField {
   background-color: #fff;
   color: #fff;
+  border-radius: 10px;
+  height: 2.5rem;
+
+}
+
+
+.BMIContainer .MuiInputBase-input {
+  padding: 0.5rem !important;
+}
+.BMIContainer .MuiOutlinedInput-notchedOutline{
+  border: none !important;
+ 
 }

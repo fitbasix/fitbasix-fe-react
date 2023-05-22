@@ -1,0 +1,13 @@
+.UsersCard--Container{
+    height:28vh;
+    width:25vw;
+    border-radius: 10px;
+    background-image:url("../../../../assets/usersCardBG.svg");
+    background-size: cover;
+    opacity:1;
+  
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 1rem;
+}

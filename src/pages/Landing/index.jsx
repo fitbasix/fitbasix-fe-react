@@ -2,7 +2,6 @@ import React from "react";
 import AboutUs from "./AboutUs";
 import BMI from "./BMI";
 
-import GetStarted from "./GetStarted";
 import Home from "./Home";
 import LiveClass from "./LiveClass";
 import PopularClasses from "./PopularClasses";
@@ -11,6 +10,8 @@ import UserReviews from "./UserReviews";
 import WorkoutSessions from "./WorkoutSessions";
 import "./styles.css";
 import FAQ from "./FAQ";
+import GetStarted from "./GetStarted";
+import Footer from "./Footer";
 const Landing = () => {
   return (
     <div className="landingContainer">
@@ -18,12 +19,13 @@ const Landing = () => {
       <LiveClass />
       <AboutUs />
       <PopularClasses />
-      <WorkoutSessions />
+      {/* <WorkoutSessions /> */}
       <TopTrainers />
       <BMI />
-      <UserReviews />
-      <GetStarted />
+      {/* <UserReviews /> */}
+      {/* <GetStarted /> */}
       <FAQ />
+      <Footer />
     </div>
   );
 };
