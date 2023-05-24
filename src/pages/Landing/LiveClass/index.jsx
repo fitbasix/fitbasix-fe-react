@@ -1,9 +1,9 @@
 import React from "react";
 import "./styles.css";
 import { Button } from "@mui/material";
-import Mobole1 from "../../../assets/MobileImage1.png";
-import Mobole2 from "../../../assets/MobileImage2.png";
-import Mobole3 from "../../../assets/MobileImage3.png";
+import Mobile1 from "../../../assets/MobileImage1.svg";
+import Mobile2 from "../../../assets/MobileImage2.svg";
+import Mobile3 from "../../../assets/MobileImage3.svg";
 const LiveClass = () => {
   return (
     <div className="liveClassContainer">
@@ -14,9 +14,9 @@ const LiveClass = () => {
         JOIN OUR LIVE CLASSES NOW!
       </Button>
       <div className="liveClassContainer--imageContainer">
-        <img src={Mobole1} />
-        <img src={Mobole2} />
-        <img src={Mobole3} />
+        <img src={Mobile1} />
+        <img src={Mobile2} />
+        <img src={Mobile3} />
       </div>
     </div>
   );

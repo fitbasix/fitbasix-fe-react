@@ -12,18 +12,20 @@ import "./styles.css";
 import FAQ from "./FAQ";
 import GetStarted from "./GetStarted";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 const Landing = () => {
   return (
     <div className="landingContainer">
+      <Navbar />
       <Home />
       <LiveClass />
       <AboutUs />
       <PopularClasses />
-      {/* <WorkoutSessions /> */}
+      <WorkoutSessions />
       <TopTrainers />
       <BMI />
-      {/* <UserReviews /> */}
-      {/* <GetStarted /> */}
+      <UserReviews />
+      <GetStarted />
       <FAQ />
       <Footer />
     </div>

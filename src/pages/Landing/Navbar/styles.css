@@ -1,0 +1,25 @@
+.rootNav {
+  width: 98vw;
+  /* height: 100vh; */
+  position: fixed;
+  background-color: #000000;
+  z-index: 1;
+}
+.gridWrapper-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.call-btn button {
+  background-color: #49ad50 !important;
+  text-transform: none;
+  margin-top: 1rem;
+}
+.appstore-style {
+  background-color: transparent !important;
+  border: none !important;
+}
+.logo-nav img {
+  /* padding: 1rem; */
+  margin: 1rem 4rem 1rem 2rem;
+}
