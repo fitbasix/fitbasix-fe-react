@@ -1,44 +1,45 @@
 .GetStarted--Container {
   height: 60vh;
   /* width: 98vw; */
-  display:flex
+  display:flex;
+  background-image: url("../../../assets/GetStartedBG.svg");
 }
 
-.GetStarted--Left{
-width:50%;
-display: flex;
-align-items: center;
-justify-content: center;
+
+
+.GridLeft--Conatiner{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2rem;
 }
 
-.GetStarted--Right{
-width:50%;
-display: flex;
-justify-content: space-between;
-padding-right: 5rem;
-}
-
-.GetStarted--RightButtonContainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.MobileImage{
+  width:80%;
 }
 
 .TextFieldContainer{
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 2rem;
+  
+  position: relative;
 }
 
 .TextFieldContainer .MuiFilledInput-input{
   height: 1rem !important;
   border-radius: 10px;
+
+  width: 100% !important;
 }
 
 .TextFieldContainer .MuiOutlinedInput-notchedOutline{
   border: none !important;
  background: none !important;
+}
+
+.GridButtons--Conatiner{
+  padding-top: 3rem;
 }
 
 
@@ -48,4 +49,28 @@ padding-right: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px){
+  .GetStarted--Container{
+    height: auto;
+    padding-bottom: 1rem;
+    background: none;
+  }
+  .MobileImage{
+    width:60%
+  }
+  .GridImage--Conatiner{
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .GridButtons--Conatiner{
+    text-align: center ;
+    padding-top: 2rem;
+  }
+  .custom-style{
+    display: flex;
+    flex-direction: column;
+  }
+
 }

@@ -8,8 +8,25 @@
 }
 
 .WorkoutSession--Grid{
- 
   margin-top: 2rem;
   margin-right:20%;
   margin-left:20%;
+}
+
+.WorkoutSession--GridMobile{
+  display: none;
+}
+
+@media only screen and (max-width: 767px){
+  .WorkoutSession--Container{
+    height:auto
+  }
+  .WorkoutSession--GridMobile{
+    display: block;
+    margin-top: 2rem;
+  }
+  .WorkoutSession--Grid{
+   display: none;
+  }
+  
 }

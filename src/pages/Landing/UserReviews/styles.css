@@ -3,6 +3,8 @@
   width: 98vw;
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
+  
 }
 
 .userReviewsContainer--Top{
@@ -15,6 +17,11 @@
 .userReviewsContainer--Bottom{
   margin-top: 4rem;
 }
+
+.userReviewsContainer--BottomMobile{
+  display: none;
+}
+
 .SwiperSlide{
   display: flex;
   justify-content: space-around;
@@ -30,9 +37,6 @@
   width: 2.8rem;
 }
 
-
-
-
 .userReviewsContainer--Bottom .swiper-button-prev::after{
   font-size: 20px;
   color:#022405
@@ -46,5 +50,43 @@
 }
 .userReviewsContainer--Bottom  .swiper-button-next::after{
   font-size: 20px;
-  color:#022405
+  color:#022405;
+}
+
+
+@media only screen and (max-width: 767px){
+  .userReviewsContainer{
+height:auto;
+padding-bottom: 1rem;
+  }
+
+  .TopContent--Container{
+    padding-left:2rem;
+    padding-right: 2rem;
+  }
+
+  .userReviewsContainer--Bottom{
+    display: none;
+  }
+  .userReviewsContainer--BottomMobile{
+    display: block;
+  }
+
+  .SwiperSlide{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2rem;
+   
+  }
+.swiper-pagination {
+  margin-top: 1rem !important;
+}
+  .swiper-pagination-bullet{
+    border:2px solid #5E9665 !important;
+    opacity:1 !important
+  }
+  .swiper-pagination-bullet-active{
+    background: #5E9665 !important;
+  }
+ 
 }

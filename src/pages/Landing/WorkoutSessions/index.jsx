@@ -44,6 +44,22 @@ const WorkoutSessions = () => {
           </Grid>
         </Grid>
       </div>
+      <div className="WorkoutSession--GridMobile">
+        <Grid container>
+          <Grid item xs={6}>
+            <img src={image1} style={{ width: "200px" }} />
+          </Grid>
+          <Grid item xs={6}>
+            <img src={image1} style={{ width: "200px" }} />
+          </Grid>
+          <Grid item xs={6}>
+            <img src={image1} style={{ width: "200px" }} />
+          </Grid>
+          <Grid item xs={6}>
+            <img src={image1} style={{ width: "200px" }} />
+          </Grid>
+        </Grid>
+      </div>
     </div>
   );
 };

@@ -26,3 +26,9 @@ justify-content: space-around;
   color:#fff !important;
   
 }
+
+@media only screen and (max-width: 767px){
+ .FAQContainer{
+  display:none
+ }
+}

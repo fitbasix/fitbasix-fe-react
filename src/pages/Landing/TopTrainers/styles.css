@@ -1,6 +1,5 @@
 .topTrainersContainer {
   height: 100vh;
-  z-index: -1;
 
 }
 
@@ -40,8 +39,45 @@
   width: 2.8rem;
 
 }
+.topTrainersContainer--bottomMobile{
+  display: none;
+}
 
 .topTrainersContainer--bottom .swiper-button-next::after{
   font-size: 20px;
   color:#022405
+}
+
+@media only screen and (max-width: 767px){
+  .topTrainersContainer{
+height:auto;
+padding-bottom: 1rem;
+  }
+.topTrainersContainer--top{
+  padding:1rem
+}
+  .topTrainersContainer--bottomMobile{
+    display: block;
+
+  }
+  .topTrainersContainer--bottom{
+    display: none;
+  }
+
+  
+.SwiperSlide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+  
+    .swiper-pagination-bullet{
+      border:2px solid #5E9665 !important;
+      opacity:1 !important
+    }
+    .swiper-pagination-bullet-active{
+      background: #5E9665 !important;
+    }
 }
