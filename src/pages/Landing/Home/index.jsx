@@ -9,7 +9,7 @@ const Home = () => {
     <div className="homeContainer">
       <Grid container spacing={2} >
         <Grid item xs={12} sm={12}>
-          <Grid container spacing={2} sx={{padding: "7rem 4rem 2rem 4rem"}}>
+          <Grid container spacing={2} sx={{padding: "12rem 4rem 7rem 4rem"}}>
             <Grid item xs={12} sm={12} >
               <Typography variant="h3">
                 THE FUTURE OF <br />
@@ -18,8 +18,8 @@ const Home = () => {
             </Grid>
             <Grid item xs={12} sm={12}>
               <Typography variant="h5">
-                Elevate your fitness <br /> journey with a personal
-                <br /> touch!
+                Elevate Your Fitness <br />Journey With A Personal
+                <br />Touch!
               </Typography>
             </Grid>
             <Grid item xs={12} sm={12} className="knowMore-btn">
