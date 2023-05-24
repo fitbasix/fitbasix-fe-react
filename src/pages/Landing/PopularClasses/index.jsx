@@ -1,14 +1,21 @@
 import React, { useRef } from "react";
 import "./styles.css";
-import { Button, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import PopularClassesCard from "./PopularClassesCard";
-import cardImage from "../../../assets/popularClassCardIMG.svg";
+import cardImage from "../../../assets/CARDIMAGEPOPULARCALASSES.svg";
 import {
   StackedCarousel,
   ResponsiveContainer,
 } from "react-stacked-center-carousel";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Autoplay } from "swiper";
 
 const PopularClasses = () => {
   const ref = useRef();
@@ -81,57 +88,91 @@ const PopularClasses = () => {
         <ResponsiveContainer
           carouselRef={ref}
           render={(parentWidth, carouselRef) => {
-            let currentVisibleSlide = 3;
-            if (parentWidth <= 1280) currentVisibleSlide = 3;
-            if (parentWidth <= 640) currentVisibleSlide = 1;
+            let currentVisibleSlide = 1;
+            if (parentWidth >= 1023) currentVisibleSlide = 3;
+            if (parentWidth <= 767) currentVisibleSlide = 1;
             return (
               <>
                 {" "}
                 <StackedCarousel
                   ref={carouselRef}
                   slideComponent={PopularClassesCard}
-                  slideWidth={400}
+                  slideWidth={250}
                   carouselWidth={parentWidth}
                   data={data}
                   currentVisibleSlide={currentVisibleSlide}
                   maxVisibleSlide={3}
                   useGrabCursor
-                  fadeDistance={0.1}
+                  fadeDistance={0.2}
                   height={500}
                 />{" "}
-                {/* <Button
-                  endIcon={<ArrowCircleLeftIcon />}
-                  style={{
-                    position: "absolute",
-                    top: "40%",
-                    left: `${window.innerWidth < 640 ? "-5%" : 0}`,
-                    zIndex: 10,
-                  }}
-                  onClick={() => {
-                    ref.current?.goBack();
-                  }}
-                >
-                  Prev
-                </Button>
-                <Button
-                  endIcon={<ArrowCircleRightIcon />}
-                  style={{
-                    position: "absolute",
-                    top: "40%",
-                    right: `${window.innerWidth < 640 ? "-5%" : 10}`,
-                    zIndex: 10,
-                  }}
-                  onClick={() => {
-                    ref.current?.goNext(6);
-                  }}
-                >
-                  next
-                </Button> */}
               </>
             );
           }}
         />
       </div>
+      <div className="popularClassesContainer--BottomMobile">
+        <Swiper
+          navigation={false}
+          speed={1000}
+          className="mySwiper"
+          modules={[Autoplay]}
+          pagination={false}
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+        >
+          <SwiperSlide>
+            <div className="SwiperSlide">
+              <PopularClassesCard data={data} dataIndex={0} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="SwiperSlide">
+              {" "}
+              <PopularClassesCard data={data} dataIndex={1} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="SwiperSlide">
+              {" "}
+              <PopularClassesCard data={data} dataIndex={2} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="SwiperSlide">
+              {" "}
+              <PopularClassesCard data={data} dataIndex={3} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="SwiperSlide">
+              <PopularClassesCard data={data} dataIndex={0} />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      <Grid container>
+        <Grid
+          item
+          xs={12}
+          md={12}
+          sx={{ textAlign: "center", marginBottom: "1rem", marginTop: "1rem" }}
+        >
+          <Button
+            sx={{
+              backgroundColor: "#49AD50",
+              color: "#fff",
+              textAlign: "center",
+            }}
+          >
+            {" "}
+            Get a FREE TRIAL
+          </Button>
+        </Grid>
+      </Grid>
     </div>
   );
 };

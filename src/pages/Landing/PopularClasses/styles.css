@@ -1,5 +1,5 @@
 .popularClassesContainer {
-  height: 100vh;
+  height: auto;
   width: 98vw;
 }
 
@@ -12,5 +12,28 @@ flex-direction: column;
 }
 
 .popularClassesContainer--Bottom{
-  margin-top: 4rem;
+  margin-top: 3rem;
+}
+
+.popularClassesContainer--BottomMobile{
+  display:none
+}
+
+@media only screen and (max-width: 767px){
+
+
+  .popularClassesContainer{
+    height: auto;
+    margin-top: 30rem;
+  }
+
+  .popularClassesContainer--Bottom{
+   display: none;
+  }
+  
+  .popularClassesContainer--BottomMobile{
+    display:block;
+    margin-top: 3rem;
+  }
+  
 }

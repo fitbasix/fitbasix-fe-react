@@ -1,5 +1,5 @@
 .liveClassContainer {
-  height: 100vh;
+  height: auto;
   width: 98vw;
   display: flex;
   align-items: center;
@@ -15,4 +15,34 @@ margin-top: 5rem;
 
 .liveClassContainer--imageContainer img{
   width:400px
+}
+
+.MobileCarousel--Container{
+  width:100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.MobileCarousel--ContainerMobile{
+  display:none
+}
+
+@media only screen and (max-width: 767px){
+  .MobileCarousel--Container{
+   display: none;
+  }
+  
+  .MobileCarousel--ContainerMobile{
+    display:block;
+    width:100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+   
+  }
+
+  .SwiperSlide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

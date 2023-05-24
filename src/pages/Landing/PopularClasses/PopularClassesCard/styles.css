@@ -7,6 +7,7 @@
     display: flex;
     position:relative;
 }
+
 .PopularClassesCard--Left{
  width:80%;
  padding-left: 1rem;
@@ -21,16 +22,21 @@
 }
 
 .PopularClassesCard--Right img{
--webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+
   position: absolute;
-  width:280px;
-  top: -5%;
-  bottom: 2%;
+  width:240px;
+  z-index: -1;
   margin:0;
-  left:40%;
+  left:26%;
 }
 
 .ratingContainer{
     display: flex;
+}
+
+@media only screen and (max-width: 767px){
+    .PopularClassesCard--Container{
+        width:80vw;
+    }
+
 }

@@ -1,9 +1,11 @@
 .aboutUsContainer {
-  height: 100vh;
+  height: 110vh;
   width: 98vw;
   display: flex;
   /* align-items: center; */
   flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 5rem;
 }
 .cardContainer {
   /* height: 60vh; */
@@ -12,7 +14,12 @@
   opacity: 0.8;
   border-radius: 10px;
   display: flex;
+
   justify-content: space-around;
+}
+
+.rightContainer {
+  padding: 1rem;
 }
 
 .btnTrial button {
@@ -27,8 +34,40 @@
 .cardTitle .MuiTypography-root {
   color: #49ad50;
 }
+.textContent {
+  margin-top: 1rem;
+}
+
 .aa {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+}
+.aboutUsContainer--RightMobile {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .aboutUsContainer {
+    padding: 1.5rem;
+    height: 80vh;
+  }
+  .aboutUsContainer--Right {
+    display: none;
+  }
+  .textContent {
+    text-align: center;
+  }
+  .aboutUsContainer--RightMobile {
+    display: block;
+  }
+  .cardContainer {
+    width: 70vw;
+    background-color: #262626;
+    opacity: 0.8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
 }

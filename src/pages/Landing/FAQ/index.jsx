@@ -4,6 +4,7 @@ import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  Link,
   Typography,
 } from "@mui/material";
 
@@ -11,38 +12,46 @@ import ControlPointIcon from "@mui/icons-material/ControlPoint";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 
 const FAQ = () => {
-  const [expanded, setExpanded] = useState("none");
-
-  console.log("EXP", expanded);
+  const [expanded, setExpanded] = React.useState("panel1");
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded ? panel : false);
+  };
 
   return (
     <div className="FAQContainer">
       {" "}
       <div className="FAQContainer--Left">
-        <Typography sx={{ color: "#49AD50" }}>Support</Typography>
+        <Typography variant='h5' sx={{ color: "#49AD50" }}>Support</Typography>
         <Typography
+        variant='h4'
           sx={{ fontWeight: 600, fontSize: "20px", marginTop: "1rem" }}
         >
           Frequently Asked Questions
         </Typography>
         <Typography
-          sx={{ fontSize: "12px", width: "16rem", marginTop: "1rem" }}
+        variant="body1"
+          sx={{ fontSize: "12px", width: "18rem", marginTop: "1rem" }}
         >
-          Everything you need to know about us. Can’t find the answer you’re
-          looking for? Please reach out to our Customer Support.
+          Everything you need to know about us. Can&apos;t find the answer
+          you&apos;re looking for? Please reach out to our <br />
+          <span>
+            <Link href="#" color="#fff">
+              Customer Support.
+            </Link>
+          </span>
         </Typography>
       </div>
       <div className="AccordionContainer">
         <Accordion
           className="Accordion"
-          onChange={(e, exp) => {
-            if (exp) {
-              console.log("SET EXP", exp);
-              setExpanded("panel1");
-            } else {
-              setExpanded("none");
-            }
+          sx={{
+            "&::before": {
+              display: "none",
+            },
+            boxShadow: "none",
           }}
+          expanded={expanded === "panel1"}
+          onChange={handleChange("panel1")}
         >
           <AccordionSummary
             expandIcon={
@@ -52,8 +61,6 @@ const FAQ = () => {
                 <ControlPointIcon sx={{ color: "#fff" }} />
               )
             }
-            aria-controls="panel1a-content"
-            id="panel1a-header"
           >
             <Typography
               sx={{ color: expanded == "panel1" ? "#49AD50" : "#fff" }}
@@ -61,7 +68,14 @@ const FAQ = () => {
               Lorem Ipsum is a temporary Question
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails
+            sx={{
+              "&::before": {
+                display: "none",
+              },
+              boxShadow: "none",
+            }}
+          >
             <Typography
               sx={{
                 fontSize: "14px",
@@ -75,14 +89,14 @@ const FAQ = () => {
         </Accordion>
         <Accordion
           className="Accordion"
-          onChange={(e, exp) => {
-            if (exp) {
-              console.log("SET EXP", exp);
-              setExpanded("panel2");
-            } else {
-              setExpanded("none");
-            }
+          sx={{
+            "&::before": {
+              display: "none",
+            },
+            boxShadow: "none",
           }}
+          expanded={expanded === "panel2"}
+          onChange={handleChange("panel2")}
         >
           <AccordionSummary
             expandIcon={
@@ -92,8 +106,6 @@ const FAQ = () => {
                 <ControlPointIcon sx={{ color: "#fff" }} />
               )
             }
-            aria-controls="panel2a-content"
-            id="panel2a-header"
           >
             <Typography
               sx={{ color: expanded == "panel2" ? "#49AD50" : "#fff" }}
@@ -101,8 +113,19 @@ const FAQ = () => {
               Lorem Ipsum is a temporary Question
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
-            <Typography sx={{ fontSize: "14px" }}>
+          <AccordionDetails
+            sx={{
+              "&::before": {
+                display: "none",
+              },
+              boxShadow: "none",
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: "14px",
+              }}
+            >
               Lorem ipsum dolor sit amet consectetur. Mus in diam magna tortor
               felis aenean magna. Interdum purus faucibus pulvinar etiam platea.
               Quis urna velit et amet lacus porttitor.
@@ -111,14 +134,14 @@ const FAQ = () => {
         </Accordion>
         <Accordion
           className="Accordion"
-          onChange={(e, exp) => {
-            if (exp) {
-              console.log("SET EXP", exp);
-              setExpanded("panel3");
-            } else {
-              setExpanded("none");
-            }
+          sx={{
+            "&::before": {
+              display: "none",
+            },
+            boxShadow: "none",
           }}
+          expanded={expanded === "panel3"}
+          onChange={handleChange("panel3")}
         >
           <AccordionSummary
             expandIcon={
@@ -128,8 +151,6 @@ const FAQ = () => {
                 <ControlPointIcon sx={{ color: "#fff" }} />
               )
             }
-            aria-controls="panel3a-content"
-            id="panel3a-header"
           >
             <Typography
               sx={{ color: expanded == "panel3" ? "#49AD50" : "#fff" }}
@@ -137,8 +158,19 @@ const FAQ = () => {
               Lorem Ipsum is a temporary Question
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
-            <Typography sx={{ fontSize: "14px" }}>
+          <AccordionDetails
+            sx={{
+              "&::before": {
+                display: "none",
+              },
+              boxShadow: "none",
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: "14px",
+              }}
+            >
               Lorem ipsum dolor sit amet consectetur. Mus in diam magna tortor
               felis aenean magna. Interdum purus faucibus pulvinar etiam platea.
               Quis urna velit et amet lacus porttitor.
@@ -147,14 +179,14 @@ const FAQ = () => {
         </Accordion>
         <Accordion
           className="Accordion"
-          onChange={(e, exp) => {
-            if (exp) {
-              console.log("SET EXP", exp);
-              setExpanded("panel4");
-            } else {
-              setExpanded("none");
-            }
+          sx={{
+            "&::before": {
+              display: "none",
+            },
+            boxShadow: "none",
           }}
+          expanded={expanded === "panel4"}
+          onChange={handleChange("panel4")}
         >
           <AccordionSummary
             expandIcon={
@@ -164,8 +196,6 @@ const FAQ = () => {
                 <ControlPointIcon sx={{ color: "#fff" }} />
               )
             }
-            aria-controls="panel4a-content"
-            id="panel4a-header"
           >
             <Typography
               sx={{ color: expanded == "panel4" ? "#49AD50" : "#fff" }}
@@ -173,8 +203,19 @@ const FAQ = () => {
               Lorem Ipsum is a temporary Question
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
-            <Typography sx={{ fontSize: "14px" }}>
+          <AccordionDetails
+            sx={{
+              "&::before": {
+                display: "none",
+              },
+              boxShadow: "none",
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: "14px",
+              }}
+            >
               Lorem ipsum dolor sit amet consectetur. Mus in diam magna tortor
               felis aenean magna. Interdum purus faucibus pulvinar etiam platea.
               Quis urna velit et amet lacus porttitor.
@@ -183,14 +224,14 @@ const FAQ = () => {
         </Accordion>
         <Accordion
           className="Accordion"
-          onChange={(e, exp) => {
-            if (exp) {
-              console.log("SET EXP", exp);
-              setExpanded("panel5");
-            } else {
-              setExpanded("none");
-            }
+          sx={{
+            "&::before": {
+              display: "none",
+            },
+            boxShadow: "none",
           }}
+          expanded={expanded === "panel5"}
+          onChange={handleChange("panel5")}
         >
           <AccordionSummary
             expandIcon={
@@ -200,8 +241,6 @@ const FAQ = () => {
                 <ControlPointIcon sx={{ color: "#fff" }} />
               )
             }
-            aria-controls="panel5a-content"
-            id="panel5a-header"
           >
             <Typography
               sx={{ color: expanded == "panel5" ? "#49AD50" : "#fff" }}
@@ -209,8 +248,19 @@ const FAQ = () => {
               Lorem Ipsum is a temporary Question
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
-            <Typography sx={{ fontSize: "14px" }}>
+          <AccordionDetails
+            sx={{
+              "&::before": {
+                display: "none",
+              },
+              boxShadow: "none",
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: "14px",
+              }}
+            >
               Lorem ipsum dolor sit amet consectetur. Mus in diam magna tortor
               felis aenean magna. Interdum purus faucibus pulvinar etiam platea.
               Quis urna velit et amet lacus porttitor.
@@ -219,14 +269,14 @@ const FAQ = () => {
         </Accordion>
         <Accordion
           className="Accordion"
-          onChange={(e, exp) => {
-            if (exp) {
-              console.log("SET EXP", exp);
-              setExpanded("panel6");
-            } else {
-              setExpanded("none");
-            }
+          sx={{
+            "&::before": {
+              display: "none",
+            },
+            boxShadow: "none",
           }}
+          expanded={expanded === "panel6"}
+          onChange={handleChange("panel6")}
         >
           <AccordionSummary
             expandIcon={
@@ -236,8 +286,6 @@ const FAQ = () => {
                 <ControlPointIcon sx={{ color: "#fff" }} />
               )
             }
-            aria-controls="pane6a-content"
-            id="pane6a-header"
           >
             <Typography
               sx={{ color: expanded == "panel6" ? "#49AD50" : "#fff" }}
@@ -245,8 +293,19 @@ const FAQ = () => {
               Lorem Ipsum is a temporary Question
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
-            <Typography sx={{ fontSize: "14px" }}>
+          <AccordionDetails
+            sx={{
+              "&::before": {
+                display: "none",
+              },
+              boxShadow: "none",
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: "14px",
+              }}
+            >
               Lorem ipsum dolor sit amet consectetur. Mus in diam magna tortor
               felis aenean magna. Interdum purus faucibus pulvinar etiam platea.
               Quis urna velit et amet lacus porttitor.

@@ -27,6 +27,7 @@ const PopularClassesCard = ({ data, dataIndex }) => {
               padding: "0.5rem",
               height: "2rem",
               borderRadius: "10px",
+              opacity: "0.8",
             }}
           >
             Duration - {data[dataIndex].duration}

@@ -18,7 +18,7 @@ const Landing = () => {
     <div className="landingContainer">
       <Navbar />
       <Home />
-      {/* <LiveClass /> */}
+      <LiveClass />
       <AboutUs />
       <PopularClasses />
       <WorkoutSessions />
