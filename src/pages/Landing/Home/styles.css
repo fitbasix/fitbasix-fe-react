@@ -1,8 +1,8 @@
 .homeContainer {
-  background-image: url("../../../assets/HomeScreenBGImage.svg");
-  background-size: contain;
-
-  width: 98vw;
+  background-image: url("../../../assets/HomeScreenBGImage1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width: 98vw; */
   height: 100vh;
   color: #fff;
   z-index: -1;
