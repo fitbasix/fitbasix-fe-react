@@ -1,4 +1,40 @@
 .homeContainer {
+  background-image: url("../../../assets/HomeScreenBGImage.svg");
+  background-size: contain;
+
   width: 98vw;
   height: 100vh;
+  color: #fff;
+  z-index: -1;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  animation: none !important;
+}
+.knowMore-btn button {
+  background-color: #49ad50 !important;
+  text-transform: none;
+}
+.homelogo-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homelogo-style img {
+  height: 70%;
+}
+.homeTitle-style {
+  font-weight: 800;
+  margin-top: 2rem;
+}
+.explore-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.explore-btn button {
+  color: #fff;
+  font-weight: 500;
 }

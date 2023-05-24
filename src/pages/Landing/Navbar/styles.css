@@ -1,13 +1,14 @@
 .rootNav {
   width: 98vw;
   /* height: 100vh; */
-  position: fixed;
+  /* position: fixed; */
   background-color: #000000;
   z-index: 1;
 }
 .gridWrapper-nav {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 10px;
 }
 
 .call-btn button {
