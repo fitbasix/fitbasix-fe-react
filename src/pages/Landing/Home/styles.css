@@ -45,3 +45,32 @@
 .my-float{
 	margin-top:16px;
 }
+
+
+
+@media only screen and (max-width: 767px) {
+  .homeContainer{
+    height: auto;
+    width: auto;
+    background-image: url("../../../assets/MOBILEHOMEBG.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+  }
+
+  .homelogo-style{
+    display: none;
+  }
+  .explore-btn{
+    display: none;
+  }
+  .whatsappContainer{
+    display: none;
+  }
+  .title{
+    font-weight: bold;
+  }
+  .sub-title{
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+}

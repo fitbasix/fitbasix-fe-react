@@ -8,11 +8,11 @@ const Footer = () => {
   return (
     <div className="Footer">
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={6} sm={6}>
           <Grid container spacing={2} sx={{ textAlign: "center" }}>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={6} sm={4}>
               <Link
-                href="#"
+                href="/privacy"
                 underline="none"
                 color="#fff"
                 // sx={{ fontSize: "14px" }}
@@ -21,9 +21,9 @@ const Footer = () => {
               </Link>
             </Grid>
 
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={6} sm={4}>
               <Link
-                href="#"
+                href="/terms"
                 underline="none"
                 color="#fff"
                 // sx={{ fontSize: "14px" }}
@@ -33,7 +33,7 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={12} sm={6} sx={{ display: "flex" }}>
+        <Grid item xs={6} sm={6} sx={{ display: "flex" }}>
           <Grid
             container
             spacing={3}
@@ -43,13 +43,13 @@ const Footer = () => {
               justifyContent: "flex-end",
             }}
           >
-            <Grid item xs={12} sm={2}>
+            <Grid item xs={4} sm={2}>
               <img src={facebookLogo} alt="" />
             </Grid>
-            <Grid item xs={12} sm={2}>
+            <Grid item xs={4} sm={2}>
               <img src={instaLogo} alt="" />
             </Grid>
-            <Grid item xs={12} sm={2}>
+            <Grid item xs={4} sm={2}>
               <img src={twitterLogo} alt="" />
             </Grid>
           </Grid>

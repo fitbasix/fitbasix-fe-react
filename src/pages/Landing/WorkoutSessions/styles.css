@@ -1,5 +1,5 @@
 .WorkoutSession--Container {
-  height: 100vh;
+  height: auto;
   width: 98vw;
   display: flex;
   flex-direction: column;
@@ -9,8 +9,9 @@
 
 .WorkoutSession--Grid{
   margin-top: 2rem;
-  margin-right:20%;
-  margin-left:20%;
+  margin-bottom: 10%;
+  margin-right:10%;
+  margin-left:10%;
 }
 
 .WorkoutSession--GridMobile{

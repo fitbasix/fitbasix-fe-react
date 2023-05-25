@@ -11,12 +11,12 @@ const Home = () => {
         <Grid item xs={12} sm={12}>
           <Grid container spacing={2} sx={{ padding: "12rem 4rem 7rem 4rem" }}>
             <Grid item xs={12} sm={12}>
-              <Typography variant="h3">
+              <Typography variant="h3" className="title">
                 THE FUTURE OF <br />
                 FITNESS
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={12}>
+            <Grid item xs={12} sm={12} className="sub-title">
               <Typography variant="h5">
                 Elevate Your Fitness <br />
                 Journey With A Personal
@@ -40,7 +40,13 @@ const Home = () => {
             <KeyboardArrowDownIcon />
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={1} sx={{ textAlign: "end", padding: "1rem" }}>
+        <Grid
+          item
+          xs={12}
+          sm={1}
+          sx={{ textAlign: "end", padding: "1rem" }}
+          className="whatsappContainer"
+        >
           <Tooltip
             title="Contact Us"
             placement="left-start"
