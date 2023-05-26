@@ -20,7 +20,7 @@ const Navbar = () => {
   const handleChange = (event) => {
     setWorkout(event.target.value);
   };
-  
+
   return (
     <div className="rootNav">
       <Grid container spacing={2} className="gridWrapper-nav">
@@ -44,7 +44,9 @@ const Navbar = () => {
               </ButtonsContainer>
             </Grid>
             <Grid item xs={12} sm={4} className="call-btn">
-              <Button variant="contained" onClick={()=>setOpen(true)}>Call us Now!</Button>
+              <Button variant="contained" onClick={() => setOpen(true)}>
+                Call us Now!
+              </Button>
             </Grid>
           </Grid>
         </Grid>
@@ -85,7 +87,7 @@ const Navbar = () => {
               <Grid item md={12}>
                 <Select
                   value={workout}
-                  label="Type of Workout"
+                  // label="Type of Workout"
                   onChange={handleChange}
                   style={{ width: "80%", color: "#111" }}
                 >
@@ -98,7 +100,16 @@ const Navbar = () => {
               </Grid>
 
               <Grid item md={12}>
-                Time Slot
+                <TextField
+                  fullWidth
+                  sx={{ backgroundColor: "#fff" }}
+                  name="time"
+                  type="time"
+                  style={{ width: "80%", borderRadius: "40px" }}
+              
+                  renderInput={(params) => <TextField  placeholder="override does nothing" {...params} />}
+                  InputProps={{ min: new Date().toISOString().slice(0, 16) }}
+                />
               </Grid>
             </Grid>
           </Grid>
