@@ -12,6 +12,7 @@ import Typography from "@mui/material/Typography";
 import { Grid, MenuItem, Select, TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
 import { postDialog } from "../../api/services";
+import { useNavigate } from "react-router-dom";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -52,8 +53,9 @@ BootstrapDialogTitle.propTypes = {
 };
 
 export default function ReusableDialog({ open, setOpen, title }) {
-  const { register, handleSubmit } = useForm();
 
+  const { register, handleSubmit } = useForm();
+  const navigate= useNavigate()
   //API CALL On SUBMIT
   const onSubmit = async (data) => {
     data.formType = "CallBack";
@@ -62,7 +64,11 @@ export default function ReusableDialog({ open, setOpen, title }) {
 
     if (response?.resStr == "success") {
       console.log("SUCCESSFULL");
+      navigate("/thankyou")
       setOpen(false);
+    }
+    else{
+      navigate("/error")
     }
   };
 
@@ -167,6 +173,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
               autoFocus
               type="submit"
               sx={{ backgroundColor: "#49AD50", color: "#fff" }}
+           
             >
               Submit
             </Button>

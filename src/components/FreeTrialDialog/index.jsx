@@ -12,6 +12,7 @@ import Typography from "@mui/material/Typography";
 import { Grid, MenuItem, Select, TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
 import { postDialog } from "../../api/services";
+import { useNavigate } from "react-router-dom";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -58,7 +59,7 @@ export default function FreeTrialDialog({
   title,
 }) {
   const { register, handleSubmit } = useForm();
-
+  const navigate= useNavigate()
   const onSubmit = async (data) => {
     console.log("FORM SUBMIT", data);
     data.formType = "FreeTrial";
@@ -67,7 +68,11 @@ export default function FreeTrialDialog({
 
     if (response?.resStr == "success") {
       console.log("SUCCESSFULL");
+      navigate("/thankyou")
       setOpen(false);
+    }
+    else{
+      navigate("/error")
     }
   };
   const handleClose = (e, reason) => {
@@ -151,6 +156,7 @@ export default function FreeTrialDialog({
               autoFocus
               type="submit"
               sx={{ backgroundColor: "#49AD50", color: "#fff" }}
+             
             >
               Submit
             </Button>
