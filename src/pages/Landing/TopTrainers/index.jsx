@@ -15,8 +15,23 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectFade, Navigation, Pagination } from "swiper";
+import { useEffect } from "react";
+import { getTrainers } from "../../../api/services";
+import { useState } from "react";
 
 const TopTrainers = () => {
+  const [trainers, setTrainers] = useState([]);
+  console.log("Trainers", trainers);
+  const getData = async () => {
+    let response = await getTrainers();
+
+    setTrainers(response?.response?.data);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div className="topTrainersContainer">
       <div className="topTrainersContainer--top">
@@ -45,71 +60,35 @@ const TopTrainers = () => {
           <SwiperSlide>
             <div className="SwiperSlide">
               <TrainerCard
-                image={trainer1}
-                name="Brandon Wong"
+                image={trainers[0]?.profilePhoto}
+                name={trainers[0]?.name}
                 designation="HIIT Trainer"
                 experience="3"
-                rating={3}
+                rating={parseInt(trainers[0]?.rating)}
                 reviews={234}
               />
               <TrainerCard
-                image={trainer2}
-                name="Brandon Wong"
+                image={trainers[1]?.profilePhoto}
+                name={trainers[1]?.name}
                 designation="HIIT Trainer"
                 experience="3"
-                rating={3}
+                rating={parseInt(trainers[1]?.rating)}
                 reviews={234}
               />
               <TrainerCard
-                image={trainer3}
-                name="Brandon Wong"
+                image={trainers[2]?.profilePhoto}
+                name={trainers[2]?.name}
                 designation="HIIT Trainer"
                 experience="3"
-                rating={3}
+                rating={parseInt(trainers[2]?.rating)}
                 reviews={234}
               />
               <TrainerCard
-                image={trainer4}
-                name="Brandon Wong"
+                image={trainers[3]?.profilePhoto}
+                name={trainers[3]?.name}
                 designation="HIIT Trainer"
                 experience="3"
-                rating={3}
-                reviews={234}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="SwiperSlide">
-              <TrainerCard
-                image={trainer1}
-                name="Brandon Wong"
-                designation="HIIT Trainer"
-                experience="3"
-                rating={3}
-                reviews={234}
-              />
-              <TrainerCard
-                image={trainer2}
-                name="Brandon Wong"
-                designation="HIIT Trainer"
-                experience="3"
-                rating={3}
-                reviews={234}
-              />
-              <TrainerCard
-                image={trainer3}
-                name="Brandon Wong"
-                designation="HIIT Trainer"
-                experience="3"
-                rating={3}
-                reviews={234}
-              />
-              <TrainerCard
-                image={trainer4}
-                name="Brandon Wong"
-                designation="HIIT Trainer"
-                experience="3"
-                rating={3}
+                rating={parseInt(trainers[3]?.rating)}
                 reviews={234}
               />
             </div>
@@ -117,35 +96,35 @@ const TopTrainers = () => {
           <SwiperSlide>
             <div className="SwiperSlide">
               <TrainerCard
-                image={trainer1}
-                name="Brandon Wong"
+                image={trainers[4]?.profilePhoto}
+                name={trainers[4]?.name}
                 designation="HIIT Trainer"
                 experience="3"
-                rating={3}
+                rating={parseInt(trainers[4]?.rating)}
                 reviews={234}
               />
               <TrainerCard
-                image={trainer2}
-                name="Brandon Wong"
+                image={trainers[5]?.profilePhoto}
+                name={trainers[5]?.name}
                 designation="HIIT Trainer"
                 experience="3"
-                rating={3}
+                rating={parseInt(trainers[5]?.rating)}
                 reviews={234}
               />
               <TrainerCard
-                image={trainer3}
-                name="Brandon Wong"
+                image={trainers[6]?.profilePhoto}
+                name={trainers[6]?.name}
                 designation="HIIT Trainer"
                 experience="3"
-                rating={3}
+                rating={parseInt(trainers[6]?.rating)}
                 reviews={234}
               />
               <TrainerCard
-                image={trainer4}
-                name="Brandon Wong"
+                image={trainers[7]?.profilePhoto}
+                name={trainers[7]?.name}
                 designation="HIIT Trainer"
                 experience="3"
-                rating={3}
+                rating={parseInt(trainers[7]?.rating)}
                 reviews={234}
               />
             </div>

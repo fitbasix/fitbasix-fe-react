@@ -22,3 +22,13 @@ export const postDialog = async (payload) => {
     return { error: e.response.data };
   }
 };
+
+export const getTrainers = async () => {
+  try {
+    const response = await axiosInstance.get(`/api/auth/getTrainers`);
+
+    return response?.data;
+  } catch (e) {
+    return { error: e.response.data };
+  }
+};
