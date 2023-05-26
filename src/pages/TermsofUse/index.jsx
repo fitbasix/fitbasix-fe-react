@@ -1,8 +1,8 @@
+import { Grid, Typography } from "@mui/material";
 import React from "react";
+import Footer from "../Landing/Footer";
 import Navbar from "../Landing/Navbar";
 import "./styles.css";
-import Footer from "../Landing/Footer";
-import { Grid, Typography } from "@mui/material";
 
 const TermsofUse = () => {
   return (
@@ -537,6 +537,437 @@ const TermsofUse = () => {
                     </ul>
                   </Typography>
                 </li>
+                <br />
+
+                <li>
+                  <Typography variant="h6">
+                    Disclosure of your personal data:
+                  </Typography>
+                  <br />
+                  <Typography variant="body2">
+                    You agree that we have the right to share your personal
+                    information with: Any member of our group (for example any
+                    subsidiaries or our ultimate parent holding company),
+                    employees, ; Selected third parties including: business
+                    partners, suppliers, and sub-contractors acting for or on
+                    our behalf for the performance of any contract we enter into
+                    with you (including Enhance Trainers), prospective buyers or
+                    investors, advertisers and advertising networks that require
+                    the data to select and serve relevant adverts to you and
+                    others, analytics and search engine providers that assist us
+                    in the improvement and optimization of our Website or App,
+                    credit reference agencies for the purpose of assessing your
+                    credit score, credit card and payment processing companies,
+                    lawyers, auditors, professional advisors and investors of
+                    Enhance. If we are under a duty to disclose or share your
+                    personal data in order to comply with any legal obligation
+                    or in order to enforce or apply our Terms of Use and other
+                    agreements or to protect the rights, property, or safety of
+                    Enhance, our customers or others. This includes exchanging
+                    information with other companies and organizations for the
+                    purposes of fraud protection and credit risk reduction. We
+                    do not rent, trade or sell your personal information.
+                    Recipients of your personal data may be located outside of
+                    the United Arab Emirates. You agree that we may transfer
+                    your personal data outside of the United Arab Emirates as
+                    long as the data is handled in accordance with this Privacy
+                    Policy and applicable laws.
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">Consent</Typography>
+                  <br />
+                  <Typography variant="body2">
+                    This agreement applies to the App you are currently viewing.
+                    By using the App (i) you agree irrevocably and without
+                    condition to this agreement terms, and (ii) you consent to
+                    your personal information being collected, used and
+                    disclosed as set out in this agreement. You consent to us
+                    posting and using any photographs, content and/or personal
+                    information you might upload on the App or have otherwise
+                    provided consent to publish on the App, blog, in our
+                    marketing material or social media channels, which we may
+                    use in order to provide information on our services and/or
+                    products, the marketing of our services and/or products or
+                    for the purpose of our functions and/or activities.
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">Purpose</Typography>
+                  <br />
+                  <Typography variant="body2">
+                    We collect your personal information to enable you to
+                    receive the benefit of the App and services and/or products.
+                    Subject to this agreement, we may use your personal
+                    information for the following purposes:
+                    <br />
+                    <ul>
+                      <li>
+                        to carry out our obligations and to provide you with
+                        agreed services and/or products;
+                      </li>
+                      <br />
+                      <li>
+                        to establish, maintain and administer your account;
+                      </li>
+                      <br />
+                      <li>
+                        to send you service and/or product or promotional
+                        communications and marketing material that is relevant
+                        to you to promote and market our services and/or
+                        products and the App and those of third parties
+                        (including any social media pages maintained or operated
+                        by us such as Facebook, Instagram, Snapchat, Twitter,
+                        YouTube);
+                      </li>
+                      <br />
+                      <li>
+                        to notify you about changes to our services and/or
+                        products;
+                      </li>
+                      <br />
+                      <li>quality assurance and training;</li>
+                      <br />
+                      <li>
+                        improving our products and services, including site
+                        customization;
+                      </li>
+                      <br />
+                      <li>
+                        to verify your identity or location, and make security
+                        checks, in relation to a purchase;
+                      </li>
+                      <br />
+                      <li>
+                        to access third-party development platforms or add-on
+                        keys;
+                      </li>
+                      <br />
+                      <li>market research and analysis;</li>
+                      <br />
+                      <li>
+                        to promote and market our services and/or products
+                        (including via any social media pages maintained or
+                        operated by us such as Facebook, Instagram, Snapchat,
+                        Twitter, YouTube, Twitch, and Mixer);
+                      </li>
+                      <br />
+                      <li>
+                        internal record-keeping to facilitate any other Purpose;
+                      </li>
+                      <br />
+                    </ul>
+                    any other uses identified to you at the time of collecting
+                    your personal information or as reasonably contemplated by
+                    this agreement.
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">
+                    Accessing your personal data
+                  </Typography>
+                  <br />
+                  <Typography variant="body2">
+                    To the extent required by law, you may review, edit, correct
+                    or delete any personal information you submit to us. On
+                    request we will, as soon as reasonably possible, provide you
+                    with:
+                    <br />
+                    <ul>
+                      <li>
+                        Personal data about you that is in our possession or
+                        under our control; and
+                      </li>
+                      <br />
+                      <li>
+                        Information about the ways in which the personal data
+                        referred to in paragraph above (Disclosure of your
+                        personal information) has been or may have been used or
+                        disclosed by us during the year preceding the date of
+                        the request.
+                      </li>
+                      <br />
+                      <li>
+                        If you are subject to protection under EU law (including
+                        all residents in the EU), you may be entitled to further
+                        rights.
+                      </li>
+                      <br />
+                      <li>
+                        We reserve the right not to provide you with your
+                        personal data or other related information if providing
+                        it could reasonably be expected to:
+                      </li>
+                      <br />
+                      <li>
+                        Threaten the safety or physical or mental health of
+                        another individual
+                      </li>
+                      <br />
+                      <li>
+                        Cause immediate or grave harm to your safety, physical
+                        or mental health
+                      </li>
+                      <br />
+                      <li>Reveal personal data about another individual</li>
+                      <br />
+                      <li>
+                        Reveal the identity of an individual who has provided
+                        personal data about another individual and the
+                        individual providing the personal data does not consent
+                        to the disclosure of his identity
+                      </li>
+                      <br />
+                      <li>Be contrary to the national interest.</li>
+                      <br />
+                    </ul>
+                    If you wish to access the personal information we hold about
+                    you, you should contact us on [info@fitbasix.com] as
+                    described above and we will respond to your request within a
+                    reasonable period after the request is made. If we deny you
+                    access, we will provide our reason for doing so at the time
+                    of your request. While we do not charge a fee for a request
+                    for accessing your personal information, we may charge a
+                    reasonable fee (which will be notified to you once you make
+                    a request) for time and cost in the following circumstances:
+                    <ul>
+                      <li>
+                        If an extended amount of time is required to collate and
+                        prepare material for you; and
+                      </li>
+                      <br />
+                      <li>
+                        If you wish to have your files photocopied for you.
+                      </li>
+                      <br />
+                    </ul>
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">Accuracy</Typography>
+                  <br />
+                  <Typography variant="body2">
+                    We take reasonable steps to ensure that the personal
+                    information we hold about you is accurate, complete and
+                    up-to-date. However, we primarily rely on you to advise us
+                    of any changes to your personal information. By accepting
+                    this agreement, you hereby undertake to use all reasonable
+                    endeavors to provide corrections and updates of your
+                    personal data in a timely manner
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">
+                    Retention of personal data
+                  </Typography>
+                  <br />
+                  <Typography variant="body2">
+                    We will use all reasonable endeavors to cease to retain its
+                    documents containing personal data or remove the means by
+                    which the personal data can be associated with particular
+                    individuals, as soon as it is reasonable to assume that the
+                    Purpose for which that personal data was collected is no
+                    longer being served by retention of the personal data, or
+                    retention is no longer necessary for legal or business
+                    purposes.
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">Security</Typography>
+                  <br />
+                  <Typography variant="body2">
+                    We are concerned about safeguarding the confidentiality of
+                    your information. We provide physical, electronic, and
+                    procedural safeguards to protect information we process and
+                    maintain. For example, we limit access to this information
+                    to authorized employees and contractors who need to know
+                    that information in order to operate, develop or improve our
+                    Application. Please be aware that, although we endeavor to
+                    provide reasonable security for information we process and
+                    maintain, no security system can prevent all potential
+                    security breaches. Enhance does not warrant or guarantee in
+                    any way that your personal data will always remain private
+                    or safe. Enhance disclaims any responsibility or liability
+                    arising out of or in connection with loss or unauthorized
+                    use, access or disclosure of any personal data held by us.
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">Use of cookies</Typography>
+                  <br />
+                  <Typography variant="body2">
+                    The Website and/or App may use cookie technology to
+                    distinguish you for other users of our website or App. A
+                    cookie is a small text file that is placed on a computer or
+                    other device and is used to identify the user or device and
+                    to collect information. This helps us to provide you with a
+                    good experience when you browse our Website and App and
+                    allows us to improve our website. The cookies are not used
+                    to get data from your hard drive, your email or any other
+                    identifiable data. This Website and/or App uses software
+                    provided by Google Analytics which uses cookies to track
+                    analytics. You can read Google’s privacy policy here:
+                    http://www.google.com/privacy.html If you wish to deny the
+                    use of and saving of cookies from the Website onto your
+                    computer, you should take the necessary steps in your
+                    browser settings. You always have the choice of accepting,
+                    rejecting or deleting cookies. If you choose to change your
+                    settings, you may find that certain functions and features
+                    will not work as intended.
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">
+                    What are my opt-out rights?
+                  </Typography>
+                  <br />
+                  <Typography variant="body2">
+                    You can stop all collection of information by the App easily
+                    by uninstalling the App. You may use the standard uninstall
+                    processes as may be available as part of your mobile device
+                    or via the mobile application marketplace or network. You
+                    can also request to opt-out or delete your account via
+                    email, at info@fitbasix.com
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">
+                    Data retention policy, managing your information
+                  </Typography>
+                  <br />
+                  <Typography variant="body2">
+                    We will retain User Provided Information for as long as you
+                    use the App and/or Website and for a reasonable time
+                    thereafter. If you’d like us to delete User Provided
+                    Information that you have provided via the App and/or
+                    Website, please contact us at info@fitbasix.com and we will
+                    respond in a reasonable time. Please note that some or all
+                    of the User Provided Information may be required in order
+                    for the Website and/or App to function properly. If you wish
+                    to correct or update your personal data, you may do so at
+                    any time by accessing your account settings through the
+                    Website and/or App.
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">Children</Typography>
+                  <br />
+                  <Typography variant="body2">
+                    We do not use the Application to knowingly solicit data from
+                    or market to children under the age of 13. If you are under
+                    13, please do not use this Website or App or attempt to send
+                    us any personal data about yourself. If a parent or guardian
+                    becomes aware that his or her child has provided us with
+                    information without their consent, he or she should contact
+                    us at info@fitbasix.com. We will delete such information
+                    from our files within a reasonable time.
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">Linked sites</Typography>
+                  <br />
+                  <Typography variant="body2">
+                    Our website may, from time to time, contain links to and
+                    from the websites of our partner networks, advertisers and
+                    affiliates. If you follow a link to any of these websites,
+                    please note that these websites have their own privacy
+                    policies and we do not accept any responsibility or
+                    liability for these policies. Please check these policies
+                    before submitting any personal data to these websites.{" "}
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">Your consent</Typography>
+                  <br />
+                  <Typography variant="body2">
+                    By using the Application, you are consenting to our
+                    processing of your information as set forth in this
+                    agreement now and as amended by us. “Processing,” means
+                    using cookies on a computer/handheld device or using or
+                    touching information in any way, including, but not limited
+                    to, collecting, storing, deleting, using, combining and
+                    disclosing information. If you do not consent to the terms
+                    of this agreement, please do not access this Website, App or
+                    provide Enhance with your Personal Data
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">Changes</Typography>
+                  <br />
+                  <Typography variant="body2">
+                    This agreement may be updated from time to time for any
+                    reason. We will notify you of any changes to our agreement
+                    by posting the new agreement here and informing you via
+                    email or text message. You are advised to consult this
+                    agreement regularly for any changes, as continued use is
+                    deemed approval of all changes.
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">Governing law</Typography>
+                  <br />
+                  <Typography variant="body2">
+                    This agreement is governed by and construed in accordance
+                    with laws of the United Arab Emirates as applicable in the
+                    Emirate of Dubai. We both agree that the courts of UAE shall
+                    have exclusive jurisdiction.
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">Contact us</Typography>
+                  <br />
+                  <Typography variant="body2">
+                    If you have any questions regarding privacy while using the
+                    Application, or have questions about our practices, please
+                    contact us on info@fitbasix.com.
+                  </Typography>
+                </li>
+              </ul>
+            </Typography>
+          </div>
+          <br />
+          <br />
+          <div>
+            <Typography variant="h5">
+              Subscribing to the Application & Eligibility
+            </Typography>
+            <br />
+            <Typography variant="body2">
+              The Application may provide you with access to Company's website
+              located at www.fitbasix.com (the "Website") and products and
+              services accessible thereon, and certain features, functionality,
+              and content accessible on or through the Application may be hosted
+              on the Website (collectively, "Content and Services"). Your access
+              to and use of such Content and Services are governed by this
+              agreement. Your access to and use of such Content and Services may
+              require you to acknowledge your acceptance of this agreement
+              and/or to register with the Website, and your failure to do so may
+              restrict you from accessing or using certain of the Application's
+              features and functionality. Any violation of such Terms of Use
+              will also be deemed a violation of this Agreement.
+              <br />
+              <ul>
+                <li>
+                  <Typography variant="h6">Code of Conduct</Typography>
+                </li>
+                <br />
+                In using our Services, you may not:
+                <br />
                 <br />
               </ul>
             </Typography>
