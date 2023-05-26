@@ -25,6 +25,7 @@ import "swiper/css/pagination";
 import { Autoplay } from "swiper";
 import ReusableDialog from "../../../components/ReusableDialog";
 import { useState } from "react";
+import FreeTrialDialog from "../../../components/FreeTrialDialog";
 
 const PopularClasses = () => {
   const ref = useRef();
@@ -190,56 +191,11 @@ const PopularClasses = () => {
           </Button>
         </Grid>
       </Grid>
-      <ReusableDialog setOpen={setOpen} open={open} title={"Get a FREE TRAIL!"}>
-        <Grid container>
-          <Grid item md={12}>
-            <Grid container spacing={3}>
-              <Grid item md={12}>
-                <TextField
-                  id="outlined-basic"
-                  label="Name"
-                  variant="outlined"
-                  style={{ width: "80%", borderRadius: "40px" }}
-                />
-              </Grid>
-
-              <Grid item md={12}>
-                <TextField
-                  id="outlined-basic"
-                  label="Mobile no."
-                  variant="outlined"
-                  style={{ width: "80%", borderRadius: "40px" }}
-                />
-              </Grid>
-
-              <Grid item md={12}>
-                <TextField
-                  id="outlined-basic"
-                  label="Email"
-                  type="email"
-                  style={{ width: "80%", borderRadius: "40px" }}
-                  variant="outlined"
-                />
-              </Grid>
-
-              <Grid item md={12}>
-                <Select
-                  value={workout}
-                  // label="Type of Workout"
-                  onChange={handleChange}
-                  style={{ width: "80%", color: "#111" }}
-                >
-                  <MenuItem value={10}>Workout Type</MenuItem>
-
-                  <MenuItem value={20}>Workout Type</MenuItem>
-
-                  <MenuItem value={30}>Workout Type</MenuItem>
-                </Select>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
-      </ReusableDialog>
+      <FreeTrialDialog
+        setOpen={setOpen}
+        open={open}
+        title={"Get a FREE TRIAL!"}
+      />
     </div>
   );
 };

@@ -17,6 +17,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper";
 import ReusableDialog from "../../../components/ReusableDialog";
+import LiveClassDialog from "../../../components/LiveClassDialog";
 
 const LiveClass = () => {
   const ref = useRef();
@@ -42,12 +43,6 @@ const LiveClass = () => {
     },
   ];
   const [open, setOpen] = useState(false);
-
-  const [workout, setWorkout] = useState("");
-
-  const handleChange = (event) => {
-    setWorkout(event.target.value);
-  };
 
   return (
     <div className="liveClassContainer">
@@ -127,60 +122,11 @@ const LiveClass = () => {
       >
         JOIN OUR LIVE CLASSES NOW!
       </Button>
-      <ReusableDialog
+      <LiveClassDialog
         setOpen={setOpen}
         open={open}
-        title={"Join Our LIVE CLASS!"}
-      >
-        <Grid container>
-          <Grid item md={12}>
-            <Grid container spacing={3}>
-              <Grid item md={12}>
-                <TextField
-                  id="outlined-basic"
-                  label="Name"
-                  variant="outlined"
-                  style={{ width: "80%", borderRadius: "40px" }}
-                />
-              </Grid>
-
-              <Grid item md={12}>
-                <TextField
-                  id="outlined-basic"
-                  label="Mobile no."
-                  variant="outlined"
-                  style={{ width: "80%", borderRadius: "40px" }}
-                />
-              </Grid>
-
-              <Grid item md={12}>
-                <TextField
-                  id="outlined-basic"
-                  label="Email"
-                  type="email"
-                  style={{ width: "80%", borderRadius: "40px" }}
-                  variant="outlined"
-                />
-              </Grid>
-
-              <Grid item md={12}>
-                <Select
-                  value={workout}
-                  // label="Type of Workout"
-                  onChange={handleChange}
-                  style={{ width: "80%", color: "#111" }}
-                >
-                  <MenuItem value={10}>Workout Type</MenuItem>
-
-                  <MenuItem value={20}>Workout Type</MenuItem>
-
-                  <MenuItem value={30}>Workout Type</MenuItem>
-                </Select>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
-      </ReusableDialog>
+        title={"Join our LIVE CLASS!"}
+      />
     </div>
   );
 };

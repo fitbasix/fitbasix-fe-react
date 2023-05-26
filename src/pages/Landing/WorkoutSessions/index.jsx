@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import { Box, Button, Card, CardMedia, Grid, Typography } from "@mui/material";
 
@@ -11,8 +11,10 @@ import WsImage1 from "../../../assets/workout sessions/WSImage1.svg";
 import WsImage2 from "../../../assets/workout sessions/WSImage2.svg";
 import WsImage3 from "../../../assets/workout sessions/WSImage3.svg";
 import WsImage4 from "../../../assets/workout sessions/WSImage4.svg";
+import FreeTrialDialog from "../../../components/FreeTrialDialog";
 
 const WorkoutSessions = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="WorkoutSession--Container">
       <Typography variant="h3">Workout Sessions</Typography>
@@ -101,10 +103,9 @@ const WorkoutSessions = () => {
               </Box>
             </Card>
           </Grid>
-         
         </Grid>
         <Grid container spacing={1}>
-        <Grid
+          <Grid
             item
             xs={12}
             md={12}
@@ -120,6 +121,7 @@ const WorkoutSessions = () => {
                 color: "#fff",
                 textAlign: "center",
               }}
+              onClick={() => setOpen(true)}
             >
               Get a FREE TRIAL
             </Button>
@@ -142,6 +144,12 @@ const WorkoutSessions = () => {
           </Grid>
         </Grid>
       </div>
+
+      <FreeTrialDialog
+        setOpen={setOpen}
+        open={open}
+        title={"Get a FREE TRIAL!"}
+      />
     </div>
   );
 };

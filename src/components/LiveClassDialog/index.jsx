@@ -51,12 +51,16 @@ BootstrapDialogTitle.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
-export default function ReusableDialog({ open, setOpen, title }) {
+export default function LiveClassDialog({
+  open,
+  setOpen,
+
+  title,
+}) {
   const { register, handleSubmit } = useForm();
 
-  //API CALL On SUBMIT
   const onSubmit = async (data) => {
-    data.formType = "CallBack";
+    data.formType = "JoinClass";
     console.log("FORM SUBMIT", data);
     const response = await postDialog(data);
 
@@ -114,8 +118,8 @@ export default function ReusableDialog({ open, setOpen, title }) {
                   <Grid item md={12}>
                     <TextField
                       id="outlined-basic"
-                      label="Email"
                       type="email"
+                      label="Email-Id"
                       style={{ width: "80%", borderRadius: "40px" }}
                       variant="outlined"
                       {...register("email")}
@@ -124,7 +128,6 @@ export default function ReusableDialog({ open, setOpen, title }) {
 
                   <Grid item md={12}>
                     <Select
-                      // label="Work out Type"
                       displayEmpty={true}
                       style={{
                         width: "80%",
@@ -137,25 +140,6 @@ export default function ReusableDialog({ open, setOpen, title }) {
                       <MenuItem value={"Personal"}>Personal</MenuItem>
                       <MenuItem value={"Yoga"}>Yoga</MenuItem>
                       <MenuItem value={"Diet"}>Diet</MenuItem>
-                    </Select>
-                  </Grid>
-
-                  <Grid item md={12}>
-                    <Select
-                      // label="Time Slot"
-                      displayEmpty={true}
-                      style={{
-                        width: "80%",
-                        color: "#111",
-                        backgroundColor: "#fff",
-                      }}
-                      {...register("timeSlot")}
-                    >
-                      <MenuItem disabled>Time Slot</MenuItem>
-                      <MenuItem value={"Morning"}>Morning</MenuItem>
-                      <MenuItem value={"Afternoon"}>Afternoon</MenuItem>
-                      <MenuItem value={"Evening"}>Evening</MenuItem>
-                      <MenuItem value={"Night"}>Night</MenuItem>
                     </Select>
                   </Grid>
                 </Grid>

@@ -51,13 +51,18 @@ BootstrapDialogTitle.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
-export default function ReusableDialog({ open, setOpen, title }) {
+export default function FreeTrialDialog({
+  open,
+  setOpen,
+
+  title,
+}) {
   const { register, handleSubmit } = useForm();
 
-  //API CALL On SUBMIT
   const onSubmit = async (data) => {
-    data.formType = "CallBack";
     console.log("FORM SUBMIT", data);
+    data.formType = "FreeTrial";
+
     const response = await postDialog(data);
 
     if (response?.resStr == "success") {
@@ -65,7 +70,6 @@ export default function ReusableDialog({ open, setOpen, title }) {
       setOpen(false);
     }
   };
-
   const handleClose = (e, reason) => {
     if (reason && reason == "backdropClick") return;
 
@@ -114,8 +118,8 @@ export default function ReusableDialog({ open, setOpen, title }) {
                   <Grid item md={12}>
                     <TextField
                       id="outlined-basic"
-                      label="Email"
                       type="email"
+                      label="Email-Id"
                       style={{ width: "80%", borderRadius: "40px" }}
                       variant="outlined"
                       {...register("email")}
@@ -124,7 +128,6 @@ export default function ReusableDialog({ open, setOpen, title }) {
 
                   <Grid item md={12}>
                     <Select
-                      // label="Work out Type"
                       displayEmpty={true}
                       style={{
                         width: "80%",
@@ -137,25 +140,6 @@ export default function ReusableDialog({ open, setOpen, title }) {
                       <MenuItem value={"Personal"}>Personal</MenuItem>
                       <MenuItem value={"Yoga"}>Yoga</MenuItem>
                       <MenuItem value={"Diet"}>Diet</MenuItem>
-                    </Select>
-                  </Grid>
-
-                  <Grid item md={12}>
-                    <Select
-                      // label="Time Slot"
-                      displayEmpty={true}
-                      style={{
-                        width: "80%",
-                        color: "#111",
-                        backgroundColor: "#fff",
-                      }}
-                      {...register("timeSlot")}
-                    >
-                      <MenuItem disabled>Time Slot</MenuItem>
-                      <MenuItem value={"Morning"}>Morning</MenuItem>
-                      <MenuItem value={"Afternoon"}>Afternoon</MenuItem>
-                      <MenuItem value={"Evening"}>Evening</MenuItem>
-                      <MenuItem value={"Night"}>Night</MenuItem>
                     </Select>
                   </Grid>
                 </Grid>
