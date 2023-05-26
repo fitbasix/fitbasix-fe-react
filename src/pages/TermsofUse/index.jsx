@@ -6,9 +6,9 @@ import { Grid, Typography } from "@mui/material";
 
 const TermsofUse = () => {
   return (
-    <div className="termsContainer">
+    <div>
       <Navbar />
-      <Grid container spacing={1} className="privacyContainer">
+      <Grid container spacing={1} className="termsContainer">
         <Grid item xs={12} sm={12}>
           <div>
             <Typography variant="h4">TERMS OF USE</Typography>
@@ -217,13 +217,13 @@ const TermsofUse = () => {
                   license;
                 </li>
                 <br />
-                <br />
+
                 <li>
                   Modify, translate, adapt, or otherwise create derivative works
                   or improvements, whether or not patentable, of the
                   Application;
                 </li>
-                <br />
+
                 <br />
                 <li>
                   Reverse engineer, disassemble, decompile, decode, or otherwise
@@ -231,14 +231,13 @@ const TermsofUse = () => {
                   Application or any part thereof;
                 </li>
                 <br />
-                <br />
                 <li>
                   Remove, delete, alter, or obscure any trademarks or any
                   copyright, trademark, patent, or other intellectual property
                   or proprietary rights notices from the Application, including
                   any copy thereof;
                 </li>
-                <br />
+
                 <br />
                 <li>
                   Rent, lease, lend, sell, sublicense, assign, distribute,
@@ -249,14 +248,14 @@ const TermsofUse = () => {
                   capable of being accessed by more than one device at any time;
                   or
                 </li>
-                <br />
+
                 <br />
                 <li>
                   Remove, disable, circumvent, or otherwise create or implement
                   any workaround to any copy protection, rights management, or
                   security features in or protecting the Application; or
                 </li>
-                <br />
+
                 <br />
                 <li>
                   Upon Customer’s request, FITBASIX will issue a Customer ID to
@@ -270,7 +269,7 @@ const TermsofUse = () => {
                   ID if it determines it may have been used for an unauthorized
                   purpose.
                 </li>
-                <br />
+
                 <br />
                 <li>
                   Customer agrees that it will not, and it will not permit any
@@ -303,7 +302,7 @@ const TermsofUse = () => {
                   designed. If Customer is prohibited under applicable law from
                   using the application, Customer may not use the application.
                 </li>
-                <br />
+
                 <br />
                 <li>
                   In addition to any other suspension or termination rights of
@@ -335,7 +334,7 @@ const TermsofUse = () => {
             <Typography variant="h5">Reservation of Rights</Typography>
             <br />
             <Typography variant="h5">FITBASIX</Typography>
-            <br/>
+            <br />
             <Typography variant="body2">
               <ul>
                 <li>
@@ -383,9 +382,9 @@ const TermsofUse = () => {
                 </li>
               </ul>
             </Typography>
-            <br/>
+            <br />
             <Typography variant="h5">Feedback</Typography>
-            <br/>
+            <br />
             <Typography variant="body2">
               <ul>
                 <li>
@@ -405,6 +404,140 @@ const TermsofUse = () => {
                   provides the Feedback on the Services or through any other
                   method of communication with FITBASIX.
                 </li>
+              </ul>
+            </Typography>
+          </div>
+          <br />
+          <br />
+          <div>
+            <Typography variant="h5">
+              Collection and Use of Your Information
+            </Typography>
+            <br />
+            <Typography variant="body2">
+              <ul>
+                <li>
+                  <Typography variant="h6">
+                    User Provided Information
+                  </Typography>
+                  <br />
+                  <Typography variant="body2">
+                    This is information that you give to us by filling in forms
+                    on our website or via the downloading or registering the
+                    App. Registration with us is optional. However, please keep
+                    in mind that you may not be able to use some of the features
+                    offered by the App and/or Website unless you register with
+                    us. When you register with us, use the App and/or Website,
+                    subscribe to any service, report a problem, correspond with
+                    us by email, the information you provide us may include (a)
+                    your name, email address, age, user name, password and other
+                    registration information; (b) transaction-related
+                    information, such as when you make purchases, respond to any
+                    offers, or download or use applications from us; (c)
+                    information you provide us when you contact us for help;
+                    and; (d) information you enter into our system, such as
+                    health and medical history and current information (e) your
+                    fitness goals (f) your current fitness tracker.
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">
+                    Automatically Collected Information
+                  </Typography>
+                  <br />
+                  <Typography variant="body2">
+                    In addition, with regards to each of your visits to our
+                    Website or the App we may collect certain information
+                    automatically, including, but not limited to technical
+                    information such as, the type of mobile device you use, your
+                    mobile devices unique device ID, the IP address of your
+                    mobile device and/or computer, your operating systems and
+                    platform, your browser type, time zone settings, browser
+                    plug-in types , and information about the way you use the
+                    Application.
+                  </Typography>
+                </li>
+                <br />
+                <li>
+                  <Typography variant="h6">How is my data used?</Typography>
+                  <br />
+                  <Typography variant="body2">
+                    We use information held about you in the following ways
+                    (non-exhaustive list):
+                    <ul>
+                      <li>
+                        To carry out our obligations and provide you with
+                        information, products and services that you request from
+                        us;
+                      </li>
+                      <br />
+                      <li>
+                        {" "}
+                        To provide you with information about other goods and
+                        services we offer that are similar to those that you
+                        have already purchased or enquired about;
+                      </li>
+                      <br />
+                      <li>To customize and enhance your online experience;</li>
+                      <br />
+                      <li>
+                        To provide you or permit selected third parties to
+                        provide you with information about goods or services we
+                        feel may interest you;
+                      </li>
+                      <br />
+                      <li>
+                        To inform you of changes to our service, news, special
+                        offers, promotions, surveys, events;
+                      </li>
+                      <br />
+                      <li>
+                        To ensure that the content from the App is presented in
+                        the most effective manner for you and your computer;
+                      </li>
+                      <br />
+                      <li>
+                        To support the services offered on the Website or App;
+                      </li>
+                      <br />
+                    </ul>
+                    To conduct research about our customer base and contact you
+                    about feedback;
+                    <br />
+                    <br />
+                    <ul>
+                      <li>
+                        To process your payments using credit card details;
+                      </li>
+                      <br />
+                      <li>
+                        To reduce credit risk, detect and protect us against
+                        error, fraud and other criminal activity;
+                      </li>
+                      <br />
+                      <li>
+                        To comply with law, regulatory officials or court orders
+                        and/or to enforce our legal rights and remedies
+                      </li>
+                      <br />
+                      <li>To keep the App safe and secure;</li>
+                      <br />
+                      <li>
+                        To administer the App and for internal operations,
+                        including troubleshooting, data analysis, testing,
+                        research, statistical and survey purposes, updates and
+                        changes in policy; and
+                      </li>
+                      <br />
+                      <li>
+                        For any other purposes notified to you on or before the
+                        collection or use of such data.
+                      </li>
+                    </ul>
+                  </Typography>
+                </li>
+                <br />
               </ul>
             </Typography>
           </div>

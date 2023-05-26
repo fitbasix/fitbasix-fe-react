@@ -1,15 +1,26 @@
-import React from "react";
-import Fitba6Logo from "../../../assets/Fitba6Logo.svg";
+import { Button, Grid, MenuItem, Select, TextField } from "@mui/material";
+import React, { useState } from "react";
 import {
-  GooglePlayButton,
   AppStoreButton,
   ButtonsContainer,
+  GooglePlayButton,
 } from "react-mobile-app-button";
-import { Button, Grid } from "@mui/material";
+import Fitba6Logo from "../../../assets/Fitba6Logo.svg";
+import ReusableDialog from "../../../components/ReusableDialog";
 import "./styles.css";
+
 const Navbar = () => {
   const APKUrl = "https://play.google.com";
   const iOSUrl = "https://apps.apple.com";
+
+  const [open, setOpen] = useState(false);
+
+  const [workout, setWorkout] = useState("");
+
+  const handleChange = (event) => {
+    setWorkout(event.target.value);
+  };
+  
   return (
     <div className="rootNav">
       <Grid container spacing={2} className="gridWrapper-nav">
@@ -33,11 +44,66 @@ const Navbar = () => {
               </ButtonsContainer>
             </Grid>
             <Grid item xs={12} sm={4} className="call-btn">
-              <Button variant="contained">Call us Now!</Button>
+              <Button variant="contained" onClick={()=>setOpen(true)}>Call us Now!</Button>
             </Grid>
           </Grid>
         </Grid>
       </Grid>
+
+      <ReusableDialog setOpen={setOpen} open={open} title={"Get a Call Back!"}>
+        <Grid container>
+          <Grid item md={12}>
+            <Grid container spacing={3}>
+              <Grid item md={12}>
+                <TextField
+                  id="outlined-basic"
+                  label="Name"
+                  variant="outlined"
+                  style={{ width: "80%", borderRadius: "40px" }}
+                />
+              </Grid>
+
+              <Grid item md={12}>
+                <TextField
+                  id="outlined-basic"
+                  label="Mobile no."
+                  variant="outlined"
+                  style={{ width: "80%", borderRadius: "40px" }}
+                />
+              </Grid>
+
+              <Grid item md={12}>
+                <TextField
+                  id="outlined-basic"
+                  label="Email"
+                  type="email"
+                  style={{ width: "80%", borderRadius: "40px" }}
+                  variant="outlined"
+                />
+              </Grid>
+
+              <Grid item md={12}>
+                <Select
+                  value={workout}
+                  label="Type of Workout"
+                  onChange={handleChange}
+                  style={{ width: "80%", color: "#111" }}
+                >
+                  <MenuItem value={10}>Ten</MenuItem>
+
+                  <MenuItem value={20}>Twenty</MenuItem>
+
+                  <MenuItem value={30}>Thirty</MenuItem>
+                </Select>
+              </Grid>
+
+              <Grid item md={12}>
+                Time Slot
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </ReusableDialog>
     </div>
   );
 };
