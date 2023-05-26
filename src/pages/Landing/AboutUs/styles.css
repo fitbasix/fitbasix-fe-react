@@ -1,6 +1,6 @@
 .aboutUsContainer {
-  height: 110vh;
-  width: 98vw;
+  height: auto;
+  /* width: 98vw; */
   display: flex;
   /* align-items: center; */
   flex-direction: column;
@@ -19,7 +19,10 @@
 }
 
 .rightContainer {
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0rem;
+}
+.leftContainer {
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .btnTrial button {
@@ -49,10 +52,13 @@
 @media only screen and (max-width: 767px) {
   .aboutUsContainer {
     padding: 1.5rem;
-    height: 80vh;
+    height: 100vh;
   }
   .aboutUsContainer--Right {
     display: none;
+  }
+  .rightContainer {
+    padding: 1rem;
   }
   .textContent {
     text-align: center;

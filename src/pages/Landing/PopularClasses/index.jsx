@@ -1,6 +1,13 @@
 import React, { useRef } from "react";
 import "./styles.css";
-import { Button, Grid, Typography } from "@mui/material";
+import {
+  Button,
+  Grid,
+  MenuItem,
+  Select,
+  TextField,
+  Typography,
+} from "@mui/material";
 import PopularClassesCard from "./PopularClassesCard";
 import cardImage from "../../../assets/CARDIMAGEPOPULARCALASSES.svg";
 import {
@@ -16,6 +23,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper";
+import ReusableDialog from "../../../components/ReusableDialog";
+import { useState } from "react";
 
 const PopularClasses = () => {
   const ref = useRef();
@@ -67,6 +76,13 @@ const PopularClasses = () => {
       image: cardImage,
     },
   ];
+  const [open, setOpen] = useState(false);
+
+  const [workout, setWorkout] = useState("");
+
+  const handleChange = (event) => {
+    setWorkout(event.target.value);
+  };
   return (
     <div className="popularClassesContainer">
       <div className="popularClassesContainer--Top">
@@ -167,12 +183,63 @@ const PopularClasses = () => {
               color: "#fff",
               textAlign: "center",
             }}
+            onClick={() => setOpen(true)}
           >
             {" "}
             Get a FREE TRIAL
           </Button>
         </Grid>
       </Grid>
+      <ReusableDialog setOpen={setOpen} open={open} title={"Get a FREE TRAIL!"}>
+        <Grid container>
+          <Grid item md={12}>
+            <Grid container spacing={3}>
+              <Grid item md={12}>
+                <TextField
+                  id="outlined-basic"
+                  label="Name"
+                  variant="outlined"
+                  style={{ width: "80%", borderRadius: "40px" }}
+                />
+              </Grid>
+
+              <Grid item md={12}>
+                <TextField
+                  id="outlined-basic"
+                  label="Mobile no."
+                  variant="outlined"
+                  style={{ width: "80%", borderRadius: "40px" }}
+                />
+              </Grid>
+
+              <Grid item md={12}>
+                <TextField
+                  id="outlined-basic"
+                  label="Email"
+                  type="email"
+                  style={{ width: "80%", borderRadius: "40px" }}
+                  variant="outlined"
+                />
+              </Grid>
+
+              <Grid item md={12}>
+                <Select
+                  value={workout}
+                  // label="Type of Workout"
+                  onChange={handleChange}
+                  style={{ width: "80%", color: "#111" }}
+                >
+                  <MenuItem value={10}>Workout Type</MenuItem>
+
+                  <MenuItem value={20}>Workout Type</MenuItem>
+
+                  <MenuItem value={30}>Workout Type</MenuItem>
+                </Select>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </ReusableDialog>
     </div>
   );
 };

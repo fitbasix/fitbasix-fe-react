@@ -47,7 +47,7 @@ const AboutUs = () => {
         </Grid>
       </Grid>
       <Grid item md={6} xs={12} className="aboutUsContainer--Right">
-        <Grid container sx={{ padding: "2rem 5rem 0rem 2rem" }}>
+        <Grid container>
           <Grid item sx={{ marginTop: "1rem" }}>
             <div className="cardContainer">
               <div className="leftContainer">
@@ -62,12 +62,6 @@ const AboutUs = () => {
                     Lorem ipsum dolor sit amet. Qui enim vitae eos quia
                     inventore aut deserunt quia et d
                   </Typography>
-                </div>
-
-                <div className="btnTrial">
-                  <Button variant="contained" sx={{ marginTop: "0.5rem" }}>
-                    Get a FREE TRIAL!
-                  </Button>
                 </div>
               </div>
             </div>
@@ -87,12 +81,6 @@ const AboutUs = () => {
                     inventore aut deserunt quia et d
                   </Typography>
                 </div>
-
-                <div className="btnTrial">
-                  <Button variant="contained" sx={{ marginTop: "0.5rem" }}>
-                    Get a FREE TRIAL!
-                  </Button>
-                </div>
               </div>
             </div>
           </Grid>
@@ -111,19 +99,29 @@ const AboutUs = () => {
                     inventore aut deserunt quia et d
                   </Typography>
                 </div>
-
-                <div className="btnTrial">
-                  <Button variant="contained" sx={{ marginTop: "0.5rem" }}>
-                    Get a FREE TRIAL!
-                  </Button>
-                </div>
               </div>
             </div>
           </Grid>
+
+       
         </Grid>
+        
       </Grid>
+      <Grid item md={12} xs={12}>
+            <Button
+              sx={{
+                backgroundColor: "#49AD50",
+                color: "#fff",
+                textAlign: "center",
+              }}
+              // onClick={() => setOpen(true)}
+            >
+              {" "}
+              Get a FREE TRIAL
+            </Button>
+          </Grid>
       <Grid item md={12} xs={12} className="aboutUsContainer--RightMobile">
-        <Grid conatiner sx={{ marginTop: "15rem" }}>
+        <Grid container sx={{ marginTop: "15rem" }}>
           <Swiper
             navigation={false}
             modules={[Pagination]}
@@ -150,15 +148,6 @@ const AboutUs = () => {
                         inventore aut deserunt quia et d
                       </Typography>
                     </div>
-
-                    <div className="btnTrial">
-                      <Button
-                        variant="contained"
-                        sx={{ marginTop: "1rem", marginLeft: "12%" }}
-                      >
-                        Get a FREE TRIAL!
-                      </Button>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -179,12 +168,6 @@ const AboutUs = () => {
                         inventore aut deserunt quia et d
                       </Typography>
                     </div>
-
-                    <div className="btnTrial">
-                      <Button variant="contained" sx={{ marginTop: "0.5rem" }}>
-                        Get a FREE TRIAL!
-                      </Button>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -204,12 +187,6 @@ const AboutUs = () => {
                         Lorem ipsum dolor sit amet. Qui enim vitae eos quia
                         inventore aut deserunt quia et d
                       </Typography>
-                    </div>
-
-                    <div className="btnTrial">
-                      <Button variant="contained" sx={{ marginTop: "0.5rem" }}>
-                        Get a FREE TRIAL!
-                      </Button>
                     </div>
                   </div>
                 </div>
