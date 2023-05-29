@@ -9,7 +9,11 @@ import {
   AppStoreButton,
   ButtonsContainer,
 } from "react-mobile-app-button";
-import PersonIcon from "@mui/icons-material/Person";
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
+import PhoneIphoneRoundedIcon from '@mui/icons-material/PhoneIphoneRounded';
+
+
 const GetStarted = () => {
   const APKUrl =
     "https://play.google.com/store/apps/details?id=com.fitbasixco.fitbasix&hl=en&gl=US&pli=1";
@@ -25,7 +29,9 @@ const GetStarted = () => {
           <div className="TextFieldContainer">
             <TextField
               placeholder="Enter Name"
-              startAdornment={PersonIcon}
+              InputProps={{
+                startAdornment: <PersonOutlineOutlinedIcon />,
+              }}
               sx={{
                 background: "rgba(255, 255, 255, 0.32)",
                 borderRadius: "10px",
@@ -35,6 +41,9 @@ const GetStarted = () => {
             />
             <TextField
               placeholder="Email id"
+              InputProps={{
+                startAdornment: <MailOutlinedIcon />,
+              }}
               sx={{
                 background: "rgba(255, 255, 255, 0.32)",
                 borderRadius: "10px",
@@ -44,6 +53,9 @@ const GetStarted = () => {
             />
             <TextField
               placeholder="Enter Mobile no."
+              InputProps={{
+                startAdornment: <PhoneIphoneRoundedIcon />,
+              }}
               sx={{
                 background: "rgba(255, 255, 255, 0.32)",
                 borderRadius: "10px",
@@ -60,7 +72,6 @@ const GetStarted = () => {
                 marginTop: "1rem",
               }}
             >
-              {" "}
               Get a FREE TRIAL!
             </Button>
           </div>
