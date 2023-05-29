@@ -98,7 +98,7 @@ const Footer = () => {
               </div>
               <div className="socialmedia-icons">
                 <div>
-                  <a href="https://www.facebook.com/fitbasix.ae/">
+                  <a href="https://www.facebook.com/profile.php?id=100087235057294">
                     <img
                       src={facebookLogo}
                       alt=""
@@ -107,7 +107,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <div>
-                  <a href="https://www.instagram.com/fitbasix_/?hl=en">
+                  <a href=" https://www.instagram.com/fitbasix_/">
                     <img
                       src={instaLogo}
                       alt=""

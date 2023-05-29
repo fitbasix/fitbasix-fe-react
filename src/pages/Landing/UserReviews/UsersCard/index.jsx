@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.css";
 import { Grid, Typography } from "@mui/material";
-import logo from "../../../../assets/USERCARDLOGO.svg";
-const UsersCard = ({ content, name, service }) => {
+
+const UsersCard = ({ content, name, service, logo }) => {
   return (
     <div className="UsersCard--Container">
       <Grid container>

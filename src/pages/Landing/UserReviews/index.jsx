@@ -8,7 +8,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
+import userR1 from "../../../assets/userR1.png";
+import userR2 from "../../../assets/userR2.png";
+import userR3 from "../../../assets/userR3.png";
 // import required modules
 import { EffectFade, Navigation, Pagination } from "swiper";
 
@@ -30,8 +32,8 @@ const UserReviews = () => {
             sx={{ textAlign: "center", marginTop: "1rem" }}
           >
             Users rave about FITbasix's personal training sessions:
-            game-changing workouts, measurable progress, and <br/> newfound confidence
-            in their fitness journey!
+            game-changing workouts, measurable progress, and <br /> newfound
+            confidence in their fitness journey!
           </Typography>
         </Grid>
         <Grid item md={12} xs={12}>
@@ -48,17 +50,20 @@ const UserReviews = () => {
                 <div className="SwiperSlide">
                   <UsersCard
                     content="FITbasix transformed my fitness routine with its user-friendly interface, diverse workouts, and expert guidance. Highly recommend!"
-                    name="Safari Sharma"
+                    name="Yasmin Patel"
+                    logo={userR1}
                     service="Service that customer availed"
                   />
                   <UsersCard
                     content="FITbasix transformed my fitness journey! With its user-friendly interface and comprehensive workout library, reaching my goals has never been easier."
-                    name="Safari Sharma"
+                    name="Rashid Khan"
+                    logo={userR2}
                     service="Service that customer availed"
                   />{" "}
                   <UsersCard
                     content="FITbasix transformed my fitness routine! With its user-friendly interface and diverse workout options, I'm achieving my goals faster than ever. #FITbasix"
-                    name="Safari Sharma"
+                    name="Omar Shah"
+                    logo={userR3}
                     service="Service that customer availed"
                   />
                 </div>
@@ -66,18 +71,21 @@ const UserReviews = () => {
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                    content=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.“"
-                    name="Safari Sharma"
+                    content="FITbasix transformed my fitness routine with its user-friendly interface, diverse workouts, and expert guidance. Highly recommend!"
+                    name="Yasmin Patel"
+                    logo={userR1}
                     service="Service that customer availed"
                   />
                   <UsersCard
-                    content=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.“"
-                    name="Safari Sharma"
+                    content="FITbasix transformed my fitness journey! With its user-friendly interface and comprehensive workout library, reaching my goals has never been easier."
+                    name="Rashid Khan"
+                    logo={userR2}
                     service="Service that customer availed"
                   />{" "}
                   <UsersCard
-                    content=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.“"
-                    name="Safari Sharma"
+                    content="FITbasix transformed my fitness routine! With its user-friendly interface and diverse workout options, I'm achieving my goals faster than ever. #FITbasix"
+                    name="Omar Shah"
+                    logo={userR3}
                     service="Service that customer availed"
                   />
                 </div>
@@ -85,18 +93,21 @@ const UserReviews = () => {
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                    content=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.“"
-                    name="Safari Sharma"
+                    content="FITbasix transformed my fitness routine with its user-friendly interface, diverse workouts, and expert guidance. Highly recommend!"
+                    name="Yasmin Patel"
+                    logo={userR1}
                     service="Service that customer availed"
                   />
                   <UsersCard
-                    content=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.“"
-                    name="Safari Sharma"
+                    content="FITbasix transformed my fitness journey! With its user-friendly interface and comprehensive workout library, reaching my goals has never been easier."
+                    name="Rashid Khan"
+                    logo={userR2}
                     service="Service that customer availed"
                   />{" "}
                   <UsersCard
-                    content=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.“"
-                    name="Safari Sharma"
+                    content="FITbasix transformed my fitness routine! With its user-friendly interface and diverse workout options, I'm achieving my goals faster than ever. #FITbasix"
+                    name="Omar Shah"
+                    logo={userR3}
                     service="Service that customer availed"
                   />
                 </div>
