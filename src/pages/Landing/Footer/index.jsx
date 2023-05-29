@@ -44,10 +44,14 @@ const Footer = () => {
             }}
           >
             <Grid item xs={4} sm={2}>
-              <img src={facebookLogo} alt="" />
+              <a href="https://www.facebook.com/fitbasix.ae/">
+                <img src={facebookLogo} alt="" />
+              </a>
             </Grid>
             <Grid item xs={4} sm={2}>
-              <img src={instaLogo} alt="" />
+              <a href="https://www.instagram.com/fitbasix_/?hl=en">
+                <img src={instaLogo} alt="" />
+              </a>
             </Grid>
             <Grid item xs={4} sm={2}>
               <img src={twitterLogo} alt="" />

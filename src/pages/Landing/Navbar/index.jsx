@@ -10,8 +10,8 @@ import ReusableDialog from "../../../components/ReusableDialog";
 import "./styles.css";
 
 const Navbar = () => {
-  const APKUrl = "https://play.google.com";
-  const iOSUrl = "https://apps.apple.com";
+  const APKUrl = "https://play.google.com/store/apps/details?id=com.fitbasixco.fitbasix&hl=en&gl=US&pli=1";
+  const iOSUrl = "https://apps.apple.com/tt/app/fitbasix/id1618003884";
 
   const [open, setOpen] = useState(false);
 

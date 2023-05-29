@@ -11,6 +11,9 @@ import {
 } from "react-mobile-app-button";
 
 const GetStarted = () => {
+  const APKUrl = "https://play.google.com/store/apps/details?id=com.fitbasixco.fitbasix&hl=en&gl=US&pli=1";
+  const iOSUrl = "https://apps.apple.com/tt/app/fitbasix/id1618003884";
+
   return (
     <div className="GetStarted--Container">
       <Grid container>
@@ -78,11 +81,11 @@ const GetStarted = () => {
                    {" "}
                   <ButtonsContainer direction="column">
                     <AppStoreButton
-                      // url={iOSUrl}
+                      url={iOSUrl}
                       theme={"dark"}
                     />
                     <GooglePlayButton
-                      // url={APKUrl}
+                      url={APKUrl}
                       theme={"dark"}
                     />
                   </ButtonsContainer>
