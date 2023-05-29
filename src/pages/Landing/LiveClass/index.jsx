@@ -45,7 +45,7 @@ const LiveClass = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="liveClassContainer">
+    <div className="liveClassContainer" id="liveClassId">
       <div className="MobileCarousel--Container">
         <ResponsiveContainer
           carouselRef={ref}

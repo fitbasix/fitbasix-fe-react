@@ -34,7 +34,13 @@ const Home = () => {
         </Grid>
 
         <Grid item xs={12} sm={11} className="explore-btn">
-          <Typography variant="subtitle1">
+          <Typography
+            variant="subtitle1"
+            onClick={() => {
+              document.querySelector(`#liveClassId`).scrollIntoView({behavior: "smooth"});
+            }}
+            sx={{ cursor: "pointer" }}
+          >
             Explore
             <br />
             <KeyboardArrowDownIcon />
