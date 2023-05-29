@@ -1,10 +1,9 @@
 import { Button, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
-import ReactPlayer from "react-player";
+import picture from "../../../assets/WhoareWe.svg";
 import image1 from "../../../assets/cardImg1.svg";
 import image2 from "../../../assets/cardImg2.svg";
 import image3 from "../../../assets/cardImg3.svg";
-import picture from "../../../assets/WhoareWe.svg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,10 +12,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import "./styles.css";
 import { motion } from "framer-motion";
 import { Pagination } from "swiper";
 import FreeTrialDialog from "../../../components/FreeTrialDialog";
+import "./styles.css";
 const AboutUs = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -57,6 +56,7 @@ const AboutUs = () => {
             >
               <img
                 src={picture}
+                alt=""
                 style={{ position: "absolute", width: "100%" }}
               />
             </Grid>
@@ -67,7 +67,7 @@ const AboutUs = () => {
             <Grid item sx={{ marginTop: "1rem" }}>
               <div className="cardContainer">
                 <div className="leftContainer">
-                  <img src={image1} />
+                  <img alt="" src={image1} />
                 </div>
                 <div className="rightContainer">
                   <div className="cardTitle">
@@ -86,7 +86,7 @@ const AboutUs = () => {
             <Grid item sx={{ marginTop: "1rem" }}>
               <div className="cardContainer">
                 <div className="leftContainer">
-                  <img src={image2} />
+                  <img alt="" src={image2} />
                 </div>
                 <div className="rightContainer">
                   <div className="cardTitle">
@@ -105,7 +105,7 @@ const AboutUs = () => {
             <Grid item sx={{ marginTop: "1rem" }}>
               <div className="cardContainer">
                 <div className="leftContainer">
-                  <img src={image3} />
+                  <img src={image3} alt="" />
                 </div>
                 <div className="rightContainer">
                   <div className="cardTitle">
@@ -156,7 +156,7 @@ const AboutUs = () => {
                 <div className="SwiperSlide">
                   <div className="cardContainer">
                     <div className="leftContainer">
-                      <img src={image1} />
+                      <img src={image1} alt="" />
                     </div>
                     <div className="rightContainer">
                       <div className="cardTitle">
@@ -178,7 +178,7 @@ const AboutUs = () => {
                 <div className="SwiperSlide">
                   <div className="cardContainer">
                     <div className="leftContainer">
-                      <img src={image2} />
+                      <img src={image2} alt="" />
                     </div>
                     <div className="rightContainer">
                       <div className="cardTitle">
@@ -198,7 +198,7 @@ const AboutUs = () => {
                 <div className="SwiperSlide">
                   <div className="cardContainer">
                     <div className="leftContainer">
-                      <img src={image3} />
+                      <img src={image3} alt="" />
                     </div>
                     <div className="rightContainer">
                       <div className="cardTitle">

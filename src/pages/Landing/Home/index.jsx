@@ -64,7 +64,7 @@ const Home = () => {
             <a
               href="https://wa.me/971528802831"
               className="float"
-              target="_blank"
+             
             >
               <img src={whatsappLogo} alt="" height={50} />
             </a>

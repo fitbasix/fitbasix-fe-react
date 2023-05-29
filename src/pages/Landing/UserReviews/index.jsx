@@ -1,7 +1,7 @@
-import React from "react";
-import "./styles.css";
 import { Grid, Typography } from "@mui/material";
+import React from "react";
 import UsersCard from "./UsersCard";
+import "./styles.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -12,7 +12,7 @@ import userR1 from "../../../assets/userR1.png";
 import userR2 from "../../../assets/userR2.png";
 import userR3 from "../../../assets/userR3.png";
 // import required modules
-import { EffectFade, Navigation, Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 const UserReviews = () => {
   return (

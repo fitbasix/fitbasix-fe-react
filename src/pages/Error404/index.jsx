@@ -1,9 +1,8 @@
+import { Button, Typography } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../Landing/Navbar";
 import "./styles.css";
-import { Button, Typography } from "@mui/material";
-import danceStudio from "../../assets/dance studio.svg";
-import { useNavigate } from "react-router-dom";
 
 const Error404 = () => {
   const navigate = useNavigate();

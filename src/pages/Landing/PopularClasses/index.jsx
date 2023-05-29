@@ -1,30 +1,24 @@
-import React, { useRef } from "react";
-import "./styles.css";
 import {
   Button,
   Grid,
-  MenuItem,
-  Select,
-  TextField,
-  Typography,
+  Typography
 } from "@mui/material";
-import PopularClassesCard from "./PopularClassesCard";
-import cardImage from "../../../assets/CARDIMAGEPOPULARCALASSES.svg";
+import React, { useRef } from "react";
 import {
-  StackedCarousel,
   ResponsiveContainer,
+  StackedCarousel,
 } from "react-stacked-center-carousel";
-import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
-import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+import cardImage from "../../../assets/CARDIMAGEPOPULARCALASSES.svg";
+import PopularClassesCard from "./PopularClassesCard";
+import "./styles.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
+import { useState } from "react";
+import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Autoplay } from "swiper";
-import ReusableDialog from "../../../components/ReusableDialog";
-import { useState } from "react";
 import FreeTrialDialog from "../../../components/FreeTrialDialog";
 
 const PopularClasses = () => {
@@ -70,11 +64,6 @@ const PopularClasses = () => {
   ];
   const [open, setOpen] = useState(false);
 
-  const [workout, setWorkout] = useState("");
-
-  const handleChange = (event) => {
-    setWorkout(event.target.value);
-  };
   return (
     <div className="popularClassesContainer">
       <div className="popularClassesContainer--Top">

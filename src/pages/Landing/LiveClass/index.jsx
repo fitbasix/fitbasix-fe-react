@@ -1,22 +1,21 @@
+import { Button } from "@mui/material";
 import React, { useRef, useState } from "react";
-import "./styles.css";
-import { Button, Grid, MenuItem, Select, TextField } from "@mui/material";
+import {
+  ResponsiveContainer,
+  StackedCarousel,
+} from "react-stacked-center-carousel";
 import Mobole1 from "../../../assets/MB1.svg";
 import Mobole2 from "../../../assets/MB2.svg";
 import Mobole3 from "../../../assets/MB3.svg";
-import {
-  StackedCarousel,
-  ResponsiveContainer,
-} from "react-stacked-center-carousel";
 import LiveClassCard from "./LiveClassCard";
+import "./styles.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
+import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Autoplay } from "swiper";
-import ReusableDialog from "../../../components/ReusableDialog";
 import LiveClassDialog from "../../../components/LiveClassDialog";
 
 const LiveClass = () => {

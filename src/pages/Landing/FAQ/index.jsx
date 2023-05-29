@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-import "./styles.css";
 import {
   Accordion,
   AccordionDetails,
@@ -7,6 +5,8 @@ import {
   Link,
   Typography,
 } from "@mui/material";
+import React from "react";
+import "./styles.css";
 
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
@@ -57,7 +57,7 @@ const FAQ = () => {
         >
           <AccordionSummary
             expandIcon={
-              expanded == "panel1" ? (
+              expanded === "panel1" ? (
                 <RemoveCircleOutlineIcon sx={{ color: "#fff" }} />
               ) : (
                 <ControlPointIcon sx={{ color: "#fff" }} />
@@ -65,7 +65,7 @@ const FAQ = () => {
             }
           >
             <Typography
-              sx={{ color: expanded == "panel1" ? "#49AD50" : "#fff" }}
+              sx={{ color: expanded === "panel1" ? "#49AD50" : "#fff" }}
             >
               What is FITbasix?
             </Typography>
@@ -102,7 +102,7 @@ const FAQ = () => {
         >
           <AccordionSummary
             expandIcon={
-              expanded == "panel2" ? (
+              expanded === "panel2" ? (
                 <RemoveCircleOutlineIcon sx={{ color: "#fff" }} />
               ) : (
                 <ControlPointIcon sx={{ color: "#fff" }} />
@@ -110,7 +110,7 @@ const FAQ = () => {
             }
           >
             <Typography
-              sx={{ color: expanded == "panel2" ? "#49AD50" : "#fff" }}
+              sx={{ color: expanded === "panel2" ? "#49AD50" : "#fff" }}
             >
               How does FITbasix work?
             </Typography>
@@ -149,7 +149,7 @@ const FAQ = () => {
         >
           <AccordionSummary
             expandIcon={
-              expanded == "panel3" ? (
+              expanded === "panel3" ? (
                 <RemoveCircleOutlineIcon sx={{ color: "#fff" }} />
               ) : (
                 <ControlPointIcon sx={{ color: "#fff" }} />
@@ -157,7 +157,7 @@ const FAQ = () => {
             }
           >
             <Typography
-              sx={{ color: expanded == "panel3" ? "#49AD50" : "#fff" }}
+              sx={{ color: expanded === "panel3" ? "#49AD50" : "#fff" }}
             >
               How can I get started with FITbasix?
             </Typography>
@@ -197,7 +197,7 @@ const FAQ = () => {
         >
           <AccordionSummary
             expandIcon={
-              expanded == "panel4" ? (
+              expanded === "panel4" ? (
                 <RemoveCircleOutlineIcon sx={{ color: "#fff" }} />
               ) : (
                 <ControlPointIcon sx={{ color: "#fff" }} />
@@ -205,7 +205,7 @@ const FAQ = () => {
             }
           >
             <Typography
-              sx={{ color: expanded == "panel4" ? "#49AD50" : "#fff" }}
+              sx={{ color: expanded === "panel4" ? "#49AD50" : "#fff" }}
             >
               Are the personal training sessions conducted online or in-person?
             </Typography>
@@ -242,7 +242,7 @@ const FAQ = () => {
         >
           <AccordionSummary
             expandIcon={
-              expanded == "panel5" ? (
+              expanded === "panel5" ? (
                 <RemoveCircleOutlineIcon sx={{ color: "#fff" }} />
               ) : (
                 <ControlPointIcon sx={{ color: "#fff" }} />
@@ -250,7 +250,7 @@ const FAQ = () => {
             }
           >
             <Typography
-              sx={{ color: expanded == "panel5" ? "#49AD50" : "#fff" }}
+              sx={{ color: expanded === "panel5" ? "#49AD50" : "#fff" }}
             >
               How are the trainers selected?
             </Typography>
@@ -288,7 +288,7 @@ const FAQ = () => {
         >
           <AccordionSummary
             expandIcon={
-              expanded == "panel6" ? (
+              expanded === "panel6" ? (
                 <RemoveCircleOutlineIcon sx={{ color: "#fff" }} />
               ) : (
                 <ControlPointIcon sx={{ color: "#fff" }} />
@@ -296,7 +296,7 @@ const FAQ = () => {
             }
           >
             <Typography
-              sx={{ color: expanded == "panel6" ? "#49AD50" : "#fff" }}
+              sx={{ color: expanded === "panel6" ? "#49AD50" : "#fff" }}
             >
               Can I choose my own trainer?
             </Typography>
@@ -335,7 +335,7 @@ const FAQ = () => {
         >
           <AccordionSummary
             expandIcon={
-              expanded == "panel7" ? (
+              expanded === "panel7" ? (
                 <RemoveCircleOutlineIcon sx={{ color: "#fff" }} />
               ) : (
                 <ControlPointIcon sx={{ color: "#fff" }} />
@@ -343,7 +343,7 @@ const FAQ = () => {
             }
           >
             <Typography
-              sx={{ color: expanded == "panel7" ? "#49AD50" : "#fff" }}
+              sx={{ color: expanded === "panel7" ? "#49AD50" : "#fff" }}
             >
               Are the nutrition plans personalized?
             </Typography>
@@ -380,7 +380,7 @@ const FAQ = () => {
         >
           <AccordionSummary
             expandIcon={
-              expanded == "panel8" ? (
+              expanded === "panel8" ? (
                 <RemoveCircleOutlineIcon sx={{ color: "#fff" }} />
               ) : (
                 <ControlPointIcon sx={{ color: "#fff" }} />
@@ -388,7 +388,7 @@ const FAQ = () => {
             }
           >
             <Typography
-              sx={{ color: expanded == "panel8" ? "#49AD50" : "#fff" }}
+              sx={{ color: expanded === "panel8" ? "#49AD50" : "#fff" }}
             >
               How often can I have live training sessions?
             </Typography>
@@ -426,7 +426,7 @@ const FAQ = () => {
         >
           <AccordionSummary
             expandIcon={
-              expanded == "panel9" ? (
+              expanded === "panel9" ? (
                 <RemoveCircleOutlineIcon sx={{ color: "#fff" }} />
               ) : (
                 <ControlPointIcon sx={{ color: "#fff" }} />
@@ -434,7 +434,7 @@ const FAQ = () => {
             }
           >
             <Typography
-              sx={{ color: expanded == "panel9" ? "#49AD50" : "#fff" }}
+              sx={{ color: expanded === "panel9" ? "#49AD50" : "#fff" }}
             >
               What if I'm a beginner? Can FITbasix still help me?
             </Typography>
@@ -472,7 +472,7 @@ const FAQ = () => {
         >
           <AccordionSummary
             expandIcon={
-              expanded == "panel10" ? (
+              expanded === "panel10" ? (
                 <RemoveCircleOutlineIcon sx={{ color: "#fff" }} />
               ) : (
                 <ControlPointIcon sx={{ color: "#fff" }} />
@@ -480,7 +480,7 @@ const FAQ = () => {
             }
           >
             <Typography
-              sx={{ color: expanded == "panel10" ? "#49AD50" : "#fff" }}
+              sx={{ color: expanded === "panel10" ? "#49AD50" : "#fff" }}
             >
               Are the yoga sessions suitable for all levels?
             </Typography>
@@ -518,7 +518,7 @@ const FAQ = () => {
         >
           <AccordionSummary
             expandIcon={
-              expanded == "panel11" ? (
+              expanded === "panel11" ? (
                 <RemoveCircleOutlineIcon sx={{ color: "#fff" }} />
               ) : (
                 <ControlPointIcon sx={{ color: "#fff" }} />
@@ -526,7 +526,7 @@ const FAQ = () => {
             }
           >
             <Typography
-              sx={{ color: expanded == "panel11" ? "#49AD50" : "#fff" }}
+              sx={{ color: expanded === "panel11" ? "#49AD50" : "#fff" }}
             >
               What if I have further questions or need assistance?
             </Typography>

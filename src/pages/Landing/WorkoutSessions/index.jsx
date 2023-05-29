@@ -1,12 +1,8 @@
+import { Box, Button, Card, CardMedia, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
 import "./styles.css";
-import { Box, Button, Card, CardMedia, Grid, Typography } from "@mui/material";
 
 import image1 from "../../../assets/WSImage1.svg";
-import image2 from "../../../assets/WSImage2.svg";
-import image3 from "../../../assets/WSImage3.svg";
-import image4 from "../../../assets/WSImage4.svg";
-import image5 from "../../../assets/WSImage5.svg";
 import WsImage1 from "../../../assets/workout sessions/WSImage1.svg";
 import WsImage2 from "../../../assets/workout sessions/WSImage2.svg";
 import WsImage3 from "../../../assets/workout sessions/WSImage3.svg";
@@ -131,16 +127,16 @@ const WorkoutSessions = () => {
       <div className="WorkoutSession--GridMobile">
         <Grid container>
           <Grid item xs={6}>
-            <img src={image1} style={{ width: "200px" }} />
+            <img src={image1} alt="" style={{ width: "200px" }} />
           </Grid>
           <Grid item xs={6}>
-            <img src={image1} style={{ width: "200px" }} />
+            <img src={image1} alt="" style={{ width: "200px" }} />
           </Grid>
           <Grid item xs={6}>
-            <img src={image1} style={{ width: "200px" }} />
+            <img src={image1} alt="" style={{ width: "200px" }} />
           </Grid>
           <Grid item xs={6}>
-            <img src={image1} style={{ width: "200px" }} />
+            <img src={image1} alt="" style={{ width: "200px" }} />
           </Grid>
         </Grid>
       </div>

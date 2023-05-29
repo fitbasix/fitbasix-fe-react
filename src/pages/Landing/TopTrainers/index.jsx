@@ -1,11 +1,11 @@
-import React from "react";
-import "./styles.css";
 import { Typography } from "@mui/material";
-import TrainerCard from "./TrainerCard";
+import React from "react";
 import trainer1 from "../../../assets/Trainers/trainer1.png";
 import trainer2 from "../../../assets/Trainers/trainer2.png";
 import trainer3 from "../../../assets/Trainers/trainer3.png";
 import trainer4 from "../../../assets/Trainers/trainer4.png";
+import TrainerCard from "./TrainerCard";
+import "./styles.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -14,10 +14,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // import required modules
-import { EffectFade, Navigation, Pagination } from "swiper";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Navigation, Pagination } from "swiper";
 import { getTrainers } from "../../../api/services";
-import { useState } from "react";
 
 const TopTrainers = () => {
   const [trainers, setTrainers] = useState([]);

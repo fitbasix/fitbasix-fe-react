@@ -1,17 +1,15 @@
-import React, { useState } from "react";
-import "./styles.css";
 import {
-  FormControl,
+  Button,
   Grid,
-  InputLabel,
   MenuItem,
   Select,
   TextField,
-  Typography,
+  Typography
 } from "@mui/material";
-import { Button, Input } from "@mui/material";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { postBMI } from "../../../api/services";
+import "./styles.css";
 
 const BMI = () => {
   const { register, handleSubmit } = useForm();

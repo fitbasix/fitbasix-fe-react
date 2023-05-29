@@ -8,7 +8,7 @@ const TrainerCard = ({image,name,designation,experience,rating,reviews}) => {
   return (
     <div className="TrainerCard--Container">
         <div className='TrainerCard--Image'>
-            <img src={image} />
+            <img src={image} alt="" />
         </div>
         {/* NAME */}
         <Typography variant='subtitle1' sx={{fontWeight:"700",marginTop:"0.5rem"}}>{name}</Typography>

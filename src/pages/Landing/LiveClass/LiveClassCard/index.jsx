@@ -4,7 +4,7 @@ import "./styles.css";
 const LiveClassCard = ({ data, dataIndex }) => {
   return (
     <div className="Mobile--Conatiner">
-      <img src={data[dataIndex].image} />
+      <img src={data[dataIndex].image} alt="" />
     </div>
   );
 };
