@@ -9,9 +9,10 @@ import {
   AppStoreButton,
   ButtonsContainer,
 } from "react-mobile-app-button";
-
+import PersonIcon from "@mui/icons-material/Person";
 const GetStarted = () => {
-  const APKUrl = "https://play.google.com/store/apps/details?id=com.fitbasixco.fitbasix&hl=en&gl=US&pli=1";
+  const APKUrl =
+    "https://play.google.com/store/apps/details?id=com.fitbasixco.fitbasix&hl=en&gl=US&pli=1";
   const iOSUrl = "https://apps.apple.com/tt/app/fitbasix/id1618003884";
 
   return (
@@ -23,20 +24,17 @@ const GetStarted = () => {
           </Typography>
           <div className="TextFieldContainer">
             <TextField
-              id="filled-helperText"
-              label="Enter Name"
+              placeholder="Enter Name"
+              startAdornment={PersonIcon}
               sx={{
                 background: "rgba(255, 255, 255, 0.32)",
                 borderRadius: "10px",
-                height: "3rem",
+
                 width: "100%",
               }}
-              variant="filled"
             />
             <TextField
-              id="filled-helperText"
-              label="Email id"
-              variant="filled"
+              placeholder="Email id"
               sx={{
                 background: "rgba(255, 255, 255, 0.32)",
                 borderRadius: "10px",
@@ -45,9 +43,7 @@ const GetStarted = () => {
               }}
             />
             <TextField
-              id="filled-helperText"
-              label="Enter Mobile no."
-              variant="filled"
+              placeholder="Enter Mobile no."
               sx={{
                 background: "rgba(255, 255, 255, 0.32)",
                 borderRadius: "10px",
@@ -78,16 +74,10 @@ const GetStarted = () => {
             <Grid item md={6} xs={12}>
               <Grid container>
                 <Grid item md={12} xs={12} className="GridButtons--Conatiner">
-                   {" "}
+                  {" "}
                   <ButtonsContainer direction="column">
-                    <AppStoreButton
-                      url={iOSUrl}
-                      theme={"dark"}
-                    />
-                    <GooglePlayButton
-                      url={APKUrl}
-                      theme={"dark"}
-                    />
+                    <AppStoreButton url={iOSUrl} theme={"dark"} />
+                    <GooglePlayButton url={APKUrl} theme={"dark"} />
                   </ButtonsContainer>
                 </Grid>
               </Grid>

@@ -43,7 +43,9 @@
 }
 
 
-
+.TextFieldContainer .MuiInputBase-input {
+  color: #fff;
+}
 
 .GetStarted--Left--Container{
   display: flex;
