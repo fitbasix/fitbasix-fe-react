@@ -37,7 +37,9 @@ const Home = () => {
           <Typography
             variant="subtitle1"
             onClick={() => {
-              document.querySelector(`#liveClassId`).scrollIntoView({behavior: "smooth"});
+              document
+                .querySelector(`#liveClassId`)
+                .scrollIntoView({ behavior: "smooth" });
             }}
             sx={{ cursor: "pointer" }}
           >
@@ -60,7 +62,7 @@ const Home = () => {
             sx={{ backgroundColor: "#fff" }}
           >
             <a
-              href="https://api.whatsapp.com"
+              href="https://wa.me/971528802831"
               className="float"
               target="_blank"
             >

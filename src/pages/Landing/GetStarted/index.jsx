@@ -9,7 +9,7 @@ import {
   ButtonsContainer,
   GooglePlayButton,
 } from "react-mobile-app-button";
-import Mobiles from "../../../assets/Mobiles.svg";
+import Mobiles from "../../../assets/Mobiles.png";
 import "./styles.css";
 import { useNavigate } from "react-router-dom";
 import { postDialog } from "../../../api/services";

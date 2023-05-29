@@ -3,10 +3,7 @@
   padding: 0;
 }
 
-::-webkit-scrollbar {
-  width: 0.4rem;
-  background-color: #0b0c0c;
-}
+
 
 ::-webkit-scrollbar-thumb {
   background-color: #49ad50;

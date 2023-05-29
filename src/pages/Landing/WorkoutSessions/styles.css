@@ -1,6 +1,6 @@
 .WorkoutSession--Container {
   height: auto;
-  width: 98vw;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

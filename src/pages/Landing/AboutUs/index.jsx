@@ -217,7 +217,13 @@ const AboutUs = () => {
             </Swiper>
           </Grid>
         </Grid>
-        <Grid item md={12} xs={12} className="getTrial-btnMobile">
+        <Grid
+          item
+          md={12}
+          xs={12}
+          className="getTrial-btnMobile"
+          sx={{ textAlign: "center" }}
+        >
           <Button
             sx={{
               backgroundColor: "#49AD50",

@@ -1,14 +1,37 @@
-.Footer{
-    height: auto;
-    
-    background-color: #49AD50;
+.Footer {
+  height: auto;
+  /* padding: 4rem; */
+  background-color: #76767640;
+  margin-top: 2rem;
+  padding: 4rem;
 }
+.footerContentWrapper {
+  display: flex;
+  flex-direction: row;
 
 
-@media only screen and (max-width: 767px){
-    .Footer{
-        height: auto;
-        width: auto;
-        margin-top: 1rem;
-    }
-   }
+  /* margin: 2rem 1rem 2rem 1rem; */
+}
+.socialmedia-icons {
+    display: flex;
+    text-align: left;
+
+    align-items: left;
+    margin-top: 2rem;
+    /* flex-direction: column; */
+}
+.playstore-style {
+    background-color: #111 !important;
+    border: none !important;
+  }
+  .btnContainer{
+    margin-top: 2rem;
+  }
+@media only screen and (max-width: 767px) {
+  .Footer {
+    height: auto;
+    width: auto;
+    margin-top: 2rem;
+    padding: 0.5rem;
+  }
+}

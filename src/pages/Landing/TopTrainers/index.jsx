@@ -44,6 +44,7 @@ const TopTrainers = () => {
         <Typography
           variant="body1"
           sx={{ textAlign: "center", marginTop: "1rem" }}
+         
         >
           Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut
           deserunt quia et ducimus voluptatem.{" "}

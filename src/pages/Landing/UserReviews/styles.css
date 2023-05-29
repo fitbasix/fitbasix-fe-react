@@ -1,6 +1,6 @@
 .userReviewsContainer {
   height: 70vh;
-  width: 98vw;
+  width: auto;
   display: flex;
   flex-direction: column;
   margin-top: 2rem;

@@ -13,7 +13,7 @@ import { Grid, MenuItem, Select, TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
 import { postDialog } from "../../api/services";
 import { useNavigate } from "react-router-dom";
-
+import "./styles.css";
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -25,7 +25,6 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 
 function BootstrapDialogTitle(props) {
   const { children, onClose, ...other } = props;
-  
 
   return (
     <DialogTitle sx={{ mr: 2, p: 2 }} {...other}>
@@ -60,7 +59,7 @@ export default function LiveClassDialog({
   title,
 }) {
   const { register, handleSubmit } = useForm();
-  const navigate= useNavigate()
+  const navigate = useNavigate();
   const onSubmit = async (data) => {
     data.formType = "JoinClass";
     console.log("FORM SUBMIT", data);
@@ -68,11 +67,10 @@ export default function LiveClassDialog({
 
     if (response?.resStr == "success") {
       console.log("SUCCESSFULL");
-      navigate("/thankyou")
+      navigate("/thankyou");
       setOpen(false);
-    }
-    else{
-      navigate("/error")
+    } else {
+      navigate("/error");
     }
   };
 
@@ -103,6 +101,7 @@ export default function LiveClassDialog({
                 <Grid container spacing={3}>
                   <Grid item md={12}>
                     <TextField
+                      className="textFieldMobile"
                       id="outlined-basic"
                       label="Name"
                       variant="outlined"
@@ -114,6 +113,7 @@ export default function LiveClassDialog({
                   <Grid item md={12}>
                     <TextField
                       id="outlined-basic"
+                      className="textFieldMobile"
                       label="Mobile no."
                       variant="outlined"
                       style={{ width: "80%", borderRadius: "40px" }}
@@ -124,6 +124,7 @@ export default function LiveClassDialog({
                   <Grid item md={12}>
                     <TextField
                       id="outlined-basic"
+                      className="textFieldMobile"
                       type="email"
                       label="Email-Id"
                       style={{ width: "80%", borderRadius: "40px" }}
@@ -135,6 +136,7 @@ export default function LiveClassDialog({
                   <Grid item md={12}>
                     <Select
                       displayEmpty={true}
+                      className="textFieldMobile"
                       style={{
                         width: "80%",
                         color: "#111",
@@ -157,7 +159,6 @@ export default function LiveClassDialog({
               autoFocus
               type="submit"
               sx={{ backgroundColor: "#49AD50", color: "#fff" }}
-             
             >
               Submit
             </Button>

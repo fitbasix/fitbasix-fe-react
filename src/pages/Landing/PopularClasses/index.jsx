@@ -96,6 +96,7 @@ const PopularClasses = () => {
         <Typography
           variant="body1"
           sx={{ textAlign: "center", marginTop: "1rem", width: "30rem" }}
+          className="SubtextMobile"
         >
          Experience the pinnacle of personal training excellence with FITbasix! Our app delivers customized workouts and expert guidance for optimal results.
 

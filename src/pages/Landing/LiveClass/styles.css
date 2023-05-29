@@ -1,6 +1,6 @@
 .liveClassContainer {
   height: auto;
-  width: 98vw;
+  width: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -46,3 +46,4 @@ margin-top: 5rem;
     align-items: center;
   }
 }
+

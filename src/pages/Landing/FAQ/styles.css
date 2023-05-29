@@ -1,5 +1,5 @@
 .FAQContainer {
-  height: 110vh;
+  height: auto;
   /* width: 98vw; */
   display: flex;
   margin-top: 2rem;
@@ -15,7 +15,7 @@
 
 .AccordionContainer {
   width: 50%;
-  max-height: 70vh;
+
   padding-right: 4rem;
 }
 
@@ -26,6 +26,17 @@
 
 @media only screen and (max-width: 767px) {
   .FAQContainer {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .FAQContainer--Left{
+ width:100%;
+ padding-left: 1rem;
+ height: auto;
+  }
+  .AccordionContainer{
+    margin-top: 1rem;
+    width:100%;
   }
 }

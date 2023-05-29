@@ -1,6 +1,6 @@
 .popularClassesContainer {
   height: auto;
-  width: 98vw;
+  width: auto;
 }
 
 
@@ -21,7 +21,9 @@ flex-direction: column;
 
 @media only screen and (max-width: 767px){
 
-
+  .SubtextMobile{
+    width:80% !important;
+  }
   .popularClassesContainer{
     height: auto;
     margin-top: 30rem;

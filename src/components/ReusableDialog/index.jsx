@@ -13,7 +13,7 @@ import { Grid, MenuItem, Select, TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
 import { postDialog } from "../../api/services";
 import { useNavigate } from "react-router-dom";
-
+import "./styles.css";
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -53,9 +53,8 @@ BootstrapDialogTitle.propTypes = {
 };
 
 export default function ReusableDialog({ open, setOpen, title }) {
-
   const { register, handleSubmit } = useForm();
-  const navigate= useNavigate()
+  const navigate = useNavigate();
   //API CALL On SUBMIT
   const onSubmit = async (data) => {
     data.formType = "CallBack";
@@ -64,11 +63,10 @@ export default function ReusableDialog({ open, setOpen, title }) {
 
     if (response?.resStr == "success") {
       console.log("SUCCESSFULL");
-      navigate("/thankyou")
+      navigate("/thankyou");
       setOpen(false);
-    }
-    else{
-      navigate("/error")
+    } else {
+      navigate("/error");
     }
   };
 
@@ -99,6 +97,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
                 <Grid container spacing={3}>
                   <Grid item md={12}>
                     <TextField
+                      className="textFieldMobile"
                       id="outlined-basic"
                       label="Name"
                       variant="outlined"
@@ -109,6 +108,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
 
                   <Grid item md={12}>
                     <TextField
+                      className="textFieldMobile"
                       id="outlined-basic"
                       label="Mobile no."
                       variant="outlined"
@@ -119,6 +119,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
 
                   <Grid item md={12}>
                     <TextField
+                      className="textFieldMobile"
                       id="outlined-basic"
                       label="Email"
                       type="email"
@@ -130,6 +131,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
 
                   <Grid item md={12}>
                     <Select
+                      className="textFieldMobile"
                       // label="Work out Type"
                       displayEmpty={true}
                       style={{
@@ -173,7 +175,6 @@ export default function ReusableDialog({ open, setOpen, title }) {
               autoFocus
               type="submit"
               sx={{ backgroundColor: "#49AD50", color: "#fff" }}
-           
             >
               Submit
             </Button>

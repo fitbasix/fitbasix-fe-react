@@ -13,6 +13,7 @@ import { Grid, MenuItem, Select, TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
 import { postDialog } from "../../api/services";
 import { useNavigate } from "react-router-dom";
+import "./styles.css";
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -20,7 +21,6 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogActions-root": {
     padding: theme.spacing(1),
   },
-  
 }));
 
 function BootstrapDialogTitle(props) {
@@ -59,7 +59,7 @@ export default function FreeTrialDialog({
   title,
 }) {
   const { register, handleSubmit } = useForm();
-  const navigate= useNavigate()
+  const navigate = useNavigate();
   const onSubmit = async (data) => {
     console.log("FORM SUBMIT", data);
     data.formType = "FreeTrial";
@@ -68,11 +68,10 @@ export default function FreeTrialDialog({
 
     if (response?.resStr == "success") {
       console.log("SUCCESSFULL");
-      navigate("/thankyou")
+      navigate("/thankyou");
       setOpen(false);
-    }
-    else{
-      navigate("/error")
+    } else {
+      navigate("/error");
     }
   };
   const handleClose = (e, reason) => {
@@ -100,9 +99,10 @@ export default function FreeTrialDialog({
             <Grid container>
               <Grid item md={12}>
                 <Grid container spacing={3}>
-                  <Grid item md={12}>
+                  <Grid item md={12} >
                     <TextField
                       id="outlined-basic"
+                      className="textFieldMobile"
                       label="Name"
                       variant="outlined"
                       style={{ width: "80%", borderRadius: "40px" }}
@@ -112,6 +112,7 @@ export default function FreeTrialDialog({
 
                   <Grid item md={12}>
                     <TextField
+                      className="textFieldMobile"
                       id="outlined-basic"
                       label="Mobile no."
                       variant="outlined"
@@ -124,6 +125,7 @@ export default function FreeTrialDialog({
                     <TextField
                       id="outlined-basic"
                       type="email"
+                      className="textFieldMobile"
                       label="Email-Id"
                       style={{ width: "80%", borderRadius: "40px" }}
                       variant="outlined"
@@ -134,6 +136,7 @@ export default function FreeTrialDialog({
                   <Grid item md={12}>
                     <Select
                       displayEmpty={true}
+                      className="textFieldMobile"
                       style={{
                         width: "80%",
                         color: "#111",
@@ -156,7 +159,6 @@ export default function FreeTrialDialog({
               autoFocus
               type="submit"
               sx={{ backgroundColor: "#49AD50", color: "#fff" }}
-             
             >
               Submit
             </Button>

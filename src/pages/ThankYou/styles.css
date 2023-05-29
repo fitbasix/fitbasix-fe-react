@@ -19,3 +19,11 @@
 .spacingStyle {
   padding: 10px;
 }
+
+
+
+@media only screen and (max-width: 767px){
+  .thanksSubContainer{
+    width: 80%;
+  }
+}

@@ -1,5 +1,6 @@
 .topTrainersContainer {
   height: 100vh;
+  width:auto;
 
 }
 
@@ -53,6 +54,8 @@
 height:auto;
 padding-bottom: 1rem;
   }
+
+ 
 .topTrainersContainer--top{
   padding:1rem
 }
