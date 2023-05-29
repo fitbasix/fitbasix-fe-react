@@ -22,16 +22,16 @@ const UserReviews = () => {
             variant="h4"
             sx={{ fontWeight: 700, marginTop: "1rem", textAlign: "center" }}
           >
-            What do our <span style={{ color: "#49AD50" }}>users</span> have to
-            say?
+            Check Out Our <span style={{ color: "#49AD50" }}>Users</span>{" "}
+            Reviews
           </Typography>
           <Typography
-            varinat="subtitle"
+            variant="h6"
             sx={{ textAlign: "center", marginTop: "1rem" }}
           >
-            Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut
-            deserunt
-            <br /> quia et ducimus voluptatem.{" "}
+            Users rave about FITbasix's personal training sessions:
+            game-changing workouts, measurable progress, and <br/> newfound confidence
+            in their fitness journey!
           </Typography>
         </Grid>
         <Grid item md={12} xs={12}>
@@ -47,17 +47,17 @@ const UserReviews = () => {
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                    content=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.“"
+                    content="FITbasix transformed my fitness routine with its user-friendly interface, diverse workouts, and expert guidance. Highly recommend!"
                     name="Safari Sharma"
                     service="Service that customer availed"
                   />
                   <UsersCard
-                    content=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.“"
+                    content="FITbasix transformed my fitness journey! With its user-friendly interface and comprehensive workout library, reaching my goals has never been easier."
                     name="Safari Sharma"
                     service="Service that customer availed"
                   />{" "}
                   <UsersCard
-                    content=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.“"
+                    content="FITbasix transformed my fitness routine! With its user-friendly interface and diverse workout options, I'm achieving my goals faster than ever. #FITbasix"
                     name="Safari Sharma"
                     service="Service that customer availed"
                   />

@@ -49,16 +49,27 @@
 .aboutUsContainer--RightMobile {
   display: none;
 }
+
+.getTrial-btnMobile {
+  display: none;
+}
 @media only screen and (max-width: 767px) {
   .aboutUsContainer {
     padding: 1.5rem;
     height: 100vh;
   }
+
   .aboutUsContainer--Right {
     display: none;
   }
   .rightContainer {
     padding: 1rem;
+  }
+  .getTrial-btn {
+    display: none;
+  }
+  .getTrial-btnMobile {
+    display: block;
   }
   .textContent {
     text-align: center;

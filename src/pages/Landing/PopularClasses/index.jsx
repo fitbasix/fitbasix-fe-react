@@ -91,14 +91,14 @@ const PopularClasses = () => {
           variant="h4"
           sx={{ fontWeight: "700", textAlign: "center" }}
         >
-          Our <span style={{ color: "#49AD50" }}>Popular </span>Classes
+          Train <span style={{ color: "#49AD50" }}>With </span>FITbasix
         </Typography>
         <Typography
           variant="body1"
           sx={{ textAlign: "center", marginTop: "1rem", width: "30rem" }}
         >
-          Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut
-          deserunt quia et ducimus voluptatem.
+         Experience the pinnacle of personal training excellence with FITbasix! Our app delivers customized workouts and expert guidance for optimal results.
+
         </Typography>
       </div>
       <div className="popularClassesContainer--Bottom">

@@ -1,5 +1,5 @@
 import { Button, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import image1 from "../../../assets/cardImg1.svg";
 import image2 from "../../../assets/cardImg2.svg";
@@ -15,7 +15,9 @@ import "swiper/css/pagination";
 
 import "./styles.css";
 import { Pagination } from "swiper";
+import FreeTrialDialog from "../../../components/FreeTrialDialog";
 const AboutUs = () => {
+  const [open, setOpen] = useState(false);
   return (
     <Grid container spacing={2} className="aboutUsContainer">
       <Grid item md={6} xs={12}>
@@ -28,9 +30,10 @@ const AboutUs = () => {
           </Grid>
           <Grid item md={12} xs={12} className="textContent">
             <Typography>
-              Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut
-              deserunt quia et ducimus voluptatem. Quo natus voluptatem et
-              dignissimos molestiae eos ipsam repellendus ex totam rerum?
+              Welcome to FITbasix! We provide personalized fitness solutions:
+              one-to-one personal training, nutrition plans, and free live
+              training and yoga sessions for all levels. Join us on your journey
+              to a healthier, fitter lifestyle.
             </Typography>
           </Grid>
           <Grid
@@ -55,12 +58,13 @@ const AboutUs = () => {
               </div>
               <div className="rightContainer">
                 <div className="cardTitle">
-                  <Typography variant="h6">Nutritional Plan</Typography>
+                  <Typography variant="h6">FREE DIET CONSULTANCY</Typography>
                 </div>
                 <div>
                   <Typography>
-                    Lorem ipsum dolor sit amet. Qui enim vitae eos quia
-                    inventore aut deserunt quia et d
+                    Fuel your fitness with customized diet plans. Reach your
+                    fitness goals with our expertly crafted meal guidance. Join
+                    us today!
                   </Typography>
                 </div>
               </div>
@@ -73,12 +77,12 @@ const AboutUs = () => {
               </div>
               <div className="rightContainer">
                 <div className="cardTitle">
-                  <Typography variant="h6">Nutritional Plan</Typography>
+                  <Typography variant="h6">PERSONAL TRAINING</Typography>
                 </div>
                 <div>
                   <Typography>
-                    Lorem ipsum dolor sit amet. Qui enim vitae eos quia
-                    inventore aut deserunt quia et d
+                    Elevate your fitness with personalized, one-to-one training.
+                    Achieve your goals with expert guidance. Join us today!
                   </Typography>
                 </div>
               </div>
@@ -91,35 +95,33 @@ const AboutUs = () => {
               </div>
               <div className="rightContainer">
                 <div className="cardTitle">
-                  <Typography variant="h6">Nutritional Plan</Typography>
+                  <Typography variant="h6">FREE YOGA SESSIONS</Typography>
                 </div>
                 <div>
                   <Typography>
-                    Lorem ipsum dolor sit amet. Qui enim vitae eos quia
-                    inventore aut deserunt quia et d
+                    Unwind and strengthen with yoga for all levels. Our expert
+                    instructors guide you towards flexibility and inner peace.
+                    Join us today!
                   </Typography>
                 </div>
               </div>
             </div>
           </Grid>
-
-       
         </Grid>
-        
       </Grid>
-      <Grid item md={12} xs={12}>
-            <Button
-              sx={{
-                backgroundColor: "#49AD50",
-                color: "#fff",
-                textAlign: "center",
-              }}
-              // onClick={() => setOpen(true)}
-            >
-              {" "}
-              Get a FREE TRIAL
-            </Button>
-          </Grid>
+      <Grid item md={12} xs={12} sx={{ textAlign: "center", marginBottom: "1rem", marginTop: "1rem" }} className="getTrial-btn">
+        <Button
+          sx={{
+            backgroundColor: "#49AD50",
+            color: "#fff",
+            textAlign: "center",
+          }}
+          onClick={() => setOpen(true)}
+        >
+          {" "}
+          Get a FREE TRIAL
+        </Button>
+      </Grid>
       <Grid item md={12} xs={12} className="aboutUsContainer--RightMobile">
         <Grid container sx={{ marginTop: "15rem" }}>
           <Swiper
@@ -195,6 +197,24 @@ const AboutUs = () => {
           </Swiper>
         </Grid>
       </Grid>
+      <Grid item md={12} xs={12}  className="getTrial-btnMobile">
+        <Button
+          sx={{
+            backgroundColor: "#49AD50",
+            color: "#fff",
+            textAlign: "center",
+          }}
+          onClick={() => setOpen(true)}
+        >
+          {" "}
+          Get a FREE TRIAL
+        </Button>
+      </Grid>
+      <FreeTrialDialog
+        setOpen={setOpen}
+        open={open}
+        title={"Get a FREE TRIAL!"}
+      />
     </Grid>
   );
 };

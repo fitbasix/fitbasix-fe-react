@@ -17,3 +17,6 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+button:hover {
+  background-color: #63b969 !important;
+}
