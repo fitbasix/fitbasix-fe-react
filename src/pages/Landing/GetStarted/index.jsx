@@ -23,13 +23,12 @@ const GetStarted = () => {
 
   const navigate = useNavigate();
   const onSubmit = async (data) => {
-    console.log("data", data);
-    console.log("FORM SUBMIT", data);
+    
     data.formType = "FreeTrial";
     const response = await postDialog(data);
 
     if (response?.resStr == "success") {
-      console.log("SUCCESSFULL");
+   
       navigate("/thankyou");
     } else {
       navigate("/error");

@@ -60,13 +60,13 @@ export default function FreeTrialDialog({
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
   const onSubmit = async (data) => {
-    console.log("FORM SUBMIT", data);
+
     data.formType = "FreeTrial";
 
     const response = await postDialog(data);
 
     if (response?.resStr == "success") {
-      console.log("SUCCESSFULL");
+   
       navigate("/thankyou");
       setOpen(false);
     } else {

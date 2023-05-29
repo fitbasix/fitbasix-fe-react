@@ -3,7 +3,7 @@ import "./styles.css";
 import { Button, Typography } from "@mui/material";
 import star from "../../../../assets/star.svg";
 const PopularClassesCard = ({ data, dataIndex }) => {
-  console.log("DATA IN CARD:", data, "INDEX: ", dataIndex);
+
 
   return (
     <div className="PopularClassesCard--Container">

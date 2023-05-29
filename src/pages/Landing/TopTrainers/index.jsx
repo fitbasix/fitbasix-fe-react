@@ -20,7 +20,7 @@ import { getTrainers } from "../../../api/services";
 
 const TopTrainers = () => {
   const [trainers, setTrainers] = useState([]);
-  console.log("Trainers", trainers);
+
   const getData = async () => {
     let response = await getTrainers();
 

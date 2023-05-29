@@ -16,10 +16,9 @@ const BMI = () => {
   const [BMIResult, setBMIResult] = useState("");
 
   const onSubmit = async (data) => {
-    console.log(data);
+   
     let { response } = await postBMI(data);
-    console.log("RESPONSE FULL", response);
-    console.log("RESPONSE FO BMI", response?.data?.bmr);
+;
     if (response?.data?.bmr) {
       setBMIResult(response?.data?.bmr);
     }

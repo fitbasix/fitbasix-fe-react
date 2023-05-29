@@ -61,11 +61,11 @@ export default function LiveClassDialog({
   const navigate = useNavigate();
   const onSubmit = async (data) => {
     data.formType = "JoinClass";
-    console.log("FORM SUBMIT", data);
+
     const response = await postDialog(data);
 
     if (response?.resStr == "success") {
-      console.log("SUCCESSFULL");
+
       navigate("/thankyou");
       setOpen(false);
     } else {

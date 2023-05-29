@@ -57,11 +57,11 @@ export default function ReusableDialog({ open, setOpen, title }) {
   //API CALL On SUBMIT
   const onSubmit = async (data) => {
     data.formType = "CallBack";
-    console.log("FORM SUBMIT", data);
+  
     const response = await postDialog(data);
 
     if (response?.resStr == "success") {
-      console.log("SUCCESSFULL");
+   
       navigate("/thankyou");
       setOpen(false);
     } else {
