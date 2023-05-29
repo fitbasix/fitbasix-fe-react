@@ -44,10 +44,9 @@ const TopTrainers = () => {
         <Typography
           variant="body1"
           sx={{ textAlign: "center", marginTop: "1rem" }}
-         
         >
-          Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut
-          deserunt quia et ducimus voluptatem.{" "}
+          Meet our exceptional trainers at FITbasix! Skilled professionals
+          committed to helping you achieve your fitness goals.
         </Typography>
       </div>
       <div className="topTrainersContainer--bottom">

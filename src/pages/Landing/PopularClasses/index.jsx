@@ -34,46 +34,37 @@ const PopularClasses = () => {
     {
       name: "Yoga Session",
       rating: "4.5",
-      duration: "30 min",
+      duration: "45 min",
       coach: "Shein Tsemda",
       description:
-        "Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut deserunt quia et ducimus voluptatem",
+        "A holistic approach on training & benefiting one's Flexibility, Body toning, stress free mental state, stability, improved sleep etc.",
       image: cardImage,
     },
     {
-      name: "Yoga Session",
+      name: "Diet Consultation",
       rating: "4.5",
-      duration: "30 min",
+      duration: "45 min",
       coach: "Shein Tsemda",
       description:
-        "Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut deserunt quia et ducimus voluptatem",
+        "Tasty and Nutritious Meal planning enhancing one's health and performance while assisting with body shaping in accordance to the goal.",
       image: cardImage,
     },
     {
-      name: "Yoga Session",
+      name: "Fitness Training",
       rating: "4.5",
-      duration: "30 min",
+      duration: "45 min",
       coach: "Shein Tsemda",
       description:
-        "Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut deserunt quia et ducimus voluptatem",
+        "An energetic Virtual Session with a systematic fitness regime that assists in burning body fats and strengthening muscularity.",
       image: cardImage,
     },
     {
-      name: "Yoga Session",
+      name: "Live Stream",
       rating: "4.5",
-      duration: "30 min",
+      duration: "45 min",
       coach: "Shein Tsemda",
       description:
-        "Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut deserunt quia et ducimus voluptatem",
-      image: cardImage,
-    },
-    {
-      name: "Yoga Session",
-      rating: "4.5",
-      duration: "30 min",
-      coach: "Shein Tsemda",
-      description:
-        "Lorem ipsum dolor sit amet. Qui enim vitae eos quia inventore aut deserunt quia et ducimus voluptatem",
+        "A Super Active Group Session with a communal motivation to rejuvenate ones Fitness lifestyle that helps with body Toning.",
       image: cardImage,
     },
   ];
@@ -98,8 +89,9 @@ const PopularClasses = () => {
           sx={{ textAlign: "center", marginTop: "1rem", width: "30rem" }}
           className="SubtextMobile"
         >
-         Experience the pinnacle of personal training excellence with FITbasix! Our app delivers customized workouts and expert guidance for optimal results.
-
+          Experience the pinnacle of personal training excellence with FITbasix!
+          Our app delivers customized workouts and expert guidance for optimal
+          results.
         </Typography>
       </div>
       <div className="popularClassesContainer--Bottom">
