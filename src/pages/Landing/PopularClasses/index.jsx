@@ -1,8 +1,6 @@
-import {
-  Button,
-  Grid,
-  Typography
-} from "@mui/material";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { Button, Fab, Grid, Typography } from "@mui/material";
 import React, { useRef } from "react";
 import {
   ResponsiveContainer,
@@ -109,6 +107,32 @@ const PopularClasses = () => {
             );
           }}
         />
+        <div className="FabButton--Container">
+          <Fab
+            size="small"
+            color="secondary"
+            aria-label="prev"
+            sx={{ backgroundColor: "#C3FFC8" }}
+            onClick={() => {
+              ref.current?.goBack();
+            }}
+          >
+            {" "}
+            <ArrowBackIosNewIcon sx={{ color: "#022405" }} />
+          </Fab>
+          <Fab
+            size="small"
+            color="secondary"
+            sx={{ backgroundColor: "#C3FFC8" }}
+            aria-label="next"
+            onClick={() => {
+              ref.current?.goNext(6);
+            }}
+          >
+            {" "}
+            <ArrowForwardIosIcon sx={{ color: "#022405" }} />
+          </Fab>
+        </div>
       </div>
       <div className="popularClassesContainer--BottomMobile">
         <Swiper

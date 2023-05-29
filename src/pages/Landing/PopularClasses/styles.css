@@ -1,6 +1,6 @@
 .popularClassesContainer {
   height: auto;
-  width: auto;
+  width: 90vw;
 }
 
 
@@ -13,6 +13,16 @@ flex-direction: column;
 
 .popularClassesContainer--Bottom{
   margin-top: 3rem;
+  position:relative
+}
+.FabButton--Container{
+  position: absolute;
+  margin: 2rem;
+  width:100%;
+  top:30%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .popularClassesContainer--BottomMobile{
