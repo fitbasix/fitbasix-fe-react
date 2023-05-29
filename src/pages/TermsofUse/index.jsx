@@ -6,7 +6,7 @@ import "./styles.css";
 
 const TermsofUse = () => {
   return (
-    <div>
+    <div className="mainContainer">
       <Navbar />
       <Grid container spacing={1} className="termsContainer">
         <Grid item xs={12} sm={12}>

@@ -6,7 +6,7 @@ import Footer from "../Landing/Footer";
 
 const PrivacyPolicy = () => {
   return (
-    <div>
+    <div className="mainContainer">
       <Navbar />
       <Grid container spacing={1} className="privacyContainer">
         <Grid item xs={12} sm={12}>
