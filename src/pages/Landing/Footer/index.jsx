@@ -77,17 +77,7 @@ const Footer = () => {
                   </Typography>
                 </Link>
               </div>
-              <div>
-                <Link href="/terms" underline="none" color="#B7B7B7">
-                  <Typography
-                    variant="h6"
-                    sx={{ fontSize: "16px", marginTop: "0.5rem" }}
-                  >
-                    {" "}
-                    Refund and cancellation Policy
-                  </Typography>
-                </Link>
-              </div>
+             
             </Grid>
 
             <Divider style={{ border: "0.5px solid #49AD50" }} />
