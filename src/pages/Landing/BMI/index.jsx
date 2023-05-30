@@ -133,7 +133,7 @@ const BMI = () => {
               <Grid item md={2} xs={12} sx={{ marginTop: "0.5rem"}}>
                 {BMIResult && (
                   <Typography sx={{ fontSize: "17px", fontWeight: 600 }}>
-                    BMI : {BMIResult}
+                    BMI : {BMIResult} kg/m<sup>2</sup>
                     <br />
                {BMICategoryResult}
                   </Typography>
