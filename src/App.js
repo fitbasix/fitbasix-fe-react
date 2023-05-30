@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Landing />} />
         <Route path="/terms" element={<TermsofUse />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/thankyou" element={<ThankYou />} />

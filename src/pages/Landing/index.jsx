@@ -13,7 +13,24 @@ import FAQ from "./FAQ";
 import GetStarted from "./GetStarted";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+
+// GTM MODULE
+import TagManager from "react-gtm-module";
+import { useEffect } from "react";
+
 const Landing = () => {
+
+  useEffect(() => {
+    const tagManagerArgs = {
+      dataLayer: {
+        pageName: "HomePage",
+      },
+      gtmId: "GTM-K7HC9VF",
+    };
+
+    TagManager.initialize(tagManagerArgs);
+  }, []);
+  
   return (
     <div className="landingContainer">
       <Navbar />

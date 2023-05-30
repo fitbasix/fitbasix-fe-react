@@ -4,9 +4,21 @@ import "./styles.css";
 import { Button, Typography } from "@mui/material";
 import danceStudio from "../../assets/dance studio.svg";
 import { useNavigate } from "react-router-dom";
-
+import { useEffect } from "react";
+// GTM MODULE
+import TagManager from "react-gtm-module";
 const ThankYou = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    const tagManagerArgs = {
+      dataLayer: {
+        pageName: "ThankYouPage",
+      },
+      gtmId: "GTM-K7HC9VF",
+    };
+
+    TagManager.initialize(tagManagerArgs);
+  }, []);
   return (
     <>
       <Navbar />
