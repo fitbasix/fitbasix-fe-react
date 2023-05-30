@@ -13,7 +13,9 @@ const WorkoutSessions = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="WorkoutSession--Container">
-      <Typography variant="h3">Workout Sessions</Typography>
+      <Typography variant="h3" sx={{ textAlign: "center" }}>
+        Workout Sessions
+      </Typography>
       <div className="WorkoutSession--Grid">
         <Grid container spacing={4}>
           <Grid item xs={12} sm={3}>
@@ -126,7 +128,7 @@ const WorkoutSessions = () => {
       </div>
       <div className="WorkoutSession--GridMobile">
         <Grid container>
-          <Grid item xs={6} >
+          <Grid item xs={6}>
             <img src={image1} alt="" style={{ width: "160px" }} />
           </Grid>
           <Grid item xs={6}>

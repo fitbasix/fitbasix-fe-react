@@ -12,23 +12,23 @@
   position: fixed;
   animation: none !important;
 }
-.whatsappContainer{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	/* background-color:#25d366;
+.whatsappContainer {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  /* background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
   font-size:30px;
 	box-shadow: 2px 2px 3px #999; */
-  z-index:100;
+  z-index: 100;
 }
 
-.my-float{
-	margin-top:16px;
+.my-float {
+  margin-top: 16px;
 }
 .knowMore-btn button {
   background-color: #49ad50 !important;
@@ -59,35 +59,30 @@
   font-weight: 500;
 }
 
-
-.my-float{
-	margin-top:16px;
+.my-float {
+  margin-top: 16px;
 }
 
-
-
 @media only screen and (max-width: 767px) {
-  .homeContainer{
+  .homeContainer {
     height: auto;
     width: auto;
     background-image: url("../../../assets/MOBILEHOMEBG.png");
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
-  .homelogo-style{
+  .homelogo-style {
     display: none;
   }
-  .explore-btn{
+  .explore-btn {
     display: none;
   }
-  .whatsappContainer{
-    display: none;
-  }
-  .title{
+
+  .title {
     font-weight: bold;
   }
-  .sub-title{
+  .sub-title {
     margin-top: 2rem;
     padding-top: 2rem;
   }

@@ -161,13 +161,14 @@ const AboutUs = () => {
                     <div className="rightContainer">
                       <div className="cardTitle">
                         <Typography variant="h6" sx={{ textAlign: "center" }}>
-                          Nutritional Plan
+                          FREE DIET CONSULTANCY
                         </Typography>
                       </div>
                       <div>
                         <Typography sx={{ textAlign: "center" }}>
-                          Lorem ipsum dolor sit amet. Qui enim vitae eos quia
-                          inventore aut deserunt quia et d
+                          Fuel your fitness with customized diet plans. Reach
+                          your fitness goals with our expertly crafted meal
+                          guidance. Join us today!
                         </Typography>
                       </div>
                     </div>
@@ -182,12 +183,13 @@ const AboutUs = () => {
                     </div>
                     <div className="rightContainer">
                       <div className="cardTitle">
-                        <Typography variant="h6">Nutritional Plan</Typography>
+                        <Typography variant="h6">PERSONAL TRAINING</Typography>
                       </div>
                       <div>
                         <Typography>
-                          Lorem ipsum dolor sit amet. Qui enim vitae eos quia
-                          inventore aut deserunt quia et d
+                          Elevate your fitness with personalized, one-to-one
+                          training. Achieve your goals with expert guidance.
+                          Join us today!
                         </Typography>
                       </div>
                     </div>
@@ -202,12 +204,13 @@ const AboutUs = () => {
                     </div>
                     <div className="rightContainer">
                       <div className="cardTitle">
-                        <Typography variant="h6">Nutritional Plan</Typography>
+                        <Typography variant="h6">FREE YOGA SESSIONS</Typography>
                       </div>
                       <div>
                         <Typography>
-                          Lorem ipsum dolor sit amet. Qui enim vitae eos quia
-                          inventore aut deserunt quia et d
+                          Unwind and strengthen with yoga for all levels. Our
+                          expert instructors guide you towards flexibility and
+                          inner peace. Join us today!
                         </Typography>
                       </div>
                     </div>
