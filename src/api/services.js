@@ -3,7 +3,7 @@ import axiosInstance from "../axios";
 export const postBMI = async (payload) => {
   try {
     const response = await axiosInstance.post(
-      `/api/nutritions/getbmr`,
+      `/api/nutritions/getbmi`,
       payload
     );
 

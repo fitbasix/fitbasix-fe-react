@@ -4,7 +4,7 @@ import {
   MenuItem,
   Select,
   TextField,
-  Typography
+  Typography,
 } from "@mui/material";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -14,13 +14,13 @@ import "./styles.css";
 const BMI = () => {
   const { register, handleSubmit } = useForm();
   const [BMIResult, setBMIResult] = useState("");
+  const [BMICategoryResult, setBMICategoryResult] = useState("");
 
   const onSubmit = async (data) => {
-   
     let { response } = await postBMI(data);
-;
-    if (response?.data?.bmr) {
-      setBMIResult(response?.data?.bmr);
+    if (response?.data) {
+      setBMIResult(response?.data?.bmi);
+      setBMICategoryResult(response?.data?.category);
     }
   };
 
@@ -38,8 +38,8 @@ const BMI = () => {
           </Grid>
           <Grid item md={12} sx={12}>
             <Grid container>
-              <Grid item md={10} xs={12}>
-                <Grid container spacing={5}>
+              {/* <Grid item md={10} xs={12}>
+                <Grid container spacing={5}> */}
                   <Grid
                     item
                     md={2}
@@ -50,6 +50,7 @@ const BMI = () => {
                       label="Gender"
                       displayEmpty={true}
                       style={{
+                        borderRadius: "10px",
                         width: "100%",
                         color: "#111",
                         backgroundColor: "#fff",
@@ -108,7 +109,7 @@ const BMI = () => {
                   </Grid>
                   <Grid
                     item
-                    md={3}
+                    md={2}
                     xs={12}
                     sx={{ paddingRight: "1rem", marginTop: "0.5rem" }}
                   >
@@ -127,12 +128,14 @@ const BMI = () => {
                       Calculate
                     </Button>
                   </Grid>
-                </Grid>
-              </Grid>
-              <Grid item md={2} xs={12} sx={{ marginTop: "0.5rem" }}>
+                {/* </Grid>
+              </Grid> */}
+              <Grid item md={2} xs={12} sx={{ marginTop: "0.5rem"}}>
                 {BMIResult && (
-                  <Typography sx={{ fontSize: "22px", fontWeight: 600 }}>
+                  <Typography sx={{ fontSize: "17px", fontWeight: 600 }}>
                     BMI : {BMIResult}
+                    <br />
+               {BMICategoryResult}
                   </Typography>
                 )}
               </Grid>
