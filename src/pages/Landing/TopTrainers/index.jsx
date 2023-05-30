@@ -139,54 +139,22 @@ const TopTrainers = () => {
           effect={"fade"}
           pagination={true}
         >
-          <SwiperSlide>
-            <div className="SwiperSlide">
-              <TrainerCard
-                image={trainer1}
-                name="Brandon Wong"
-                designation="HIIT Trainer"
-                experience="3"
-                rating={3}
-                reviews={234}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="SwiperSlide">
-              <TrainerCard
-                image={trainer2}
-                name="Brandon Wong"
-                designation="HIIT Trainer"
-                experience="3"
-                rating={3}
-                reviews={234}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="SwiperSlide">
-              <TrainerCard
-                image={trainer3}
-                name="Brandon Wong"
-                designation="HIIT Trainer"
-                experience="3"
-                rating={3}
-                reviews={234}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="SwiperSlide">
-              <TrainerCard
-                image={trainer4}
-                name="Brandon Wong"
-                designation="HIIT Trainer"
-                experience="3"
-                rating={3}
-                reviews={234}
-              />
-            </div>
-          </SwiperSlide>
+          {trainers?.map((obj, index) => (
+            <>
+              <SwiperSlide>
+                <div className="SwiperSlide">
+                  <TrainerCard
+                    image={obj?.profilePhoto}
+                    name={obj?.name}
+                    designation="HIIT Trainer"
+                    experience="3"
+                    rating={parseInt(obj?.rating)}
+                    reviews={234}
+                  />
+                </div>
+              </SwiperSlide>
+            </>
+          ))}
         </Swiper>
       </div>
     </div>

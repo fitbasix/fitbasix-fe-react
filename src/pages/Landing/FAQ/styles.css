@@ -31,12 +31,12 @@
     justify-content: center;
   }
   .FAQContainer--Left{
- width:100%;
+ width:auto;
  padding-left: 1rem;
  height: auto;
   }
   .AccordionContainer{
     margin-top: 1rem;
-    width:100%;
+    width:auto;
   }
 }

@@ -25,6 +25,8 @@
   .WorkoutSession--GridMobile{
     display: block;
     margin-top: 2rem;
+    width: auto;
+    padding: 1rem 
   }
   .WorkoutSession--Grid{
    display: none;

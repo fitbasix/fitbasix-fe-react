@@ -128,8 +128,9 @@ const UserReviews = () => {
                 <div className="SwiperSlide">
                   {" "}
                   <UsersCard
-                    content=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.“"
-                    name="Safari Sharma"
+                    content="FITbasix transformed my fitness routine with its user-friendly interface, diverse workouts, and expert guidance. Highly recommend!"
+                    name="Yasmin Patel"
+                    logo={userR1}
                     service="Service that customer availed"
                   />
                 </div>
@@ -138,18 +139,20 @@ const UserReviews = () => {
                 <div className="SwiperSlide">
                   {" "}
                   <UsersCard
-                    content=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.“"
-                    name="Safari Sharma"
+                    content="FITbasix transformed my fitness journey! With its user-friendly interface and comprehensive workout library, reaching my goals has never been easier."
+                    name="Rashid Khan"
+                    logo={userR2}
                     service="Service that customer availed"
-                  />
+                  />{" "}
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   {" "}
                   <UsersCard
-                    content=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.“"
-                    name="Safari Sharma"
+                    content="FITbasix transformed my fitness routine! With its user-friendly interface and diverse workout options, I'm achieving my goals faster than ever. #FITbasix"
+                    name="Omar Shah"
+                    logo={userR3}
                     service="Service that customer availed"
                   />
                 </div>

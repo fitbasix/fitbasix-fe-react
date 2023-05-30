@@ -2,7 +2,9 @@
   /* background-image: url("../../assets/BGImage.png"); */
   /* background-size: contain;
   box-sizing: border-box; */
+  margin: 0 !important;
+  padding: 0 !important;
   background-color: #0b0c0c;
   color: #fff;
-  font-family: Montserrat;
+ 
 }

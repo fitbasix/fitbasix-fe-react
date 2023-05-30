@@ -3,8 +3,6 @@ import "./styles.css";
 import { Button, Typography } from "@mui/material";
 import star from "../../../../assets/star.svg";
 const PopularClassesCard = ({ data, dataIndex }) => {
-
-
   return (
     <div className="PopularClassesCard--Container">
       <div className="PopularClassesCard--Left">
@@ -27,7 +25,8 @@ const PopularClassesCard = ({ data, dataIndex }) => {
               padding: "0.5rem",
               height: "2rem",
               borderRadius: "10px",
-              opacity: "0.8",
+              opacity: "0.9",
+              fontSize: "12px",
             }}
           >
             Duration - {data[dataIndex].duration}
