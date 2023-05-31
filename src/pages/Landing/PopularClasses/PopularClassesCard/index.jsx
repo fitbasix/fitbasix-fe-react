@@ -9,7 +9,7 @@ const PopularClassesCard = ({ data, dataIndex }) => {
         <div>
           <Typography variant="h6">{data[dataIndex].name}</Typography>
           <div className="ratingContainer">
-            <img src={star} style={{ width: "20px" }} />
+            {/* <img src={star} style={{ width: "20px" }} /> */}
             <Typography variant="body1" sx={{ marginLeft: "0.5rem" }}>
               {data[dataIndex].rating}
             </Typography>
@@ -39,7 +39,7 @@ const PopularClassesCard = ({ data, dataIndex }) => {
               width: "25rem",
             }}
           >
-            Coach: {data[dataIndex].coach}
+          {data[dataIndex].coach}
           </Typography>
           <Typography
             variant="body2"

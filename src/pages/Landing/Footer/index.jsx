@@ -8,7 +8,6 @@ import {
 import Fitba6Logo from "../../../assets/Fitba6Logo.svg";
 import facebookLogo from "../../../assets/facebook.svg";
 import instaLogo from "../../../assets/instagram.svg";
-import twitterLogo from "../../../assets/twitter.svg";
 import "./styles.css";
 
 const Footer = () => {
@@ -105,13 +104,7 @@ const Footer = () => {
                     />
                   </a>
                 </div>
-                <div>
-                  <img
-                    src={twitterLogo}
-                    alt=""
-                    style={{ marginRight: "2rem" }}
-                  />
-                </div>
+              
               </div>
               <div className="btnContainer">
                 <ButtonsContainer>

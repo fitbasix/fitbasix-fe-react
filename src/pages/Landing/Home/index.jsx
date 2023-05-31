@@ -1,10 +1,12 @@
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Button, Grid, Tooltip, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import homelogo from "../../../assets/HomepageLogo.svg";
 import whatsappLogo from "../../../assets/whatsapp-symbol-logo.svg";
 import "./styles.css";
+import FreeTrialDialog from "../../../components/FreeTrialDialog";
 const Home = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="homeContainer">
       <Grid container spacing={2}>
@@ -25,7 +27,7 @@ const Home = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} sm={12} className="knowMore-btn">
-              <Button variant="contained">Know More</Button>
+              <Button variant="contained"    onClick={() => setOpen(true)}>Know More</Button>
             </Grid>
           </Grid>
         </Grid>
@@ -70,6 +72,11 @@ const Home = () => {
             </a>
           </Tooltip>
         </Grid>
+        <FreeTrialDialog
+        setOpen={setOpen}
+        open={open}
+        title={"Get a FREE TRIAL!"}
+      />
       </Grid>
     </div>
   );

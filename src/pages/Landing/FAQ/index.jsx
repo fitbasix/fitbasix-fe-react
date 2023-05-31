@@ -37,7 +37,7 @@ const FAQ = () => {
           Everything you need to know about us. Can&apos;t find the answer
           you&apos;re looking for? Please reach out to our <br />
           <span>
-            <Link href="#" color="#fff">
+            <Link href="mailto:Info@fitbasix.com" color="#fff">
               Customer Support.
             </Link>
           </span>

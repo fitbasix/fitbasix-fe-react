@@ -1,6 +1,6 @@
 .popularClassesContainer {
   height: auto;
-  width: 90vw;
+  width: 95vw;
 }
 
 
@@ -47,5 +47,7 @@ flex-direction: column;
     display:block;
     margin-top: 3rem;
   }
-  
+  .getTrails-btn-pc-mobile {
+    margin-left: unset !important;
+  }
 }
