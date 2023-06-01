@@ -4,89 +4,82 @@
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  
 }
 
-.userReviewsContainer--Top{
+.userReviewsContainer--Top {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
-.userReviewsContainer--Bottom{
+.userReviewsContainer--Bottom {
   margin-top: 4rem;
 }
 
-.userReviewsContainer--BottomMobile{
+.userReviewsContainer--BottomMobile {
   display: none;
 }
 
-.SwiperSlide{
+.SwiperSlide {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-left: 3rem;
   padding-right: 3rem;
- 
 }
 
-.userReviewsContainer--Bottom .swiper-button-prev{
-  background-color: #92c095 ;
+.userReviewsContainer--Bottom .swiper-button-prev {
+  background-color: #92c095;
   border-radius: 50%;
   width: 2.8rem;
 }
 
-.userReviewsContainer--Bottom .swiper-button-prev::after{
+.userReviewsContainer--Bottom .swiper-button-prev::after {
   font-size: 20px;
-  color:#022405
+  color: #022405;
 }
 
-.userReviewsContainer--Bottom  .swiper-button-next{
-  background-color: #92c095 ;
+.userReviewsContainer--Bottom .swiper-button-next {
+  background-color: #92c095;
   border-radius: 50%;
   width: 2.8rem;
-
 }
-.userReviewsContainer--Bottom  .swiper-button-next::after{
+.userReviewsContainer--Bottom .swiper-button-next::after {
   font-size: 20px;
-  color:#022405;
+  color: #022405;
 }
 
-
-@media only screen and (max-width: 767px){
-  .userReviewsContainer{
-height:auto;
-padding-bottom: 1rem;
+@media only screen and (max-width: 767px) {
+  .userReviewsContainer {
+    height: auto;
+    padding-bottom: 1rem;
   }
 
-  .TopContent--Container{
-    padding-left:2rem;
+  .TopContent--Container {
+    padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  .userReviewsContainer--Bottom{
+  .userReviewsContainer--Bottom {
     display: none;
   }
-  .userReviewsContainer--BottomMobile{
+  .userReviewsContainer--BottomMobile {
     display: block;
   }
 
-  .SwiperSlide{
+  .SwiperSlide {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: 2rem;
-   
   }
-.swiper-pagination {
-  margin-top: 1rem !important;
-}
-  .swiper-pagination-bullet{
-    border:2px solid #5E9665 !important;
-    opacity:1 !important
+  .swiper-pagination {
+    margin-top: 1rem !important;
   }
-  .swiper-pagination-bullet-active{
-    background: #5E9665 !important;
+  .swiper-pagination-bullet {
+    border: 2px solid #5e9665 !important;
+    opacity: 1 !important;
   }
- 
+  .swiper-pagination-bullet-active {
+    background: #5e9665 !important;
+  }
 }

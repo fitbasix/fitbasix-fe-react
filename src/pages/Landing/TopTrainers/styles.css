@@ -1,86 +1,76 @@
 .topTrainersContainer {
-  height: 100vh;
-  width:auto;
-
+  /* height: 100vh; */
+  width: auto;
 }
 
-.topTrainersContainer--top{
+.topTrainersContainer--top {
   display: flex;
   align-items: center;
   flex-direction: column;
- 
 }
 
-.topTrainersContainer--bottom{
- margin-top: 2rem;
+.topTrainersContainer--bottom {
+  margin-top: 2rem;
 }
 
-.SwiperSlide{
+.SwiperSlide {
   display: flex;
   justify-content: space-around;
   align-items: center;
- 
 }
 
-.topTrainersContainer--bottom .swiper-button-prev{
-  background-color: #92c095 ;
+.topTrainersContainer--bottom .swiper-button-prev {
+  background-color: #92c095;
   border-radius: 50%;
   width: 2.8rem;
-
 }
 
-.topTrainersContainer--bottom .swiper-button-prev::after{
+.topTrainersContainer--bottom .swiper-button-prev::after {
   font-size: 20px;
-  color:#022405
+  color: #022405;
 }
 
-.topTrainersContainer--bottom .swiper-button-next{
-  background-color: #92c095 ;
+.topTrainersContainer--bottom .swiper-button-next {
+  background-color: #92c095;
   border-radius: 50%;
   width: 2.8rem;
-
 }
-.topTrainersContainer--bottomMobile{
+.topTrainersContainer--bottomMobile {
   display: none;
 }
 
-.topTrainersContainer--bottom .swiper-button-next::after{
+.topTrainersContainer--bottom .swiper-button-next::after {
   font-size: 20px;
-  color:#022405
+  color: #022405;
 }
 
-@media only screen and (max-width: 767px){
-  .topTrainersContainer{
-height:auto;
-padding-bottom: 1rem;
+@media only screen and (max-width: 767px) {
+  .topTrainersContainer {
+    height: auto;
+    padding-bottom: 1rem;
   }
 
- 
-.topTrainersContainer--top{
-  padding:1rem
-}
-  .topTrainersContainer--bottomMobile{
+  .topTrainersContainer--top {
+    padding: 1rem;
+  }
+  .topTrainersContainer--bottomMobile {
     display: block;
-
   }
-  .topTrainersContainer--bottom{
+  .topTrainersContainer--bottom {
     display: none;
   }
 
-  
-.SwiperSlide{
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-}
+  .SwiperSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-  
-    .swiper-pagination-bullet{
-      border:2px solid #5E9665 !important;
-      opacity:1 !important
-    }
-    .swiper-pagination-bullet-active{
-      background: #5E9665 !important;
-    }
+  .swiper-pagination-bullet {
+    border: 2px solid #5e9665 !important;
+    opacity: 1 !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: #5e9665 !important;
+  }
 }

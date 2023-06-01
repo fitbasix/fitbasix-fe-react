@@ -56,8 +56,8 @@ const AboutUs = () => {
             >
               <img
                 src={picture}
-                alt=""
-                style={{ position: "absolute", width: "100%" }}
+                alt="picture"
+                style={{ width: "100%" }}
               />
             </Grid>
           </Grid>
@@ -143,7 +143,7 @@ const AboutUs = () => {
           </Button>
         </Grid>
         <Grid item md={12} xs={12} className="aboutUsContainer--RightMobile">
-          <Grid container sx={{ marginTop: "15rem" }}>
+          <Grid container >
             <Swiper
               navigation={false}
               modules={[Pagination]}

@@ -1,35 +1,33 @@
-.TrainerCard--Container{
+.TrainerCard--Container {
+  padding: 1rem;
+  padding-top: 0;
+  /* height: 70vh; */
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+}
 
-    padding: 1rem;
+.TrainerCard--Image img {
+  width: 200px;
+  height: 280px;
+  background-image: url("../../../../assets/Trainers/ellipse.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.TrainerCard--ratingContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .TrainerCard--Container {
+    padding: 0.5rem;
     padding-top: 0;
-    height:70vh;
-    width:10vw;
-   
+    height: 44vh;
+    width: 40vw;
     display: flex;
     flex-direction: column;
-}
-
-.TrainerCard--Image img{
-    width: 170px;
-    height: 280px;
-    background-image: url("../../../../assets/Trainers/ellipse.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.TrainerCard--ratingContainer{
-    display:flex;
-    justify-content: space-between;
-}
-
-@media only screen and (max-width: 767px){
-    .TrainerCard--Container{
-        padding: 0.5rem;
-        padding-top: 0;
-        height:70vh;
-        width:40vw;
-        display: flex;
-        flex-direction: column;
-    }
+  }
 }

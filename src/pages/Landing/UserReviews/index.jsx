@@ -51,19 +51,19 @@ const UserReviews = () => {
                   <UsersCard
                     content="FITbasix transformed my fitness routine with its user-friendly interface, diverse workouts, and expert guidance. Highly recommend!"
                     name="Yasmin Patel"
-                    logo={userR1}
+                    logo={"https://fitbasix-dev.s3.me-south-1.amazonaws.com/webImage/sanidhi.webp"}
                     service="Service that customer availed"
                   />
                   <UsersCard
                     content="FITbasix transformed my fitness journey! With its user-friendly interface and comprehensive workout library, reaching my goals has never been easier."
                     name="Rashid Khan"
-                    logo={userR2}
+                    logo={"https://fitbasix-dev.s3.me-south-1.amazonaws.com/webImage/umair.webp"}
                     service="Service that customer availed"
                   />{" "}
                   <UsersCard
                     content="FITbasix transformed my fitness routine! With its user-friendly interface and diverse workout options, I'm achieving my goals faster than ever. #FITbasix"
                     name="Omar Shah"
-                    logo={userR3}
+                    logo={"https://fitbasix-dev.s3.me-south-1.amazonaws.com/webImage/chintan.webp"}
                     service="Service that customer availed"
                   />
                 </div>
@@ -73,19 +73,19 @@ const UserReviews = () => {
                   <UsersCard
                     content="FITbasix transformed my fitness routine with its user-friendly interface, diverse workouts, and expert guidance. Highly recommend!"
                     name="Yasmin Patel"
-                    logo={userR1}
+                    logo={"https://fitbasix-dev.s3.me-south-1.amazonaws.com/webImage/sanidhi.webp"}
                     service="Service that customer availed"
                   />
                   <UsersCard
                     content="FITbasix transformed my fitness journey! With its user-friendly interface and comprehensive workout library, reaching my goals has never been easier."
                     name="Rashid Khan"
-                    logo={userR2}
+                    logo={"https://fitbasix-dev.s3.me-south-1.amazonaws.com/webImage/umair.webp"}
                     service="Service that customer availed"
                   />{" "}
                   <UsersCard
                     content="FITbasix transformed my fitness routine! With its user-friendly interface and diverse workout options, I'm achieving my goals faster than ever. #FITbasix"
                     name="Omar Shah"
-                    logo={userR3}
+                    logo={"https://fitbasix-dev.s3.me-south-1.amazonaws.com/webImage/chintan.webp"}
                     service="Service that customer availed"
                   />
                 </div>
@@ -95,19 +95,19 @@ const UserReviews = () => {
                   <UsersCard
                     content="FITbasix transformed my fitness routine with its user-friendly interface, diverse workouts, and expert guidance. Highly recommend!"
                     name="Yasmin Patel"
-                    logo={userR1}
+                    logo={"https://fitbasix-dev.s3.me-south-1.amazonaws.com/webImage/sanidhi.webp"}
                     service="Service that customer availed"
                   />
                   <UsersCard
                     content="FITbasix transformed my fitness journey! With its user-friendly interface and comprehensive workout library, reaching my goals has never been easier."
                     name="Rashid Khan"
-                    logo={userR2}
+                    logo={"https://fitbasix-dev.s3.me-south-1.amazonaws.com/webImage/umair.webp"}
                     service="Service that customer availed"
                   />{" "}
                   <UsersCard
                     content="FITbasix transformed my fitness routine! With its user-friendly interface and diverse workout options, I'm achieving my goals faster than ever. #FITbasix"
                     name="Omar Shah"
-                    logo={userR3}
+                    logo={"https://fitbasix-dev.s3.me-south-1.amazonaws.com/webImage/chintan.webp"}
                     service="Service that customer availed"
                   />
                 </div>

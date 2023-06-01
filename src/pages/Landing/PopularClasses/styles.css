@@ -1,53 +1,56 @@
 .popularClassesContainer {
   height: auto;
-  width: 95vw;
+  width: 97vw;
 }
 
-
-.popularClassesContainer--Top{
-display:flex;
-align-items: center;
-flex-direction: column;
-
+.popularClassesContainer--Top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.popularClassesContainer--Bottom{
+.popularClassesContainer--Bottom {
   margin-top: 3rem;
-  position:relative
+  position: relative;
 }
-.FabButton--Container{
+.FabButton--Container {
   position: absolute;
   margin: 2rem;
-  width:100%;
-  top:30%;
-  display:flex;
+  width: 95vw;
+  top: 30%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.popularClassesContainer--BottomMobile{
-  display:none
+.popularClassesContainer--BottomMobile {
+  display: none;
 }
 
-@media only screen and (max-width: 767px){
-
-  .SubtextMobile{
-    width:80% !important;
+@media only screen and (max-width: 767px) {
+  .SubtextMobile {
+    width: 80% !important;
   }
-  .popularClassesContainer{
+  .popularClassesContainer {
     height: auto;
-    margin-top: 30rem;
+    margin-top: 9rem;
   }
 
-  .popularClassesContainer--Bottom{
-   display: none;
+  .popularClassesContainer--Bottom {
+    display: none;
   }
-  
-  .popularClassesContainer--BottomMobile{
-    display:block;
+
+  .popularClassesContainer--BottomMobile {
+    display: block;
     margin-top: 3rem;
   }
   .getTrails-btn-pc-mobile {
     margin-left: unset !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .popularClassesContainer {
+    height: auto;
+    margin-top: 5rem;
   }
 }

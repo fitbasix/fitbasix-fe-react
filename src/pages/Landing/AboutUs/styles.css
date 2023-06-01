@@ -56,7 +56,6 @@
 @media only screen and (max-width: 767px) {
   .aboutUsContainer {
     padding: 1.5rem;
-    height: 100vh;
   }
 
   .aboutUsContainer--Right {

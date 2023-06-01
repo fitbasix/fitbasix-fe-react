@@ -6,7 +6,7 @@ import { Rating, Typography } from '@mui/material'
 
 const TrainerCard = ({image,name,designation,experience,rating,reviews}) => {
   return (
-    <div className="TrainerCard--Container">
+    <div className="TrainerCard--Container" >
         <div className='TrainerCard--Image'>
             <img src={image} alt="" />
         </div>

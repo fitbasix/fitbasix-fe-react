@@ -30,7 +30,7 @@ const PopularClasses = () => {
       coach: "",
       description:
         "A holistic approach on training & benefiting one's Flexibility, Body toning, stress free mental state, stability, improved sleep etc.",
-      image: cardImage,
+      image: "https://fitbasix-dev.s3.me-south-1.amazonaws.com/63c0ef52dbb9f9237a278b41/certificates/7345c556-33b0-430f-aa79-9c8c92859e9btanya.png",
     },
     {
       name: "Diet Consultation",
@@ -39,7 +39,7 @@ const PopularClasses = () => {
       coach: "",
       description:
         "Tasty and Nutritious Meal planning enhancing one's health and performance while assisting with body shaping in accordance to the goal.",
-      image: cardImage,
+      image: "https://fitbasix-dev.s3.me-south-1.amazonaws.com/63c0ef52dbb9f9237a278b41/certificates/29aef114-7538-475a-8958-6da8fb58140cshivam.png",
     },
     {
       name: "Fitness Training",
@@ -48,7 +48,7 @@ const PopularClasses = () => {
       coach: "",
       description:
         "An energetic Virtual Session with a systematic fitness regime that assists in burning body fats and strengthening muscularity.",
-      image: cardImage,
+      image: "https://fitbasix-dev.s3.me-south-1.amazonaws.com/63c0ef52dbb9f9237a278b41/certificates/1a79e002-1486-42f4-9f7c-9e7eadfd0ecdbrandon.png",
     },
     {
       name: "Live Stream",
@@ -90,7 +90,6 @@ const PopularClasses = () => {
             if (parentWidth <= 767) currentVisibleSlide = 1;
             return (
               <>
-                {" "}
                 <StackedCarousel
                   ref={carouselRef}
                   slideComponent={PopularClassesCard}
@@ -102,7 +101,7 @@ const PopularClasses = () => {
                   useGrabCursor
                   fadeDistance={0.2}
                   height={500}
-                />{" "}
+                />
               </>
             );
           }}
@@ -117,7 +116,7 @@ const PopularClasses = () => {
               ref.current?.goBack();
             }}
           >
-            {" "}
+     
             <ArrowBackIosNewIcon sx={{ color: "#022405" }} />
           </Fab>
           <Fab
@@ -129,7 +128,7 @@ const PopularClasses = () => {
               ref.current?.goNext(6);
             }}
           >
-            {" "}
+    
             <ArrowForwardIosIcon sx={{ color: "#022405" }} />
           </Fab>
         </div>
@@ -154,19 +153,19 @@ const PopularClasses = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="SwiperSlide">
-              {" "}
+       
               <PopularClassesCard data={data} dataIndex={1} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="SwiperSlide">
-              {" "}
+     
               <PopularClassesCard data={data} dataIndex={2} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="SwiperSlide">
-              {" "}
+   
               <PopularClassesCard data={data} dataIndex={3} />
             </div>
           </SwiperSlide>
@@ -189,12 +188,12 @@ const PopularClasses = () => {
               backgroundColor: "#49AD50",
               color: "#fff",
               textAlign: "center",
-              marginLeft: "7rem",
+            
             }}
             className="getTrails-btn-pc-mobile"
             onClick={() => setOpen(true)}
           >
-            {" "}
+
             Get a FREE TRIAL
           </Button>
         </Grid>

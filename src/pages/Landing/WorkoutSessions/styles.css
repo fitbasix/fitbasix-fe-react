@@ -7,29 +7,28 @@
   margin-top: 5rem;
 }
 
-.WorkoutSession--Grid{
+.WorkoutSession--Grid {
   margin-top: 2rem;
   margin-bottom: 10%;
-  margin-right:10%;
-  margin-left:10%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-.WorkoutSession--GridMobile{
+.WorkoutSession--GridMobile {
   display: none;
 }
 
-@media only screen and (max-width: 767px){
-  .WorkoutSession--Container{
-    height:auto
+@media only screen and (max-width: 767px) {
+  .WorkoutSession--Container {
+    height: auto;
   }
-  .WorkoutSession--GridMobile{
+  .WorkoutSession--GridMobile {
     display: block;
     margin-top: 2rem;
     width: auto;
-    padding: 1rem 
+    padding: 1rem;
   }
-  .WorkoutSession--Grid{
-   display: none;
+  .WorkoutSession--Grid {
+    display: none;
   }
-  
 }

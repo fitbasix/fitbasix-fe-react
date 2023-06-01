@@ -13,7 +13,7 @@ const WorkoutSessions = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="WorkoutSession--Container">
-      <Typography variant="h3" sx={{ textAlign: "center" }}>
+      <Typography variant="h4" sx={{ textAlign: "center" }}>
         Workout Sessions
       </Typography>
       <div className="WorkoutSession--Grid">
@@ -129,16 +129,16 @@ const WorkoutSessions = () => {
       <div className="WorkoutSession--GridMobile">
         <Grid container>
           <Grid item xs={6}>
-            <img src={image1} alt="" style={{ width: "160px" }} />
+            <img src={image1} alt="" style={{ width: "100%", height:"100%" }} />
           </Grid>
           <Grid item xs={6}>
-            <img src={image1} alt="" style={{ width: "160px" }} />
+            <img src={image1} alt="" style={{ width: "100%", height:"100%" }} />
           </Grid>
           <Grid item xs={6}>
-            <img src={image1} alt="" style={{ width: "160px" }} />
+            <img src={image1} alt="" style={{ width: "100%", height:"100%" }} />
           </Grid>
           <Grid item xs={6}>
-            <img src={image1} alt="" style={{ width: "160px" }} />
+            <img src={image1} alt="" style={{ width: "100%", height:"100%" }} />
           </Grid>
         </Grid>
       </div>

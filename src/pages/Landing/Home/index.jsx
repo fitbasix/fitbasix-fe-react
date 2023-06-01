@@ -11,19 +11,21 @@ const Home = () => {
     <div className="homeContainer">
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12}>
-          <Grid container spacing={2} sx={{ padding: "12rem 4rem 7rem 4rem" }}>
+          <Grid container spacing={2} sx={{ padding: "4rem" }}>
             <Grid item xs={12} sm={12}>
-              <Typography variant="h3" className="title">
-                THE FUTURE OF <br />
-                FITNESS
+              <Typography className='title'>
+                <span className="title"> THE FUTURE OF <br />
+                FITNESS</span>               
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={12} className="sub-title">
-              <Typography variant="h5">
-                Elevate Your Fitness <br />
+            <Grid item xs={12} sm={12} className="sub-title" >
+              <Typography>
+              <span className="sub-title">
+              Elevate Your Fitness <br />
                 Journey With A Personal
                 <br />
                 Touch!
+              </span>               
               </Typography>
             </Grid>
             <Grid item xs={12} sm={12} className="knowMore-btn">
