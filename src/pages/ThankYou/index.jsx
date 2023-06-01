@@ -29,7 +29,7 @@ const ThankYou = () => {
           </div>
           <div className="spacingStyle">
             <Typography variant="h5">
-              We Will get back to you shorty....
+            We will get back to you shortly, till then you can download our app or exit the page now...
             </Typography>
           </div>
           <div className="spacingStyle">
@@ -46,10 +46,10 @@ const ThankYou = () => {
                 marginTop: "1rem",
               }}
               onClick={() => {
-                navigate("/");
+                window.location.href ="https://fitbasix.com/applinks";
               }}
             >
-              Go to Home Page
+              Install Now
             </Button>
           </div>
         </div>

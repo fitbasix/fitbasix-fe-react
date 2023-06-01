@@ -29,14 +29,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0rem 1rem;
   }
-  .FAQContainer--Left{
- width:auto;
- padding-left: 1rem;
- height: auto;
+  .FAQContainer--Left {
+    width: auto;
+    padding-left: 1rem;
+    height: auto;
   }
-  .AccordionContainer{
+  .AccordionContainer {
     margin-top: 1rem;
-    width:auto;
+    padding-right: 0rem;
+    width: auto;
   }
 }

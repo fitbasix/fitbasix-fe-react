@@ -17,8 +17,8 @@ const WorkoutSessions = () => {
         Workout Sessions
       </Typography>
       <div className="WorkoutSession--Grid">
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={3}>
+        <Grid container spacing={2}>
+          <Grid item xs={6} sm={3}>
             <Card sx={{ maxWidth: 600 }}>
               <Box sx={{ position: "relative" }}>
                 <CardMedia component="img" height="200" image={WsImage1} />
@@ -41,7 +41,7 @@ const WorkoutSessions = () => {
               </Box>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={3}>
+          <Grid item xs={6} sm={3}>
             <Card sx={{ maxWidth: 600 }}>
               <Box sx={{ position: "relative" }}>
                 <CardMedia component="img" height="200" image={WsImage2} />
@@ -61,7 +61,7 @@ const WorkoutSessions = () => {
               </Box>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={3}>
+          <Grid item xs={6} sm={3}>
             <Card sx={{ maxWidth: 600 }}>
               <Box sx={{ position: "relative" }}>
                 <CardMedia component="img" height="200" image={WsImage3} />
@@ -81,7 +81,7 @@ const WorkoutSessions = () => {
               </Box>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={3}>
+          <Grid item xs={6} sm={3}>
             <Card sx={{ maxWidth: 600 }}>
               <Box sx={{ position: "relative" }}>
                 <CardMedia component="img" height="200" image={WsImage4} />
@@ -123,22 +123,6 @@ const WorkoutSessions = () => {
             >
               Get a FREE TRIAL
             </Button>
-          </Grid>
-        </Grid>
-      </div>
-      <div className="WorkoutSession--GridMobile">
-        <Grid container>
-          <Grid item xs={6}>
-            <img src={image1} alt="" style={{ width: "100%", height:"100%" }} />
-          </Grid>
-          <Grid item xs={6}>
-            <img src={image1} alt="" style={{ width: "100%", height:"100%" }} />
-          </Grid>
-          <Grid item xs={6}>
-            <img src={image1} alt="" style={{ width: "100%", height:"100%" }} />
-          </Grid>
-          <Grid item xs={6}>
-            <img src={image1} alt="" style={{ width: "100%", height:"100%" }} />
           </Grid>
         </Grid>
       </div>

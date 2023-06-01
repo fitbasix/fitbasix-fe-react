@@ -16,7 +16,7 @@ const Footer = () => {
   const iOSUrl = "https://apps.apple.com/tt/app/fitbasix/id1618003884";
   return (
     <div className="Footer">
-      <Grid container spacing={2}>
+      <Grid container spacing={2} className="Footer-mob">
         <Grid item sm={12} xs={12}>
           <img src={Fitba6Logo} alt="" />
         </Grid>
@@ -107,10 +107,10 @@ const Footer = () => {
               
               </div>
               <div className="btnContainer">
-                <ButtonsContainer>
+                {/* <ButtonsContainer> */}
                   <AppStoreButton
                     url={iOSUrl}
-                    width="45%"
+                    // width="45%"
                     theme={"dark"}
                     className={"playstore-style"}
                   />
@@ -119,7 +119,7 @@ const Footer = () => {
                     theme={"dark"}
                     className={"playstore-style"}
                   />
-                </ButtonsContainer>
+                {/* </ButtonsContainer> */}
               </div>
             </Grid>
           </Grid>

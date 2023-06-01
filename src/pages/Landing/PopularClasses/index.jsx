@@ -181,7 +181,7 @@ const PopularClasses = () => {
           item
           xs={12}
           md={12}
-          sx={{ textAlign: "center", marginBottom: "1rem", marginTop: "1rem" }}
+          sx={{ textAlign: "center", marginBottom: "1rem", marginTop: "2rem" }}
         >
           <Button
             sx={{
