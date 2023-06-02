@@ -31,6 +31,12 @@ const TopTrainers = () => {
     getData();
   }, []);
 
+ const capitalizeFirstLetter = (string) => {
+
+    return string.charAt(0).toUpperCase() + string.slice(1);
+
+}
+
   return (
     <div className="topTrainersContainer">
       <div className="topTrainersContainer--top">
@@ -61,34 +67,34 @@ const TopTrainers = () => {
               <TrainerCard
                 image={trainers[0]?.profilePhoto}
                 name={trainers[0]?.name}
-                designation="HIIT Trainer"
-                experience="3"
+                designation="Personal Trainer"
+                experience="1"
                 rating={parseInt(trainers[0]?.rating)}
-                reviews={234}
+                reviews={40}
               />
               <TrainerCard
                 image={trainers[1]?.profilePhoto}
                 name={trainers[1]?.name}
-                designation="HIIT Trainer"
-                experience="3"
+                designation="Personal Trainer"
+                experience="2"
                 rating={parseInt(trainers[1]?.rating)}
-                reviews={234}
+                reviews={30}
               />
               <TrainerCard
                 image={trainers[2]?.profilePhoto}
                 name={trainers[2]?.name}
-                designation="HIIT Trainer"
-                experience="3"
+                designation="Personal Trainer"
+                experience="1"
                 rating={parseInt(trainers[2]?.rating)}
-                reviews={234}
+                reviews={25}
               />
               <TrainerCard
                 image={trainers[3]?.profilePhoto}
                 name={trainers[3]?.name}
-                designation="HIIT Trainer"
-                experience="3"
+                designation="Personal Trainer"
+                experience="2.5"
                 rating={parseInt(trainers[3]?.rating)}
-                reviews={234}
+                reviews={30}
               />
             </div>
           </SwiperSlide>
@@ -97,35 +103,35 @@ const TopTrainers = () => {
               <TrainerCard
                 image={trainers[4]?.profilePhoto}
                 name={trainers[4]?.name}
-                designation="HIIT Trainer"
-                experience="3"
+                designation="Personal Trainer"
+                experience="2"
                 rating={parseInt(trainers[4]?.rating)}
-                reviews={234}
+                reviews={30}
               />
               <TrainerCard
                 image={trainers[5]?.profilePhoto}
                 name={trainers[5]?.name}
-                designation="HIIT Trainer"
-                experience="3"
+                designation="Personal Trainer"
+                experience="2.5"
                 rating={parseInt(trainers[5]?.rating)}
-                reviews={234}
+                reviews={35}
               />
               <TrainerCard
                 image={trainers[6]?.profilePhoto}
                 name={trainers[6]?.name}
-                designation="HIIT Trainer"
-                experience="3"
+                designation="Diet Trainer"
+                experience="1"
                 rating={parseInt(trainers[6]?.rating)}
-                reviews={234}
+                reviews={20}
               />
-              <TrainerCard
+              {/* <TrainerCard
                 image={trainers[7]?.profilePhoto}
                 name={trainers[7]?.name}
                 designation="HIIT Trainer"
                 experience="3"
                 rating={parseInt(trainers[7]?.rating)}
                 reviews={234}
-              />
+              /> */}
             </div>
           </SwiperSlide>
         </Swiper>
