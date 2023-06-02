@@ -42,7 +42,7 @@ const GetStarted = () => {
           <Grid item md={6} xs={12} className="GridLeft--Conatiner">
             <Typography sx={{ fontWeight: "600", fontSize: "25px" }}>
               Get Started with{" "}
-              <span style={{ color: "#49AD50" }}>Fitbasix</span>
+              <span style={{ color: "#49AD50", fontWeight:"bolder", fontStyle:"italic" }}>FIT</span><span style={{fontWeight:"bolder", fontStyle:"italic"}} >basix</span>
             </Typography>
 
             <div className="TextFieldContainer">
