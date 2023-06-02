@@ -18,6 +18,11 @@
   justify-content: space-around;
 }
 
+.aboutUsContainer--Right {
+  display: flex;
+  justify-items: end;
+}
+
 .rightContainer {
   padding: 1rem 1rem 1rem 0rem;
 }
