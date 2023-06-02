@@ -8,8 +8,8 @@
 }
 
 .TrainerCard--Image img {
-  width: 200px;
-  height: 280px;
+  max-width: 328px;
+  max-height: 380px;
   background-image: url("../../../../assets/Trainers/ellipse.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -31,14 +31,28 @@
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 500px) {
+  .TrainerCard--Image img {
+    max-width: 200px;
+    max-height: 280px;
+  }
+  .TrainerCard--Container {
+    height: 48vh;
+  }
+}
 
 @media only screen and (max-width: 400px) {
   .TrainerCard--Container {
     padding: 0.5rem;
     padding-top: 0;
-    height: 52vh;
+    height: 55vh;
     width: 40vw;
     display: flex;
     flex-direction: column;
+  }
+
+  .TrainerCard--Image img {
+    max-width: 200px;
+    max-height: 280px;
   }
 }

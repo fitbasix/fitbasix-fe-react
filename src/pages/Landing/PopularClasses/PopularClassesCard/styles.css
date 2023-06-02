@@ -1,42 +1,40 @@
-.PopularClassesCard--Container{
-    height: 65vh;
-    width:25vw;
-    background-color: #262626 ;
-    opacity: 0.8;
-    border-radius:10px;
-    display: flex;
-    position:relative;
+.PopularClassesCard--Container {
+  min-height: 65vh;
+  width: 25vw;
+  background-color: #262626;
+  opacity: 0.8;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
 }
 
-.PopularClassesCard--Left{
- width:80%;
- padding-left: 1rem;
- padding-top:1rem;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
+.PopularClassesCard--Left {
+  width: 80%;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.PopularClassesCard--Right{
-    width:20%
+.PopularClassesCard--Right {
+  min-width: 20%;
 }
 
-.PopularClassesCard--Right img{
-
+.PopularClassesCard--Right img {
   position: absolute;
-  width:240px;
+  min-width: 240px;
   z-index: -1;
-  margin:0;
-  left:26%;
+  margin: 0;
+  left: 26%;
 }
 
-.ratingContainer{
-    display: flex;
+.ratingContainer {
+  display: flex;
 }
 
-@media only screen and (max-width: 767px){
-    .PopularClassesCard--Container{
-        width:80vw;
-    }
-
+@media only screen and (max-width: 767px) {
+  .PopularClassesCard--Container {
+    width: 80vw;
+  }
 }

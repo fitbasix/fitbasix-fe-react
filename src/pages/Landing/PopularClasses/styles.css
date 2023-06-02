@@ -50,7 +50,10 @@
 }
 @media only screen and (max-width: 500px) {
   .popularClassesContainer {
-    height: auto;
+    /* height: auto; */
     margin-top: 5rem;
   }
+  /* .SwiperSlide {
+    height: 25rem;
+  } */
 }

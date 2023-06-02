@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   /* width: 98vw; */
-  height: 130vh;
+  max-height: 130vh;
   color: #fff;
   z-index: -1;
 }
@@ -76,7 +76,7 @@
     height: auto;
     width: auto;
     background-image: url("../../../assets/MOBILEHOMEBG.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 

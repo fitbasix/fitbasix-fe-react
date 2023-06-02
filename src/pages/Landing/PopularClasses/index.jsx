@@ -69,7 +69,7 @@ const PopularClasses = () => {
           variant="h4"
           sx={{ fontWeight: "700", textAlign: "center" }}
         >
-          Train <span style={{ color: "#49AD50" }}>With </span>FITbasix
+          Train With <span style={{ color: "#49AD50", fontWeight:"bolder", fontStyle:"italic" }}>FIT</span><span style={{fontWeight:"bolder", fontStyle:"italic"}} >basix</span>
         </Typography>
         <Typography
           variant="body1"
@@ -100,7 +100,7 @@ const PopularClasses = () => {
                   maxVisibleSlide={3}
                   useGrabCursor
                   fadeDistance={0.2}
-                  height={500}
+                  max-height={500}
                 />
               </>
             );
@@ -167,11 +167,6 @@ const PopularClasses = () => {
             <div className="SwiperSlide">
    
               <PopularClassesCard data={data} dataIndex={3} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="SwiperSlide">
-              <PopularClassesCard data={data} dataIndex={0} />
             </div>
           </SwiperSlide>
         </Swiper>
