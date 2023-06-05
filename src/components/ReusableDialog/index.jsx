@@ -57,11 +57,10 @@ export default function ReusableDialog({ open, setOpen, title }) {
   //API CALL On SUBMIT
   const onSubmit = async (data) => {
     data.formType = "CallBack";
-  
+
     const response = await postDialog(data);
 
     if (response?.resStr == "success") {
-   
       navigate("/thankyou");
       setOpen(false);
     } else {
@@ -76,7 +75,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
   };
 
   return (
-    <div>
+    <div id="getACallback">
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"

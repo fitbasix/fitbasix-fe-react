@@ -65,7 +65,6 @@ export default function LiveClassDialog({
     const response = await postDialog(data);
 
     if (response?.resStr == "success") {
-
       navigate("/thankyou");
       setOpen(false);
     } else {
@@ -80,7 +79,7 @@ export default function LiveClassDialog({
   };
 
   return (
-    <div>
+    <div id="getLiveClass">
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"

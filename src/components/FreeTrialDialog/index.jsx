@@ -60,13 +60,11 @@ export default function FreeTrialDialog({
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
   const onSubmit = async (data) => {
-
     data.formType = "FreeTrial";
 
     const response = await postDialog(data);
 
     if (response?.resStr == "success") {
-   
       navigate("/thankyou");
       setOpen(false);
     } else {
@@ -80,7 +78,7 @@ export default function FreeTrialDialog({
   };
 
   return (
-    <div>
+    <div id="getFreeTrail">
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
@@ -98,7 +96,7 @@ export default function FreeTrialDialog({
             <Grid container>
               <Grid item md={12}>
                 <Grid container spacing={3}>
-                  <Grid item md={12} >
+                  <Grid item md={12}>
                     <TextField
                       id="outlined-basic"
                       className="textFieldMobile"
