@@ -54,7 +54,7 @@ const PopularClassesCard = ({ data, dataIndex }) => {
         </div>
       </div>
       <div className="PopularClassesCard--Right">
-        <img src={data[dataIndex].image} />
+        <img src={data[dataIndex].image} style={{width:"90%"}} />
       </div>
     </div>
   );

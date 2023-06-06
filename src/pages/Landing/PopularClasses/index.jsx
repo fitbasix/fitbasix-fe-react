@@ -7,6 +7,8 @@ import {
   StackedCarousel,
 } from "react-stacked-center-carousel";
 import cardImage from "../../../assets/CARDIMAGEPOPULARCALASSES.svg";
+import Basil from "../../../assets/basil.png";
+// import cardImage from "../../../assets/CARDIMAGEPOPULARCALASSES.svg";
 import PopularClassesCard from "./PopularClassesCard";
 import "./styles.css";
 // Import Swiper React components
@@ -30,7 +32,7 @@ const PopularClasses = () => {
       coach: "",
       description:
         "A holistic approach on training & benefiting one's Flexibility, Body toning, stress free mental state, stability, improved sleep etc.",
-      image: "https://fitbasix-dev.s3.me-south-1.amazonaws.com/63c0ef52dbb9f9237a278b41/certificates/7345c556-33b0-430f-aa79-9c8c92859e9btanya.png",
+      image: "https://fitbasix-dev.s3.me-south-1.amazonaws.com/628e51a2d4ecaf72757524f1/certificates/6ab839dd-58fc-4301-b6da-0200af55c9e9bidushi-min.png",
     },
     {
       name: "Diet Consultation",
@@ -48,7 +50,7 @@ const PopularClasses = () => {
       coach: "",
       description:
         "An energetic Virtual Session with a systematic fitness regime that assists in burning body fats and strengthening muscularity.",
-      image: "https://fitbasix-dev.s3.me-south-1.amazonaws.com/63c0ef52dbb9f9237a278b41/certificates/1a79e002-1486-42f4-9f7c-9e7eadfd0ecdbrandon.png",
+      image: "https://fitbasix-dev.s3.me-south-1.amazonaws.com/628e51a2d4ecaf72757524f1/certificates/fbe17627-d1f1-4b03-be38-13c92718393broshan-min.png",
     },
     {
       name: "Live Stream",
@@ -57,7 +59,7 @@ const PopularClasses = () => {
       coach: "",
       description:
         "A Super Active Group Session with a communal motivation to rejuvenate ones Fitness lifestyle that helps with body Toning.",
-      image: cardImage,
+      image: "https://fitbasix-dev.s3.me-south-1.amazonaws.com/628e51a2d4ecaf72757524f1/certificates/f51a0ba7-0136-4a9b-b0a0-d3639bf65a08basil-min.png",
     },
   ];
   const [open, setOpen] = useState(false);
