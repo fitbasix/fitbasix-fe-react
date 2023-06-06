@@ -36,7 +36,7 @@ const GetStarted = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form id="getStarted" onSubmit={handleSubmit(onSubmit)}>
       <div className="GetStarted--Container">
         <Grid container>
           <Grid item md={6} xs={12} className="GridLeft--Conatiner">
@@ -47,6 +47,7 @@ const GetStarted = () => {
 
             <div className="TextFieldContainer">
               <TextField
+              id="name"
                 placeholder="Enter Name"
                 InputProps={{
                   startAdornment: <PersonOutlineOutlinedIcon />,
@@ -60,6 +61,7 @@ const GetStarted = () => {
                 {...register("name")}
               />
               <TextField
+              id="email"
                 placeholder="Email id"
                 InputProps={{
                   startAdornment: <MailOutlinedIcon />,
@@ -73,6 +75,7 @@ const GetStarted = () => {
                 {...register("email")}
               />
               <TextField
+              id="mobileNo"
                 placeholder="Enter Mobile no."
                 InputProps={{
                   startAdornment: <PhoneIphoneRoundedIcon />,

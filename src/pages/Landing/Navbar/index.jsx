@@ -87,7 +87,7 @@ const Navbar = () => {
               <Grid item md={12}>
                 <Select
                   value={workout}
-                  // label="Type of Workout"
+                  // label="Types of Training"
                   onChange={handleChange}
                   style={{ width: "80%", color: "#111" }}
                 >

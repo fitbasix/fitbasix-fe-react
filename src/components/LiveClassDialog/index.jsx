@@ -79,7 +79,7 @@ export default function LiveClassDialog({
   };
 
   return (
-    <div id="getLiveClass">
+    <div >
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
@@ -91,7 +91,7 @@ export default function LiveClassDialog({
         >
           {title}
         </BootstrapDialogTitle>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form id="getLiveClass" onSubmit={handleSubmit(onSubmit)}>
           <DialogContent dividers>
             {" "}
             <Grid container>
@@ -100,7 +100,7 @@ export default function LiveClassDialog({
                   <Grid item md={12}>
                     <TextField
                       className="textFieldMobile"
-                      id="outlined-basic"
+                      id="name"
                       label="Name"
                       variant="outlined"
                       style={{ width: "80%", borderRadius: "40px" }}
@@ -110,7 +110,7 @@ export default function LiveClassDialog({
 
                   <Grid item md={12}>
                     <TextField
-                      id="outlined-basic"
+                      id="mobileNo"
                       className="textFieldMobile"
                       label="Mobile no."
                       variant="outlined"
@@ -121,7 +121,7 @@ export default function LiveClassDialog({
 
                   <Grid item md={12}>
                     <TextField
-                      id="outlined-basic"
+                      id="email"
                       className="textFieldMobile"
                       type="email"
                       label="Email-Id"
@@ -142,7 +142,7 @@ export default function LiveClassDialog({
                       }}
                       {...register("workOutType")}
                     >
-                      <MenuItem disabled>Type of Workout</MenuItem>
+                      <MenuItem disabled>Types of Training</MenuItem>
                       <MenuItem value={"Personal"}>Personal</MenuItem>
                       <MenuItem value={"Yoga"}>Yoga</MenuItem>
                       <MenuItem value={"Diet"}>Diet</MenuItem>

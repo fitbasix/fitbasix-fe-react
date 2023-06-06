@@ -78,7 +78,7 @@ export default function FreeTrialDialog({
   };
 
   return (
-    <div id="getFreeTrail">
+    <div >
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
@@ -90,7 +90,7 @@ export default function FreeTrialDialog({
         >
           {title}
         </BootstrapDialogTitle>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form id="getFreeTrail" onSubmit={handleSubmit(onSubmit)} >
           <DialogContent dividers>
             {" "}
             <Grid container>
@@ -98,7 +98,7 @@ export default function FreeTrialDialog({
                 <Grid container spacing={3}>
                   <Grid item md={12}>
                     <TextField
-                      id="outlined-basic"
+                      id="name"
                       className="textFieldMobile"
                       label="Name"
                       variant="outlined"
@@ -110,7 +110,7 @@ export default function FreeTrialDialog({
                   <Grid item md={12}>
                     <TextField
                       className="textFieldMobile"
-                      id="outlined-basic"
+                      id="mobileNo"
                       label="Mobile no."
                       variant="outlined"
                       style={{ width: "80%", borderRadius: "40px" }}
@@ -120,7 +120,7 @@ export default function FreeTrialDialog({
 
                   <Grid item md={12}>
                     <TextField
-                      id="outlined-basic"
+                      id="email"
                       type="email"
                       className="textFieldMobile"
                       label="Email-Id"
@@ -141,7 +141,7 @@ export default function FreeTrialDialog({
                       }}
                       {...register("workOutType")}
                     >
-                      <MenuItem disabled>Type of Workout</MenuItem>
+                      <MenuItem disabled>Types of Training</MenuItem>
                       <MenuItem value={"Personal"}>Personal</MenuItem>
                       <MenuItem value={"Yoga"}>Yoga</MenuItem>
                       <MenuItem value={"Diet"}>Diet</MenuItem>

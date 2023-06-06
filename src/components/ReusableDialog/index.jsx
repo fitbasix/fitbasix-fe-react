@@ -75,7 +75,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
   };
 
   return (
-    <div id="getACallback">
+    <div >
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
@@ -87,7 +87,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
         >
           {title}
         </BootstrapDialogTitle>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form id="getACallback" onSubmit={handleSubmit(onSubmit)}>
           <DialogContent dividers>
             {" "}
             <Grid container>
@@ -96,7 +96,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
                   <Grid item md={12}>
                     <TextField
                       className="textFieldMobile"
-                      id="outlined-basic"
+                      id="name"
                       label="Name"
                       variant="outlined"
                       style={{ width: "80%", borderRadius: "40px" }}
@@ -107,7 +107,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
                   <Grid item md={12}>
                     <TextField
                       className="textFieldMobile"
-                      id="outlined-basic"
+                      id="mobileNo"
                       label="Mobile no."
                       variant="outlined"
                       style={{ width: "80%", borderRadius: "40px" }}
@@ -118,7 +118,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
                   <Grid item md={12}>
                     <TextField
                       className="textFieldMobile"
-                      id="outlined-basic"
+                      id="email"
                       label="Email"
                       type="email"
                       style={{ width: "80%", borderRadius: "40px" }}
@@ -139,7 +139,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
                       }}
                       {...register("workOutType")}
                     >
-                      <MenuItem disabled>Type of Workout</MenuItem>
+                      <MenuItem disabled>Types of Training</MenuItem>
                       <MenuItem value={"Personal"}>Personal</MenuItem>
                       <MenuItem value={"Yoga"}>Yoga</MenuItem>
                       <MenuItem value={"Diet"}>Diet</MenuItem>
@@ -148,7 +148,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
 
                   <Grid item md={12}>
                     <Select
-                      // label="Time Slot"
+                      // label="Preferred Time Slot for Callback"
                       displayEmpty={true}
                       style={{
                         width: "80%",
@@ -157,7 +157,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
                       }}
                       {...register("timeSlot")}
                     >
-                      <MenuItem disabled>Time Slot</MenuItem>
+                      <MenuItem disabled>Preferred Time Slot for Callback</MenuItem>
                       <MenuItem value={"Morning"}>Morning</MenuItem>
                       <MenuItem value={"Afternoon"}>Afternoon</MenuItem>
                       <MenuItem value={"Evening"}>Evening</MenuItem>

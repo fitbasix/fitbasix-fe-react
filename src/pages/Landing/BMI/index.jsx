@@ -25,7 +25,7 @@ const BMI = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form id="BMIform" onSubmit={handleSubmit(onSubmit)}>
       <div className="BMIContainer">
         <Grid
           container
