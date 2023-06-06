@@ -102,6 +102,7 @@ export default function LiveClassDialog({
                       className="textFieldMobile"
                       id="name"
                       label="Name"
+                      required
                       variant="outlined"
                       style={{ width: "80%", borderRadius: "40px" }}
                       {...register("name")}
@@ -113,6 +114,7 @@ export default function LiveClassDialog({
                       id="mobileNo"
                       className="textFieldMobile"
                       label="Mobile no."
+                      required
                       variant="outlined"
                       style={{ width: "80%", borderRadius: "40px" }}
                       {...register("number")}
@@ -142,7 +144,7 @@ export default function LiveClassDialog({
                       }}
                       {...register("workOutType")}
                     >
-                      <MenuItem disabled>Types of Training</MenuItem>
+                      <MenuItem disabled>Types of plan</MenuItem>
                       <MenuItem value={"Personal"}>Personal</MenuItem>
                       <MenuItem value={"Yoga"}>Yoga</MenuItem>
                       <MenuItem value={"Diet"}>Diet</MenuItem>

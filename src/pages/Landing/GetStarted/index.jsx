@@ -49,6 +49,7 @@ const GetStarted = () => {
               <TextField
               id="name"
                 placeholder="Enter Name"
+                required
                 InputProps={{
                   startAdornment: <PersonOutlineOutlinedIcon />,
                 }}
@@ -76,6 +77,7 @@ const GetStarted = () => {
               />
               <TextField
               id="mobileNo"
+              required
                 placeholder="Enter Mobile no."
                 InputProps={{
                   startAdornment: <PhoneIphoneRoundedIcon />,

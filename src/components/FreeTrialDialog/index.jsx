@@ -103,6 +103,7 @@ export default function FreeTrialDialog({
                       label="Name"
                       variant="outlined"
                       style={{ width: "80%", borderRadius: "40px" }}
+                      required
                       {...register("name")}
                     />
                   </Grid>
@@ -112,6 +113,7 @@ export default function FreeTrialDialog({
                       className="textFieldMobile"
                       id="mobileNo"
                       label="Mobile no."
+                      required
                       variant="outlined"
                       style={{ width: "80%", borderRadius: "40px" }}
                       {...register("number")}
@@ -141,7 +143,7 @@ export default function FreeTrialDialog({
                       }}
                       {...register("workOutType")}
                     >
-                      <MenuItem disabled>Types of Training</MenuItem>
+                      <MenuItem disabled>Types of plan</MenuItem>
                       <MenuItem value={"Personal"}>Personal</MenuItem>
                       <MenuItem value={"Yoga"}>Yoga</MenuItem>
                       <MenuItem value={"Diet"}>Diet</MenuItem>

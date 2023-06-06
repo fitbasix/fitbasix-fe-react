@@ -98,6 +98,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
                       className="textFieldMobile"
                       id="name"
                       label="Name"
+                      required
                       variant="outlined"
                       style={{ width: "80%", borderRadius: "40px" }}
                       {...register("name")}
@@ -110,6 +111,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
                       id="mobileNo"
                       label="Mobile no."
                       variant="outlined"
+                      required
                       style={{ width: "80%", borderRadius: "40px" }}
                       {...register("number")}
                     />
@@ -139,7 +141,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
                       }}
                       {...register("workOutType")}
                     >
-                      <MenuItem disabled>Types of Training</MenuItem>
+                      <MenuItem disabled>Types of plan</MenuItem>
                       <MenuItem value={"Personal"}>Personal</MenuItem>
                       <MenuItem value={"Yoga"}>Yoga</MenuItem>
                       <MenuItem value={"Diet"}>Diet</MenuItem>
