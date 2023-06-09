@@ -1,13 +1,14 @@
 .UsersCard--Container {
-  /* height: 28vh; */
+  min-height: 14vw;
+  max-height: 14vw;
   width: 27vw;
+  overflow-y: auto;
   border-radius: 10px;
   background-image: url("../../../../assets/USERCARDBG.svg");
   background-size: cover;
   opacity: 1;
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
   padding: 1rem;
 }
 

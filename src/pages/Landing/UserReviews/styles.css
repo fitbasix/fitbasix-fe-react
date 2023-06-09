@@ -1,9 +1,10 @@
 .userReviewsContainer {
-  height: 70vh;
+  min-height: 70vh;
   width: auto;
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .userReviewsContainer--Top {
