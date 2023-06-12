@@ -13,6 +13,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { postDialog } from "../../api/services";
 import "./styles.css";
+import { useState } from "react";
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -58,11 +59,14 @@ export default function LiveClassDialog({
   title,
 }) {
   const { register, handleSubmit } = useForm();
+  //Search Params String
+  const [searchParams, setSearchParams] = useState(window.location.search);
+
   const navigate = useNavigate();
   const onSubmit = async (data) => {
     data.formType = "JoinClass";
 
-    const response = await postDialog(data);
+    const response = await postDialog(data, searchParams);
 
     if (response?.resStr == "success") {
       navigate("/thankyou");
@@ -79,7 +83,7 @@ export default function LiveClassDialog({
   };
 
   return (
-    <div >
+    <div>
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"

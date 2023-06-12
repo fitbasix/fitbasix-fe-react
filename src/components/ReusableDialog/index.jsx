@@ -9,6 +9,7 @@ import IconButton from "@mui/material/IconButton";
 import { styled } from "@mui/material/styles";
 import PropTypes from "prop-types";
 import * as React from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { postDialog } from "../../api/services";
@@ -54,12 +55,15 @@ BootstrapDialogTitle.propTypes = {
 export default function ReusableDialog({ open, setOpen, title }) {
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
+
+  //Search Params String
+  const [searchParams, setSearchParams] = useState(window.location.search);
+
   //API CALL On SUBMIT
+
   const onSubmit = async (data) => {
     data.formType = "CallBack";
-
-    const response = await postDialog(data);
-
+    const response = await postDialog(data, searchParams);
     if (response?.resStr == "success") {
       navigate("/thankyou");
       setOpen(false);
@@ -75,7 +79,7 @@ export default function ReusableDialog({ open, setOpen, title }) {
   };
 
   return (
-    <div >
+    <div>
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
@@ -159,7 +163,9 @@ export default function ReusableDialog({ open, setOpen, title }) {
                       }}
                       {...register("timeSlot")}
                     >
-                      <MenuItem disabled>Preferred Time Slot for Callback</MenuItem>
+                      <MenuItem disabled>
+                        Preferred Time Slot for Callback
+                      </MenuItem>
                       <MenuItem value={"Morning"}>Morning</MenuItem>
                       <MenuItem value={"Afternoon"}>Afternoon</MenuItem>
                       <MenuItem value={"Evening"}>Evening</MenuItem>

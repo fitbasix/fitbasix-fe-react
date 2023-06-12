@@ -13,9 +13,9 @@ export const postBMI = async (payload) => {
   }
 };
 
-export const postDialog = async (payload) => {
+export const postDialog = async (payload, searchParams) => {
   try {
-    const response = await axiosInstance.post(`/api/getCall/CallInfo`, payload);
+    const response = await axiosInstance.post(`/api/getCall/CallInfo${searchParams}`, payload);
 
     return response?.data;
   } catch (e) {

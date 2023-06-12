@@ -13,6 +13,7 @@ import Mobiles from "../../../assets/Mobiles.png";
 import "./styles.css";
 import { useNavigate } from "react-router-dom";
 import { postDialog } from "../../../api/services";
+import { useState } from "react";
 
 const GetStarted = () => {
   const { register, handleSubmit } = useForm();
@@ -22,13 +23,13 @@ const GetStarted = () => {
   const iOSUrl = "https://apps.apple.com/tt/app/fitbasix/id1618003884";
 
   const navigate = useNavigate();
+  //Search Params String
+  const [searchParams, setSearchParams] = useState(window.location.search);
   const onSubmit = async (data) => {
-    
     data.formType = "FreeTrial";
-    const response = await postDialog(data);
+    const response = await postDialog(data, searchParams);
 
     if (response?.resStr == "success") {
-   
       navigate("/thankyou");
     } else {
       navigate("/error");
@@ -42,12 +43,23 @@ const GetStarted = () => {
           <Grid item md={6} xs={12} className="GridLeft--Conatiner">
             <Typography sx={{ fontWeight: "600", fontSize: "25px" }}>
               Get Started with{" "}
-              <span style={{ color: "#49AD50", fontWeight:"bolder", fontStyle:"italic" }}>FIT</span><span style={{fontWeight:"bolder", fontStyle:"italic"}} >basix</span>
+              <span
+                style={{
+                  color: "#49AD50",
+                  fontWeight: "bolder",
+                  fontStyle: "italic",
+                }}
+              >
+                FIT
+              </span>
+              <span style={{ fontWeight: "bolder", fontStyle: "italic" }}>
+                basix
+              </span>
             </Typography>
 
             <div className="TextFieldContainer">
               <TextField
-              id="name"
+                id="name"
                 placeholder="Enter Name"
                 required
                 InputProps={{
@@ -62,7 +74,7 @@ const GetStarted = () => {
                 {...register("name")}
               />
               <TextField
-              id="email"
+                id="email"
                 placeholder="Email id"
                 InputProps={{
                   startAdornment: <MailOutlinedIcon />,
@@ -76,8 +88,8 @@ const GetStarted = () => {
                 {...register("email")}
               />
               <TextField
-              id="mobileNo"
-              required
+                id="mobileNo"
+                required
                 placeholder="Enter Mobile no."
                 InputProps={{
                   startAdornment: <PhoneIphoneRoundedIcon />,

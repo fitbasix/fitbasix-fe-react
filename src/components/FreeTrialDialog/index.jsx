@@ -13,6 +13,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { postDialog } from "../../api/services";
 import "./styles.css";
+import { useState } from "react";
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -59,10 +60,13 @@ export default function FreeTrialDialog({
 }) {
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
+  //Search Params String
+  const [searchParams, setSearchParams] = useState(window.location.search);
+
   const onSubmit = async (data) => {
     data.formType = "FreeTrial";
 
-    const response = await postDialog(data);
+    const response = await postDialog(data, searchParams);
 
     if (response?.resStr == "success") {
       navigate("/thankyou");
@@ -78,7 +82,7 @@ export default function FreeTrialDialog({
   };
 
   return (
-    <div >
+    <div>
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
@@ -90,7 +94,7 @@ export default function FreeTrialDialog({
         >
           {title}
         </BootstrapDialogTitle>
-        <form id="getFreeTrail" onSubmit={handleSubmit(onSubmit)} >
+        <form id="getFreeTrail" onSubmit={handleSubmit(onSubmit)}>
           <DialogContent dividers>
             {" "}
             <Grid container>
