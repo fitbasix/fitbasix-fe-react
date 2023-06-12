@@ -193,140 +193,140 @@ const UserReviews = () => {
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                   content="Awesome 🙌❤👏 @fitbasix the best app"
-                   name="Dr Kumar "
-                   logo={userR2}
-                   service="Service that customer availed"
+                    content="Awesome 🙌❤👏 @fitbasix the best app"
+                    name="Dr Kumar "
+                    logo={userR2}
+                    service="Service that customer availed"
                   />{" "}
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                   content="Starting a fitness program may be one of the best things you can do for your health. ~ Physical activity can reduce your risk of chronic disease, improve your balance and coordination, help you lose weight - and even improve your sleep habits and self-esteem! With @fitbasix, you get a nutritionist + a fitness expert so you can plan your fitness journey efficiently! Such an easy to use app and convenient as well for busy people like us.Thanks for sharing @anumable.blog! Rooting for your fitness journey."
-                   name="Shaima Hormillosa "
-                   logo={userR3}
-                   service="Service that customer availed"
+                    content="Starting a fitness program may be one of the best things you can do for your health. ~ Physical activity can reduce your risk of chronic disease, improve your balance and coordination, help you lose weight - and even improve your sleep habits and self-esteem! With @fitbasix, you get a nutritionist + a fitness expert so you can plan your fitness journey efficiently! Such an easy to use app and convenient as well for busy people like us.Thanks for sharing @anumable.blog! Rooting for your fitness journey."
+                    name="Shaima Hormillosa "
+                    logo={userR3}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                  content="Sooo convenient amazing"
-                  name="Naina Qureshi"
-                  logo={userR4}
-                  service="Service that customer availed"
+                    content="Sooo convenient amazing"
+                    name="Naina Qureshi"
+                    logo={userR4}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                     content="This is convenient to use"
-                     name="Urfi Jagda"
-                     logo={userR5}
-                     service="Service that customer availed"
+                    content="This is convenient to use"
+                    name="Urfi Jagda"
+                    logo={userR5}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                        content="I already downloaded the app and it’s super cool."
-                        name="Anum Zeeshan"
-                        logo={userR6}
-                        service="Service that customer availed"
+                    content="I already downloaded the app and it’s super cool."
+                    name="Anum Zeeshan"
+                    logo={userR6}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-              content="This is absolutely amazing. FITbasix is such a great app."
-              name="Bony Kar"
-              logo={userR7}
-              service="Service that customer availed"
+                    content="This is absolutely amazing. FITbasix is such a great app."
+                    name="Bony Kar"
+                    logo={userR7}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                  content="This app @fitbasix_ looks perfect for all busy people to give some quality time for health at the convenience of our busy schedule."
-                  name="Shadan Nazeer"
-                  logo={userR8}
-                  service="Service that customer availed"
+                    content="This app @fitbasix_ looks perfect for all busy people to give some quality time for health at the convenience of our busy schedule."
+                    name="Shadan Nazeer"
+                    logo={userR8}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                      content="Being Fit is so much Needed now adays and Only laziness makes it delay for being fit..!! @fitbasix_ is a great platform for us."
-                      name="Mrs. Noushad "
-                      logo={userR9}
-                      service="Service that customer availed"
+                    content="Being Fit is so much Needed now adays and Only laziness makes it delay for being fit..!! @fitbasix_ is a great platform for us."
+                    name="Mrs. Noushad "
+                    logo={userR9}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                  content="@fitbasix_ is all that I need right now"
-                  name="Shikha Shack "
-                  logo={userR10}
-                  service="Service that customer availed"
+                    content="@fitbasix_ is all that I need right now"
+                    name="Shikha Shack "
+                    logo={userR10}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                       content="That is brilliant. I am also planning to join gym but not able to do it because of kids. This is gonna be a great motivation @fitbasix_"
-                       name="Zartashia Mir"
-                       logo={userR0}
-                       service="Service that customer availed"
+                    content="That is brilliant. I am also planning to join gym but not able to do it because of kids. This is gonna be a great motivation @fitbasix_"
+                    name="Zartashia Mir"
+                    logo={userR0}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-               content="I have been working out with Avik for quite sometime now. I must say my experience is no short than a live training session. Look forward my fitness journey with Fitbasix."
-               name="Chintan Shah"
-               logo={userR11}
-               service="Service that customer availed"
+                    content="I have been working out with Avik for quite sometime now. I must say my experience is no short than a live training session. Look forward my fitness journey with Fitbasix."
+                    name="Chintan Shah"
+                    logo={userR11}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                       content="Hi, my name is sanidhi . And i am a happy customer of Fitbasix.. My trainer is Rosen chettri . I am thankful to thi app and my tranier for trusting in me and helping me towards achieving my goals. Thankyou very much."
-                       name="Sanidhi G. Sharma"
-                       logo={userR12}
-                       service="Service that customer availed"
+                    content="Hi, my name is sanidhi . And i am a happy customer of Fitbasix.. My trainer is Rosen chettri . I am thankful to thi app and my tranier for trusting in me and helping me towards achieving my goals. Thankyou very much."
+                    name="Sanidhi G. Sharma"
+                    logo={userR12}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                 content="Fitbasix has been fabulous for me. The trainers are professional, they dedicate their time to you, help you navigate your own fitness challenges, and help with building strength, reducing weight, and achieving top levels of fitness."
-                 name="Umair Qazi"
-                 logo={userR13}
-                 service="Service that customer availed"
+                    content="Fitbasix has been fabulous for me. The trainers are professional, they dedicate their time to you, help you navigate your own fitness challenges, and help with building strength, reducing weight, and achieving top levels of fitness."
+                    name="Umair Qazi"
+                    logo={userR13}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="SwiperSlide">
                   <UsersCard
-                       content="Everyone says health is wealth but a lot of motivation, stamina, patience, consistency and encouragement goes into achieving it. Fitbasix makes you achieve exactly that; from the point when you’re not up to or geared towards an active lifestyle at all, till you actually achieve the goals you had once...."
-                       name="Zahra Omar"
-                       logo={userR14}
-                       service="Service that customer availed"
+                    content="Everyone says health is wealth but a lot of motivation, stamina, patience, consistency and encouragement goes into achieving it. Fitbasix makes you achieve exactly that; from the point when you’re not up to or geared towards an active lifestyle at all, till you actually achieve the goals you had once...."
+                    name="Zahra Omar"
+                    logo={userR14}
+                    service="Service that customer availed"
                   />
                 </div>
               </SwiperSlide>

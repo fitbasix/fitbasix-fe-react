@@ -11,7 +11,7 @@ const UsersCard = ({ content, name, service, logo }) => {
         </Grid>
         <Grid item xs={9} md={9}>
           <Grid container sx={{ paddingLeft: "0.5rem" }}>
-            <Grid item xs={12} md={12}>
+            <Grid item xs={12} md={12} className="userCardStyle">
               <Typography sx={{ color: "#FFFFFF" }}>{content}</Typography>
             </Grid>
             <Grid item xs={12} md={12} sx={{ marginTop: "1rem" }}>
