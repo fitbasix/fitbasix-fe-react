@@ -24,7 +24,7 @@ import userR13 from "../../../assets/Users/Umair_Qazi.png";
 import userR14 from "../../../assets/Users/Zahra_Omar.png";
 import userR0 from "../../../assets/Users/user.png";
 // import required modules
-import { Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper";
 
 const UserReviews = () => {
   return (
@@ -172,13 +172,25 @@ const UserReviews = () => {
           </div>
           {/* FOR MOBILE */}
           <div className="userReviewsContainer--BottomMobile">
-            <Swiper
+            {/* <Swiper
               navigation={false}
               modules={[Pagination]}
               speed={1000}
               className="mySwiper"
               effect={"fade"}
               pagination={true}
+            > */}
+            <Swiper
+              navigation={false}
+              speed={1000}
+              className="mySwiper"
+              modules={[Autoplay]}
+              pagination={false}
+              loop={true}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
             >
               <SwiperSlide>
                 <div className="SwiperSlide">
