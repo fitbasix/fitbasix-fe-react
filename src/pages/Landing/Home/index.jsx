@@ -37,7 +37,7 @@ const Home = () => {
           <img src={homelogo} alt="" />
         </Grid>
 
-        <Grid item xs={12} sm={11} className="explore-btn">
+        <Grid item xs={12} sm={12} className="explore-btn">
           <Typography
             variant="subtitle1"
             onClick={() => {
