@@ -17,9 +17,10 @@ import Navbar from "./Navbar";
 // GTM MODULE
 import TagManager from "react-gtm-module";
 import { useEffect } from "react";
+import Booking from "../Booking";
+import NewFooter from "./NewFooter";
 
 const Landing = () => {
-
   useEffect(() => {
     const tagManagerArgs = {
       dataLayer: {
@@ -30,21 +31,23 @@ const Landing = () => {
 
     TagManager.initialize(tagManagerArgs);
   }, []);
-  
+
   return (
     <div className="landingContainer">
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
-      <LiveClass />
+      {/* <LiveClass />
       <AboutUs />
       <PopularClasses />
       <WorkoutSessions />
       <TopTrainers />
       <BMI />
-      <UserReviews />
-      <GetStarted />
-      <FAQ />
-      <Footer />
+      <UserReviews /> */}
+      <Booking />
+      {/* <GetStarted /> */}
+      {/* <FAQ /> */}
+      {/* <Footer /> */}
+      <NewFooter />
     </div>
   );
 };

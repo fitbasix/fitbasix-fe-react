@@ -1,0 +1,62 @@
+.BookContainer {
+  /* height: 35vh; */
+  /* width: 98vh; */
+
+  background-image: url("../../assets/newLanding/formBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+}
+/* 
+.textField {
+  background-color: #fff;
+  color: #fff;
+  border-radius: 10px;
+  height: 2.5rem;
+} */
+.gridContainer {
+  padding-left: 2rem;
+  padding-bottom: 6rem;
+  padding-bottom: 40vh;
+}
+
+.booking_container {
+  background-color: #caddca;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+
+.form_heading {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  color: #49ad50;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.BookContainer .MuiInputBase-input {
+  padding: 0.5rem !important;
+}
+.BookContainer .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .form_heading {
+    font-size: 1rem !important;
+  }
+  .BookContainer {
+    height: auto;
+    padding-bottom: 1rem;
+    background-image: none;
+  }
+  .BMITEXT {
+    display: none;
+  }
+  .gridContainer {
+    padding-left: 0rem;
+    padding-bottom: 0vh;
+  }
+}
