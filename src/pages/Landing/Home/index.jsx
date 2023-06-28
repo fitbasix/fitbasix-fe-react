@@ -45,14 +45,14 @@ const Home = () => {
                 </a>
 
                 <div style={{ display: "flex" }}>
-                  <ButtonsContainer>
-                    <AppStoreButton
-                      url={iOSUrl}
+                  <ButtonsContainer className="buttons-container">
+                    <GooglePlayButton
+                      url={APKUrl}
                       theme={"light"}
                       className={"appstore-style"}
                     />
-                    <GooglePlayButton
-                      url={APKUrl}
+                    <AppStoreButton
+                      url={iOSUrl}
                       theme={"light"}
                       className={"appstore-style"}
                     />
@@ -69,6 +69,7 @@ const Home = () => {
                   FIT
                 </span>
                 <span className="title">basix</span>
+                <br />
                 <br />
                 <span className="title">
                   THE FUTURE <br />

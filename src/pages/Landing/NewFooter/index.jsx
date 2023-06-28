@@ -28,48 +28,25 @@ const NewFooter = () => {
             <Typography variant="h1">Contact Us</Typography>
           </div>
         </Grid> */}
-        <Grid
-          item
-          sm={10}
-          xs={10}
-          sx={{ marginTop: "10.5vw", paddingLeft: "1rem" }}
-        >
-          <Grid container spacing={3} className="newfooterContentWrapper">
-            <Grid item xs={12} sm={4} sx={{ textAlign: "left" }}>
+        <Grid item sm={11} xs={10} className="newFooterInnerContainer">
+          <Grid container spacing={1} className="newfooterContentWrapper">
+            <Grid item xs={5} sm={4} sx={{ textAlign: "left" }}>
               <div>
-                <Typography
-                  variant="h5"
-                  color="black"
-                  sx={{ marginBottom: "1rem", fontWeight: "bold" }}
-                >
-                  Contact Us
-                </Typography>
+                <Typography className="footerTitle">Contact Us</Typography>
               </div>
               <div>
-                <Typography
-                  variant="h6"
-                  color="#373737"
-                  sx={{ fontSize: "16px" }}
-                >
+                <Typography className="footerContent">
                   Address : Block B, office B09-066 Sharjah Research Technology
                   and Innovation park, Sharjah, UAE
                 </Typography>
               </div>
               <div>
-                <Typography
-                  variant="h6"
-                  color="#373737"
-                  sx={{ fontSize: "16px", marginTop: "2rem" }}
-                >
+                <Typography className="footerContent">
                   Email: info@fitbasix.com
                 </Typography>
               </div>
               <div>
-                <Typography
-                  variant="h6"
-                  color="#373737"
-                  sx={{ fontSize: "16px", marginTop: "2rem" }}
-                >
+                <Typography className="footerContent">
                   Phone No: +971 45973222
                 </Typography>
               </div>
@@ -77,48 +54,34 @@ const NewFooter = () => {
 
             <Divider style={{ border: "0.5px solid #49AD50" }} />
 
-            <Grid item xs={12} sm={3}>
+            <Grid item xs={5} sm={3} className="secondGrid">
               <div>
-                <Typography
-                  variant="h5"
-                  color="black"
-                  sx={{ marginBottom: "1rem", fontWeight: "bold" }}
-                >
-                  Legal
-                </Typography>
+                <Typography className="footerTitle">Legal</Typography>
               </div>
               <div>
                 <Link href="/privacy" color="#373737" underline="none">
-                  <Typography variant="h6" sx={{ fontSize: "16px" }}>
-                    {" "}
+                  <Typography className="footerContent">
                     Privacy Policy
                   </Typography>
                 </Link>
               </div>
               <div>
                 <Link href="/terms" color="#373737" underline="none">
-                  <Typography
-                    variant="h6"
-                    sx={{ fontSize: "16px", marginTop: "0.5rem" }}
-                  >
-                    {" "}
+                  <Typography className="footerContent">
                     Terms of use
                   </Typography>
                 </Link>
               </div>
             </Grid>
 
-            <Divider style={{ border: "0.5px solid #49AD50" }} />
+            <Divider
+              style={{ border: "0.5px solid #49AD50" }}
+              className="secondDivider"
+            />
 
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={4} className="thirdGrid">
               <div>
-                <Typography
-                  variant="h5"
-                  color="black"
-                  sx={{ fontWeight: "bold" }}
-                >
-                  Follow us on
-                </Typography>
+                <Typography className="footerTitle">Follow us on</Typography>
               </div>
               <div className="socialmedia-icons">
                 <div>
@@ -148,6 +111,39 @@ const NewFooter = () => {
               </div>
             </Grid>
           </Grid>
+
+          <div className="mobileScreenSocial">
+            <div>
+              <Typography style={{ color: "#fff", fontWeight: "bold" }}>
+                Follow us on
+              </Typography>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                paddingTop: "0.5rem",
+              }}
+            >
+              <div>
+                <a
+                  target="blank"
+                  href="https://www.facebook.com/profile.php?id=100087235057294"
+                >
+                  <img
+                    src={facebookLogo}
+                    alt=""
+                    style={{ marginRight: "1rem" }}
+                  />
+                </a>
+              </div>
+              <div>
+                <a target="blank" href=" https://www.instagram.com/fitbasix_/">
+                  <img src={instaLogo} alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
         </Grid>
       </Grid>
     </div>

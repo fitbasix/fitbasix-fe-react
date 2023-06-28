@@ -13,17 +13,20 @@
 .title {
   font-weight: bold;
   font-size: 4rem;
+  line-height: 4.5rem;
 }
 
 .sub-title {
   font-size: 2rem;
+  line-height: 2.5rem;
 }
 .callUsBtn {
   background-color: #49ad50 !important;
   border-radius: 1.5rem !important;
-  min-width: 29vw;
+  min-width: 20.5vw !important;
   font-size: 1.5rem;
   margin-bottom: 1rem !important;
+  padding: 4px 10px 4px 10px !important;
 }
 
 .btn-whatsapp {
@@ -53,6 +56,8 @@
   text-transform: none;
   margin-top: 0.5rem;
   border-radius: 1.5rem;
+  font-size: 1.5rem !important;
+  padding: 8px 15px !important;
 }
 .homelogo-style {
   display: flex;
@@ -88,11 +93,16 @@
   color: black;
   border-radius: 1rem !important;
   padding: 5px !important;
+  width: 120px !important;
+  height: 30px !important;
+}
+.appstore-style span {
+  font-size: 8px !important;
 }
 
 @media only screen and (max-width: 767px) {
   .homeContainer {
-    height: auto;
+    height: 103vh;
     width: auto;
     background-image: url("../../../assets/newLanding/homeFirstScreenMobile.png");
     background-size: cover;
@@ -100,7 +110,7 @@
   }
   .mob_Head_view {
     text-align: end;
-    margin-top: 2rem;
+    margin-top: 28vh !important;
   }
 
   .homelogo-style {
@@ -113,24 +123,35 @@
   .title {
     font-weight: bold;
     font-size: 2rem;
+    line-height: 2.5rem;
   }
   .sub-title {
     margin-top: 2rem;
     padding-top: 2rem;
     font-size: 1rem;
     text-align: end;
+    line-height: 1rem;
   }
   .knowMore-btn {
     text-align: center;
   }
+  /* .knowMore-btn button {
+    margin-top: 2rem;
+  } */
   .appstore-style {
-    width: 100px !important;
-    height: 38px !important;
+    width: 80px !important;
+    height: 25px !important;
   }
   .homeInnerContainer {
-    padding: 1rem 0.5rem;
+    padding: 1rem 1rem;
   }
   .appstore-style span {
-    font-size: 10px !important;
+    font-size: 8px !important;
+  }
+  .appstore-style img {
+    width: 18px;
+  }
+  .buttons-container {
+    gap: 10px !important;
   }
 }

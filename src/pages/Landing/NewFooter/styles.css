@@ -5,20 +5,44 @@
   background-image: url("../../../assets/newLanding/contact_background.png");
   background-size: cover;
 }
+.footerTitle {
+  margin-bottom: 1.25rem !important;
+  font-weight: bold !important;
+  color: black !important;
+  font-size: 1.5rem !important;
+}
+.footerContent {
+  font-size: 1.25rem !important;
+  color: #373737 !important;
+  margin-bottom: 1rem !important;
+}
+
 .newfooterheadcontainer {
   padding-top: 15vw;
   text-align: center;
   font-size: 4rem;
 }
+.newFooterInnerContainer {
+  /* margin-top: 10.5vw !important; */
+}
 .newfooterhead {
   font-size: 4rem !important;
+}
+
+.secondGrid {
+  padding-left: 2rem !important;
+}
+.thirdGrid {
+  padding-left: 2rem !important;
 }
 .newfooterContentWrapper {
   display: flex;
   flex-direction: row;
-  background-color: #fff;
-  border-radius: 0% 9rem 7rem 0rem;
+  background-image: url("../../../assets/newLanding/footerBackground.png");
+  background-size: cover;
+  border-radius: 0% 9rem 9rem 0rem;
   padding-top: 2rem;
+  padding-left: 1rem;
   /* margin: 2rem 1rem 2rem 1rem; */
 }
 .socialmedia-icons {
@@ -39,14 +63,43 @@
   /* align-items: center; */
   /* flex-direction: column; */
 }
+.mobileScreenSocial {
+  display: none;
+}
 @media only screen and (max-width: 767px) {
   .newFooter {
     background-image: url("../../../assets/newLanding/contact_background_mobile.png");
-    height: auto;
+    height: 100vh !important;
     width: auto;
     /* padding: 0.75rem; */
   }
-  .newFooter-mob {
-    padding: 1rem;
+  .newfooterheadcontainer {
+    padding-top: 55vh;
+  }
+  .newfooterhead {
+    font-size: 2rem !important;
+  }
+  .newfooterContentWrapper {
+    padding-top: 0.5rem;
+  }
+  .footerTitle {
+    font-size: 10px !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .footerContent {
+    font-size: 8px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .thirdGrid {
+    display: none;
+  }
+  .secondDivider {
+    display: none;
+  }
+  .mobileScreenSocial {
+    display: block;
+    padding-top: 1rem;
+    text-align: center;
   }
 }
