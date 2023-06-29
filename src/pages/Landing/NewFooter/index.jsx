@@ -30,6 +30,22 @@ const NewFooter = () => {
         </Grid> */}
         <Grid item sm={11} xs={10} className="newFooterInnerContainer">
           <Grid container spacing={1} className="newfooterContentWrapper">
+            <div
+              style={{
+                backgroundColor: "#fff",
+                padding: "0.5rem 1rem",
+                borderRadius: "2rem",
+                position: "absolute",
+                top: "-1.5rem",
+                left: "1rem",
+                fontStyle: "italic",
+                fontSize: "1.5rem",
+                fontWeight: "800",
+              }}
+            >
+              <span style={{ color: "#49ad50" }}>FIT</span>
+              <span style={{ color: "black" }}>basix</span>
+            </div>
             <Grid item xs={5} sm={4} sx={{ textAlign: "left" }}>
               <div>
                 <Typography className="footerTitle">Contact Us</Typography>
