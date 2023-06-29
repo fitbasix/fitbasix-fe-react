@@ -22,6 +22,7 @@
 
 .newfooterheadcontainer {
   padding-top: 15vw;
+  padding-bottom: 3rem;
   text-align: center;
   font-size: 4rem;
 }
@@ -31,6 +32,18 @@
 .newfooterhead {
   font-size: 4rem !important;
   font-family: Montserrat !important;
+}
+
+.fixedFooterLogo {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  position: absolute;
+  top: -1.5rem;
+  left: 1rem;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 .secondGrid {
@@ -80,6 +93,7 @@
   }
   .newfooterheadcontainer {
     padding-top: 55vh;
+    padding-bottom: 3rem;
   }
   .newfooterhead {
     font-size: 2rem !important;
@@ -102,9 +116,20 @@
   .secondDivider {
     display: none;
   }
+  .secondGrid {
+    padding-left: 1rem !important;
+  }
+  .firstDivider {
+    margin-left: 1rem !important;
+  }
   .mobileScreenSocial {
     display: block;
     padding-top: 1rem;
     text-align: center;
+  }
+  .fixedFooterLogo {
+    font-size: 1rem !important;
+    padding: 0.25rem 0.5rem !important;
+    top: -1rem !important;
   }
 }

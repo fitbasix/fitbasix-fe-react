@@ -31,6 +31,7 @@ const NewFooter = () => {
         <Grid item sm={11} xs={10} className="newFooterInnerContainer">
           <Grid container spacing={1} className="newfooterContentWrapper">
             <div
+              className="fixedFooterLogo"
               style={{
                 backgroundColor: "#fff",
                 padding: "0.5rem 1rem",
@@ -68,7 +69,10 @@ const NewFooter = () => {
               </div>
             </Grid>
 
-            <Divider style={{ border: "0.5px solid #49AD50" }} />
+            <Divider
+              style={{ border: "0.5px solid #49AD50" }}
+              className="firstDivider"
+            />
 
             <Grid item xs={5} sm={3} className="secondGrid">
               <div>

@@ -142,16 +142,7 @@ const Booking = () => {
                 <Grid item sm={12} xs={12} md={12}>
                   <Button
                     type="submit"
-                    sx={{
-                      backgroundColor: "#49AD50",
-                      color: "#fff",
-                      marginTop: "2rem",
-                      fontSize: "2rem",
-                      borderRadius: "2rem",
-                      textTransform: "none",
-
-                      padding: "0.25rem 0.75rem",
-                    }}
+                    className="bookSubmit"
                   >
                     Submit
                   </Button>

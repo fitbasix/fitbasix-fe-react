@@ -64,7 +64,11 @@ const Home = () => {
               <Typography className="title" style={{ marginTop: "2rem" }}>
                 <span
                   className="title"
-                  style={{ color: "#49AD50", fontStyle: "italic" }}
+                  style={{
+                    color: "#49AD50",
+                    fontStyle: "italic",
+                    paddingRight: "6px",
+                  }}
                 >
                   FIT
                 </span>

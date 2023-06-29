@@ -35,6 +35,15 @@
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
+.bookSubmit {
+  background-color: #49ad50 !important;
+  color: #fff !important;
+  margin-top: 2rem !important;
+  font-size: 2rem !important;
+  border-radius: 2rem !important;
+  text-transform: none !important;
+  padding: 0.25rem 0.75rem !important;
+}
 
 .BookContainer .MuiInputBase-input {
   padding: 0.5rem !important;
@@ -51,6 +60,9 @@
     height: auto;
     padding-bottom: 1rem;
     background-image: none;
+  }
+  .bookSubmit {
+    font-size: 1.25rem !important;
   }
   .BMITEXT {
     display: none;

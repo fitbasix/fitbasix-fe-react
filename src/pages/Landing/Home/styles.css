@@ -58,6 +58,7 @@
   border-radius: 1.5rem;
   font-size: 1.5rem !important;
   padding: 8px 15px !important;
+  font-weight: 500 !important;
 }
 .homelogo-style {
   display: flex;
@@ -92,7 +93,7 @@
   background-color: #fff !important;
   color: black;
   border-radius: 1rem !important;
-  padding: 5px !important;
+  padding: 8px !important;
   width: 120px !important;
   height: 30px !important;
 }
@@ -135,18 +136,20 @@
   .knowMore-btn {
     text-align: center;
   }
-  /* .knowMore-btn button {
-    margin-top: 2rem;
-  } */
+  .knowMore-btn button {
+    padding: 2px 15px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
   .appstore-style {
     width: 80px !important;
-    height: 25px !important;
+    height: 12px !important;
   }
   .homeInnerContainer {
     padding: 1rem 1rem;
   }
   .appstore-style span {
-    font-size: 8px !important;
+    font-size: 6px !important;
   }
   .appstore-style img {
     width: 18px;
