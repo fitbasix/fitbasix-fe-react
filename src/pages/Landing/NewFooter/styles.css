@@ -7,14 +7,17 @@
 }
 .footerTitle {
   margin-bottom: 1.25rem !important;
-  font-weight: bold !important;
+  font-weight: 700 !important;
   color: black !important;
   font-size: 1.5rem !important;
+  font-family: Raleway !important;
 }
 .footerContent {
-  font-size: 1.25rem !important;
+  font-size: 1rem !important;
   color: #373737 !important;
   margin-bottom: 1rem !important;
+  font-weight: 600 !important;
+  font-family: Raleway !important;
 }
 
 .newfooterheadcontainer {
@@ -27,6 +30,7 @@
 }
 .newfooterhead {
   font-size: 4rem !important;
+  font-family: Montserrat !important;
 }
 
 .secondGrid {
