@@ -1,5 +1,5 @@
 .New--WorkoutSession--Container {
-  height: 100vh;
+  /* height: 100vh; */
   width: auto;
   display: flex;
   flex-direction: column;
@@ -56,11 +56,77 @@
   display: none;
 }
 
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 450px) {
+  .workout_session_item_div{
+    width:100px !important;
+  }
+  .NewWorkoutSession--Grid{
+    margin-top: 2rem;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-between;
+    gap: 1.75rem; */
+  }
+  .workOutHeading {
+    font-size: 35px !important;
+  }
+  .workOutSubHeading {
+    font-size: 20px !important;
+  }
+  .card_head {
+    
+    font-size: 10px !important;
+    
+  }
+}
+
+@media only screen and (min-width:451px) and (max-width: 767px) {
   .New--WorkoutSession--Container {
     height: auto;
+  }
+  .NewWorkoutSession--Grid{
+    margin-top: 2rem;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-between;
+    gap: 1.75rem; */
+  }
+  .workout_session_item_div{
+    width:190px !important;
   }
   .UserReviewHead {
     font-size: 60px !important;
   }
+  .workOutHeading {
+    font-size: 45px !important;
+  }
+  .workOutSubHeading {
+    font-size: 25px !important;
+  }
+}
+@media only screen and (min-width:768px) and (max-width: 1068px){
+   .workout_session_item_div{
+    width:200px !important;
+   }
+   .NewWorkoutSession--Grid{
+    margin-top: 2rem;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-between;
+    gap: 1.75rem; */
+  }
+}
+
+@media only screen and (min-width:1069px) and (max-width: 1300px)
+{
+  .workout_session_item_div{
+    width:200px !important;
+   }
 }

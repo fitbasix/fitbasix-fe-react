@@ -6,7 +6,10 @@
   margin-top: 2rem;
   padding-bottom: 2rem;
   background-color: lightgray;
-  height: 100vh;
+}
+
+.popularClassesContainer--Mobile {
+  display: none;
 }
 .UserReviewHead {
   color: #49ad50 !important;
@@ -19,6 +22,7 @@
   letter-spacing: -6.486px !important;
   text-transform: uppercase !important;
 }
+
 .userReviewsContainer--Top {
   display: flex;
   flex-direction: column;
@@ -63,36 +67,26 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .userReviewsContainer {
-    height: auto;
-    padding-bottom: 1rem;
-  }
-
-  .TopContent--Container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .userReviewsContainer--Bottom {
+  .userReviewsContainer--Bottom{
     display: none;
   }
   .userReviewsContainer--BottomMobile {
     display: block;
+    margin-top: 3rem;
+  }
+  .userReviewsContainer {
+    height: auto;
+    padding-bottom: 1rem;
+  }
+  .UserReviewHead{
+    font-size: 30px !important;
   }
 
-  .SwiperSlide {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 2rem;
-  }
-  .swiper-pagination {
-    margin-top: 1rem !important;
-  }
-  .swiper-pagination-bullet {
-    border: 2px solid #5e9665 !important;
-    opacity: 1 !important;
-  }
-  .swiper-pagination-bullet-active {
-    background: #5e9665 !important;
+}
+
+@media only scrren and (min-width:768px) and (max-width:1068px)
+{
+  .UserReviewHead{
+    font-size: 40px !important;
   }
 }

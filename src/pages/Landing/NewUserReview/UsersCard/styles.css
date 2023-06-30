@@ -2,7 +2,7 @@
   min-height: 14vw;
   max-height: 14vw;
   width: 27vw;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   border-radius: 10px;
   /* background-image: url("../../../../assets/USERCARDBG.svg");
   background-size: cover; */
@@ -25,5 +25,108 @@
     min-width: 70vw;
     margin-bottom: 3rem;
     padding: 2rem;
+  }
+ 
+}
+
+.user-div{
+  /* width:30vw; */
+  background-color:lightgray;
+  height: 230px;
+  display: flex;
+  justify-content: end;
+  /* border-bottom: 1px solid #48d950; */
+
+}
+.content-div{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 10px;
+   
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-div{
+  position: absolute;
+   /* width:235px; */
+  left:15%;
+  top: 0%;
+  /* left:45px;
+  top:45px; */
+
+
+}
+.col-div1{
+  position: absolute;
+  bottom: 44px;
+  right:-87px
+  /* right: 10%;
+  bottom : 20%; */
+
+
+}
+.col-div2{
+  position: absolute;
+  left:53px;
+  top:66px
+  /* left:17%;
+  top : 35%; */
+
+
+}
+.content-content{
+  background: linear-gradient(360deg, #0f410f 0%, #48d950 100%);
+  height: 300px;
+  width:315px;
+  border-radius: 10px;
+  
+}
+.content-name{
+  color:black;
+  width: 315px;
+  text-align: center;
+  
+}
+.content-para{
+  width: 75%;
+  position: relative;
+  top:21px;
+  left:67px;
+}
+
+@media screen and (max-width:450px){
+  .img-div{
+    position: absolute;
+    /* width:235px;
+    left:12px;
+    top:0px */
+    left:45px;
+    top:45px;
+  
+  
+  }
+  .col-div1{
+    position: absolute;
+    /* bottom: 44px;
+    right:-87px */
+    right: 10%;
+    bottom : 20%;
+  
+  
+  }
+  .col-div2{
+    position: absolute;
+    /* left:53px;
+    top:66px */
+    left:17%;
+    top : 35%;
+  
+  
   }
 }

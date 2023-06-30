@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardMedia, Grid, Typography } from "@mui/material";
+import { Box, Button, Card, CardMedia, Grid, Typography,Fab } from "@mui/material";
 import React, { useState } from "react";
 import "./styles.css";
 
@@ -17,7 +17,7 @@ const NewWorkoutSessions = () => {
       <Typography className="workOutSubHeading">Sessions</Typography>
       <div className="NewWorkoutSession--Grid">
         {/* item */}
-        <div
+        <div className="workout_session_item_div"
           style={{
             backgroundColor: "#fff",
             padding: "0.5rem 0.5rem 1rem 0.5rem",
@@ -25,7 +25,7 @@ const NewWorkoutSessions = () => {
           }}
         >
           <div>
-            <img src={WsImage1} />
+            <img src={WsImage1} className="workout_session_item_div"/>
           </div>
           <Typography className="card_head">
             {" "}
@@ -35,7 +35,7 @@ const NewWorkoutSessions = () => {
         </div>
 
         {/* item */}
-        <div
+        <div className="workout_session_item_div"
           style={{
             backgroundColor: "#fff",
             padding: "0.5rem 0.5rem 1rem 0.5rem",
@@ -43,13 +43,13 @@ const NewWorkoutSessions = () => {
           }}
         >
           <div>
-            <img src={WsImage2} />
+            <img src={WsImage2} className="workout_session_item_div"/>
           </div>
           <Typography className="card_head">Cardio</Typography>
         </div>
 
         {/* item */}
-        <div
+        <div className="workout_session_item_div"
           style={{
             backgroundColor: "#fff",
             padding: "0.5rem 0.5rem 1rem 0.5rem",
@@ -57,21 +57,22 @@ const NewWorkoutSessions = () => {
           }}
         >
           <div>
-            <img src={WsImage3} />
+            <img src={WsImage3} className="workout_session_item_div"/>
           </div>
           <Typography className="card_head">YOGA</Typography>
         </div>
 
         {/* item */}
-        <div
+        <div className="workout_session_item_div"
           style={{
             backgroundColor: "#fff",
             padding: "0.5rem 0.5rem 1rem 0.5rem",
             borderRadius: "0.5rem",
+            
           }}
         >
           <div>
-            <img src={WsImage4} />
+            <img src={WsImage4} className="workout_session_item_div"/>
           </div>
           <Typography className="card_head">HIIT</Typography>
         </div>

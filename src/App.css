@@ -16,3 +16,6 @@
 button:hover {
   background-color: #63b969 !important;
 }
+.stacked-carousel-responsive-container{
+  width:92% !important;
+}
