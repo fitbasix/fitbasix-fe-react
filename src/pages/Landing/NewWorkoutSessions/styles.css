@@ -1,0 +1,66 @@
+.New--WorkoutSession--Container {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  background: linear-gradient(0deg, #0f410f 0%, #49ad50 99.99%, #48d952 100%);
+}
+
+.workOutHeading {
+  text-align: center;
+  color: #fff;
+
+  font-size: 120px !important;
+  font-family: Raleway !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: normal !important;
+  letter-spacing: -6px !important;
+  text-transform: uppercase;
+}
+.workOutSubHeading {
+  text-align: center;
+  color: #fff;
+
+  font-size: 48px !important;
+  font-family: Raleway !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: normal !important;
+  letter-spacing: -2.4px !important;
+  text-transform: uppercase;
+}
+.card_head {
+  text-align: center;
+  margin-top: 1rem !important;
+  color: #333;
+  font-size: 24px !important;
+  font-family: Raleway !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 139.4% !important;
+  text-transform: capitalize !important;
+}
+
+.NewWorkoutSession--Grid {
+  margin-top: 2rem;
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.75rem;
+}
+
+.NewWorkoutSession--GridMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .New--WorkoutSession--Container {
+    height: auto;
+  }
+  .UserReviewHead {
+    font-size: 60px !important;
+  }
+}

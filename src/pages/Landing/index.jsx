@@ -8,6 +8,7 @@ import PopularClasses from "./PopularClasses";
 import TopTrainers from "./TopTrainers";
 import UserReviews from "./UserReviews";
 import WorkoutSessions from "./WorkoutSessions";
+import NewWorkoutSessions from "./NewWorkoutSessions";
 import "./styles.css";
 import FAQ from "./FAQ";
 import GetStarted from "./GetStarted";
@@ -19,6 +20,7 @@ import TagManager from "react-gtm-module";
 import { useEffect } from "react";
 import Booking from "../Booking";
 import NewFooter from "./NewFooter";
+import NewUserReviews from "./NewUserReview";
 
 const Landing = () => {
   useEffect(() => {
@@ -36,13 +38,15 @@ const Landing = () => {
     <div className="landingContainer">
       {/* <Navbar /> */}
       <Home />
-      {/* <LiveClass />
-      <AboutUs />
-      <PopularClasses />
-      <WorkoutSessions />
-      <TopTrainers />
-      <BMI />
-      <UserReviews /> */}
+      {/* <LiveClass /> */}
+      {/* <AboutUs /> */}
+      {/* <PopularClasses /> */}
+      <NewWorkoutSessions />
+      {/* <WorkoutSessions /> */}
+      {/* <TopTrainers /> */}
+      {/* <BMI /> */}
+      <NewUserReviews />
+      {/* <UserReviews /> */}
       <Booking />
       {/* <GetStarted /> */}
       {/* <FAQ /> */}

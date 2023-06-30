@@ -1,0 +1,29 @@
+.UsersCard--Container {
+  min-height: 14vw;
+  max-height: 14vw;
+  width: 27vw;
+  overflow-y: auto;
+  border-radius: 10px;
+  /* background-image: url("../../../../assets/USERCARDBG.svg");
+  background-size: cover; */
+  border-radius: 27.027px;
+  background: linear-gradient(360deg, #0f410f 0%, #48d950 100%);
+  opacity: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.userCardStyle {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+@media only screen and (max-width: 767px) {
+  .UsersCard--Container {
+    min-height: 26vh;
+    min-width: 70vw;
+    margin-bottom: 3rem;
+    padding: 2rem;
+  }
+}
