@@ -6,6 +6,7 @@
   align-items: center;
   margin-top: 5rem;
   background: linear-gradient(0deg, #0f410f 0%, #49ad50 99.99%, #48d952 100%);
+  padding-top: 14px;
 }
 
 .workOutHeading {
@@ -72,9 +73,14 @@
   }
   .workOutHeading {
     font-size: 35px !important;
+    letter-spacing: 0px !important;
   }
   .workOutSubHeading {
-    font-size: 20px !important;
+    font-size: 17px !important;
+    letter-spacing: 0px !important;
+    padding-top: 6px;
+    font-weight: 100;
+    
   }
   .card_head {
     
@@ -104,9 +110,13 @@
   }
   .workOutHeading {
     font-size: 45px !important;
+    letter-spacing: 0px !important
   }
   .workOutSubHeading {
-    font-size: 25px !important;
+    font-size: 17px !important;
+    letter-spacing: 0px !important;
+    padding-top: 6px;
+    font-weight: 100;
   }
 }
 @media only screen and (min-width:768px) and (max-width: 1068px){
