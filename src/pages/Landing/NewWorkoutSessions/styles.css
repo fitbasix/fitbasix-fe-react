@@ -5,7 +5,10 @@
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
-  background: linear-gradient(0deg, #0f410f 0%, #49ad50 99.99%, #48d952 100%);
+  /* background: linear-gradient(0deg, #0f410f 0%, #49ad50 99.99%, #48d952 100%); */
+  background-image: url("../../../assets/newLanding/workouts.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 14px;
 }
 
@@ -57,12 +60,11 @@
   display: none;
 }
 
-
 @media only screen and (max-width: 450px) {
-  .workout_session_item_div{
-    width:100px !important;
+  .workout_session_item_div {
+    width: 100px !important;
   }
-  .NewWorkoutSession--Grid{
+  .NewWorkoutSession--Grid {
     margin-top: 2rem;
     margin-bottom: 10%;
     display: grid;
@@ -80,20 +82,17 @@
     letter-spacing: 0px !important;
     padding-top: 6px;
     font-weight: 100;
-    
   }
   .card_head {
-    
     font-size: 10px !important;
-    
   }
 }
 
-@media only screen and (min-width:451px) and (max-width: 767px) {
+@media only screen and (min-width: 451px) and (max-width: 767px) {
   .New--WorkoutSession--Container {
     height: auto;
   }
-  .NewWorkoutSession--Grid{
+  .NewWorkoutSession--Grid {
     margin-top: 2rem;
     margin-bottom: 10%;
     display: grid;
@@ -102,15 +101,15 @@
     /* justify-content: space-between;
     gap: 1.75rem; */
   }
-  .workout_session_item_div{
-    width:190px !important;
+  .workout_session_item_div {
+    width: 190px !important;
   }
   .UserReviewHead {
     font-size: 60px !important;
   }
   .workOutHeading {
     font-size: 45px !important;
-    letter-spacing: 0px !important
+    letter-spacing: 0px !important;
   }
   .workOutSubHeading {
     font-size: 17px !important;
@@ -119,11 +118,11 @@
     font-weight: 100;
   }
 }
-@media only screen and (min-width:768px) and (max-width: 1068px){
-   .workout_session_item_div{
-    width:200px !important;
-   }
-   .NewWorkoutSession--Grid{
+@media only screen and (min-width: 768px) and (max-width: 1068px) {
+  .workout_session_item_div {
+    width: 200px !important;
+  }
+  .NewWorkoutSession--Grid {
     margin-top: 2rem;
     margin-bottom: 10%;
     display: grid;
@@ -134,9 +133,8 @@
   }
 }
 
-@media only screen and (min-width:1069px) and (max-width: 1300px)
-{
-  .workout_session_item_div{
-    width:200px !important;
-   }
+@media only screen and (min-width: 1069px) and (max-width: 1300px) {
+  .workout_session_item_div {
+    width: 200px !important;
+  }
 }
