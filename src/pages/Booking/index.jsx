@@ -1,10 +1,13 @@
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import PhoneIphoneRoundedIcon from "@mui/icons-material/PhoneIphoneRounded";
+import { makeStyles } from "@material-ui/core/styles";
 import {
   Button,
   Container,
+  FormControl,
   Grid,
+  InputLabel,
   MenuItem,
   Select,
   TextField,
@@ -12,6 +15,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import { useForm } from "react-hook-form";
+import OutlinedInput from "@material-ui/core/OutlinedInput";
 import {
   AppStoreButton,
   ButtonsContainer,
@@ -23,7 +27,22 @@ import { useNavigate } from "react-router-dom";
 import { postDialog } from "../../api/services";
 import { useState } from "react";
 
+
+
+
+const ITEM_HEIGHT = 48
+const ITEM_PADDING_TOP = 8
+const MenuProps = {
+  PaperProps: {
+    style: {
+      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+      width: 250,
+    },
+  },
+}
+
 const Booking = () => {
+  const[labelWidth,setLabelWidth]=useState('');
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
   //Search Params String
@@ -40,9 +59,14 @@ const Booking = () => {
     }
   };
 
+
+  
+
   return (
     <form id="getStarted" onSubmit={handleSubmit(onSubmit)}>
+        
       <div className="BookContainer">
+     
         <Grid container className="gridContainer">
           <Grid item xs={12} sm={8} md={8}>
             <Container className="booking_container">
@@ -59,6 +83,14 @@ const Booking = () => {
                       border: "1px solid #49AD50",
                       borderRadius: "10px",
                       width: "100%",
+                      input: {
+                       
+                        "&::placeholder": {
+                           color:"#0E0F13",
+                           opacity:1
+                        },
+                     }
+                
                     }}
                     {...register("firstName")}
                   />
@@ -72,6 +104,13 @@ const Booking = () => {
                       border: "1px solid #49AD50",
                       borderRadius: "10px",
                       width: "100%",
+                      input: {
+                       
+                        "&::placeholder": {
+                           color:"#0E0F13",
+                           opacity:1
+                        },
+                     }
                     }}
                     {...register("lastName")}
                   />
@@ -85,6 +124,13 @@ const Booking = () => {
                       border: "1px solid #49AD50",
                       borderRadius: "10px",
                       width: "100%",
+                      input: {
+                       
+                        "&::placeholder": {
+                           color:"#0E0F13",
+                           opacity:1
+                        },
+                     }
                     }}
                     {...register("number")}
                   />
@@ -97,13 +143,20 @@ const Booking = () => {
                       border: "1px solid #49AD50",
                       borderRadius: "10px",
                       width: "100%",
+                      input: {
+                       
+                        "&::placeholder": {
+                           color:"#0E0F13",
+                           opacity:1
+                        },
+                     }
                     }}
                     {...register("email")}
                   />
                 </Grid>
-
+             
                 <Grid item sm={6} xs={12} md={6}>
-                  <Select
+                <Select
                     displayEmpty={true}
                     // className="textFieldMobile"
                     sx={{
@@ -118,10 +171,12 @@ const Booking = () => {
                     <MenuItem value={"Yoga"}>Yoga</MenuItem>
                     <MenuItem value={"Diet"}>Diet</MenuItem>
                   </Select>
+                
+                 
                 </Grid>
                 <Grid item sm={6} xs={12} md={6}>
                   <Select
-                    // label="Preferred Time Slot for Callback"
+                 
                     displayEmpty={true}
                     sx={{
                       border: "1px solid #49AD50",
@@ -139,7 +194,7 @@ const Booking = () => {
                     <MenuItem value={"Night"}>Night</MenuItem>
                   </Select>
                 </Grid>
-                <Grid item sm={12} xs={12} md={12}>
+                <Grid item sm={12} xs={12} md={12} sx={{display:"flex",justifyContent:"center"}}>
                   <Button
                     type="submit"
                     className="bookSubmit"
@@ -150,55 +205,7 @@ const Booking = () => {
               </Grid>
             </Container>
           </Grid>
-          {/* <div className="TextFieldContainer">
-            <TextField
-              id="name"
-              placeholder="Enter Name"
-              required
-              sx={{
-                background: "rgba(255, 255, 255, 0.32)",
-                borderRadius: "10px",
-
-                width: "100%",
-              }}
-              {...register("name")}
-            />
-            <TextField
-              id="email"
-              placeholder="Email id"
-              sx={{
-                background: "rgba(255, 255, 255, 0.32)",
-                borderRadius: "10px",
-                marginTop: "1rem",
-                width: "100%",
-              }}
-              {...register("email")}
-            />
-            <TextField
-              id="mobileNo"
-              required
-              placeholder="Enter Mobile no."
-              sx={{
-                background: "rgba(255, 255, 255, 0.32)",
-                borderRadius: "10px",
-                marginTop: "1rem",
-                width: "100%",
-              }}
-              {...register("number")}
-            />
-            <Button
-              type="submit"
-              variant="contained"
-              sx={{
-                backgroundColor: "#49AD50",
-                width: "100%",
-                borderRadius: "10px",
-                marginTop: "1rem",
-              }}
-            >
-              Get a FREE TRIAL!
-            </Button>
-          </div> */}
+          
         </Grid>
       </div>
     </form>

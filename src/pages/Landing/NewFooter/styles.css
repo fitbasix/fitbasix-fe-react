@@ -1,5 +1,8 @@
 .newFooter {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   /* margin-top: 2rem; */
   /* padding: 4rem; */
   background-image: url("../../../assets/newLanding/contact_background.png");
@@ -36,7 +39,7 @@
 
 .fixedFooterLogo {
   background-color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 2rem;
   position: absolute;
   top: -1.5rem;

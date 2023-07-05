@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
+  background-position: right;
 }
 /* 
 .textField {
@@ -22,7 +23,7 @@
 
 .booking_container {
   background-color: #caddca;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding-bottom: 4rem;
@@ -39,14 +40,17 @@
   background-color: #49ad50 !important;
   color: #fff !important;
   margin-top: 2rem !important;
-  font-size: 2rem !important;
+  font-size: 1rem !important;
   border-radius: 2rem !important;
   text-transform: none !important;
   padding: 0.25rem 0.75rem !important;
+  height:40px;
+  width:117px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .BookContainer .MuiInputBase-input {
-  padding: 0.5rem !important;
+  /* padding: 0.5rem !important; */
 }
 .BookContainer .MuiOutlinedInput-notchedOutline {
   border: none !important;

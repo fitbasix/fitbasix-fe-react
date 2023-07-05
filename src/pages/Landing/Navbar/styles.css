@@ -13,8 +13,8 @@
 
 .call-btn button {
   background-color: #49ad50 !important;
-  text-transform: none;
-  margin-top: 1rem;
+  text-transform: none !important;
+  margin-top: 4rem;
 }
 .appstore-style {
   background-color: transparent;

@@ -8,6 +8,7 @@ import {
 import Fitba6Logo from "../../../assets/Fitba6Logo.svg";
 import facebookLogo from "../../../assets/facebook.svg";
 import instaLogo from "../../../assets/instagram.svg";
+import FitbasixLogo from "../../../assets/Fitba6Logo.svg"
 import "./styles.css";
 
 const NewFooter = () => {
@@ -34,7 +35,7 @@ const NewFooter = () => {
               className="fixedFooterLogo"
               style={{
                 backgroundColor: "#fff",
-                padding: "0.5rem 1rem",
+                padding: "0.1rem 1rem",
                 borderRadius: "2rem",
                 position: "absolute",
                 top: "-1.5rem",
@@ -44,6 +45,7 @@ const NewFooter = () => {
                 fontWeight: "800",
               }}
             >
+              {/* <img src={FitbasixLogo} alt=''/> */}
               <span style={{ color: "#49ad50" }}>FIT</span>
               <span style={{ color: "black" }}>basix</span>
             </div>

@@ -18,7 +18,7 @@ const Footer = () => {
     <div className="Footer">
       <Grid container spacing={2} className="Footer-mob">
         <Grid item sm={12} xs={12}>
-          <img src={Fitba6Logo} alt="" />
+          <img src={Fitba6Logo} alt="contact-logo" />
         </Grid>
         <Grid item sm={12} xs={12} sx={{ marginTop: "2rem" }}>
           <Grid container spacing={3} className="footerContentWrapper">

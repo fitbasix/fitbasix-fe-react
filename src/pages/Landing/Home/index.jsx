@@ -11,6 +11,7 @@ import {
   ButtonsContainer,
   GooglePlayButton,
 } from "react-mobile-app-button";
+import FitbasixLogo from "../../../assets/Fitba6Logo.svg"
 const Home = () => {
   const [open, setOpen] = useState(false);
   const APKUrl =
@@ -21,7 +22,7 @@ const Home = () => {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12}>
           <Grid container spacing={2} className="homeInnerContainer">
-            <Grid item xs={12} sm={12} md={12}>
+            <Grid item xs={12} sm={12} md={12} sx={{position:"absolute",width:"90%"}}>
               <div
                 style={{
                   display: "flex",
@@ -31,7 +32,7 @@ const Home = () => {
               >
                 <a href="https://wa.me/971528802831">
                   <Button variant="contained" className="callUsBtn">
-                    Call us NOW!
+                    <span style={{textTransform:"none"}}>Call us </span>&nbsp;<span style={{textTransform:'uppercase',fontWeight:"bold"}}>NOW!</span>
                     <img
                       src={whatsappLogo}
                       style={{
@@ -61,20 +62,9 @@ const Home = () => {
               </div>
             </Grid>
             <Grid item xs={12} sm={12} className="mob_Head_view">
-              <Typography className="title" style={{ marginTop: "2rem" }}>
-                <span
-                  className="title"
-                  style={{
-                    color: "#49AD50",
-                    fontStyle: "italic",
-                    paddingRight: "6px",
-                  }}
-                >
-                  FIT
-                </span>
-                <span className="title">basix</span>
-                <br />
-                <br />
+              <img src={FitbasixLogo} alt=''/>
+              <Typography className="title" style={{ marginTop: "1rem" }}>
+              
                 <span className="title">
                   THE FUTURE <br />
                   OF <span style={{ color: "#49AD50" }}>FITNESS</span>
@@ -90,8 +80,8 @@ const Home = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} sm={12} className="knowMore-btn">
-              <Button variant="contained" onClick={() => setOpen(true)}>
-                Know More
+              <Button variant="contained" onClick={() => setOpen(true)} style={{textTransform:"none", boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}}>
+                Know more
               </Button>
             </Grid>
           </Grid>

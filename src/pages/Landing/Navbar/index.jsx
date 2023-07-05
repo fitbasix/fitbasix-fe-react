@@ -44,8 +44,8 @@ const Navbar = () => {
               </ButtonsContainer>
             </Grid>
             <Grid item xs={12} sm={4} className="call-btn">
-              <Button variant="contained" onClick={() => setOpen(true)}>
-                Call us Now!
+              <Button variant="contained" onClick={() => setOpen(true)} sx={{textTransform:"initial"}}>
+                <span sx={{textTransform:"none"}}>Call us</span><span sx={{textTransform:"uppercase"}}>Now!</span>
               </Button>
             </Grid>
           </Grid>

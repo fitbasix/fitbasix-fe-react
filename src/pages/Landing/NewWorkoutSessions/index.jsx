@@ -29,8 +29,9 @@ const NewWorkoutSessions = () => {
           </div>
           <Typography className="card_head">
             {" "}
-            STRENGTH & <br />
-            CONDITIONING
+            Strength and training
+            {/* STRENGTH & <br />
+            CONDITIONING */}
           </Typography>
         </div>
 
@@ -59,7 +60,7 @@ const NewWorkoutSessions = () => {
           <div>
             <img src={WsImage3} className="workout_session_item_div"/>
           </div>
-          <Typography className="card_head">YOGA</Typography>
+          <Typography className="card_head">Yoga</Typography>
         </div>
 
         {/* item */}
