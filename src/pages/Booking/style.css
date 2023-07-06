@@ -46,6 +46,7 @@
   padding: 0.25rem 0.75rem !important;
   height:40px;
   width:117px;
+  text-shadow: 1px 1px #000;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 

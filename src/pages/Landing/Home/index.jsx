@@ -5,14 +5,27 @@ import homelogo from "../../../assets/HomepageLogo.svg";
 // import whatsappLogo from "../../../assets/newLanding/whatsappLogo.png";
 import whatsappLogo from "../../../assets/whatsapp-symbol-logo.svg";
 import "./styles.css";
+
 import FreeTrialDialog from "../../../components/FreeTrialDialog";
+import { makeStyles } from "@material-ui/core/styles";
 import {
   AppStoreButton,
   ButtonsContainer,
   GooglePlayButton,
 } from "react-mobile-app-button";
 import FitbasixLogo from "../../../assets/Fitba6Logo.svg"
+const useStyles = makeStyles(() => ({
+  buttonStep: {
+      width: '150px',
+      height: '49px',
+      background: '#5F8FE8',
+      backgrounImage: 'url("../../../assets/google play.jpg")',
+    },
+}))
+
+
 const Home = () => {
+  const classes = useStyles()
   const [open, setOpen] = useState(false);
   const APKUrl =
     "https://play.google.com/store/apps/details?id=com.fitbasixco.fitbasix&hl=en&gl=US&pli=1";
@@ -46,6 +59,7 @@ const Home = () => {
                 </a>
 
                 <div style={{ display: "flex" }}>
+              
                   <ButtonsContainer className="buttons-container">
                     <GooglePlayButton
                       url={APKUrl}
@@ -58,6 +72,7 @@ const Home = () => {
                       className={"appstore-style"}
                     />
                   </ButtonsContainer>
+                  
                 </div>
               </div>
             </Grid>
@@ -80,7 +95,7 @@ const Home = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} sm={12} className="knowMore-btn">
-              <Button variant="contained" onClick={() => setOpen(true)} style={{textTransform:"none", boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}}>
+              <Button variant="contained" onClick={() => setOpen(true)} style={{textTransform:"none", boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",textShadow: "1px 1px #000"}}>
                 Know more
               </Button>
             </Grid>

@@ -38,7 +38,7 @@
   animation: none !important;
 }
 .buttons-container {
-  gap: 7px !important;
+  gap: 4px !important;
 }
 .whatsappContainer {
   position: fixed;
@@ -104,11 +104,11 @@
   color: black;
   border-radius: 1rem !important;
   padding: 8px !important;
-  width: 120px !important;
+  width: 130px !important;
   height: 30px !important;
 }
 .appstore-style span {
-  font-size: 9px !important;
+  font-size: 10px !important;
 }
 
 @media only screen and (max-width: 767px) {

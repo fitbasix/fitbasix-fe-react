@@ -38,7 +38,7 @@
 }
 .card_head {
   text-align: center;
-  margin-top: 1rem !important;
+  /* margin-top: 1rem !important; */
   color: #333;
   font-size: 19px !important;
   font-family: Raleway !important;
