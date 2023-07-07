@@ -9,9 +9,11 @@ import Fitba6Logo from "../../../assets/Fitba6Logo.svg";
 import facebookLogo from "../../../assets/facebook.svg";
 import instaLogo from "../../../assets/instagram.svg";
 import FitbasixLogo from "../../../assets/Fitba6Logo.svg"
+import useMediaQuery from '@mui/material/useMediaQuery';
 import "./styles.css";
 
 const NewFooter = () => {
+  const matches = useMediaQuery('(max-width:600px)');
   const APKUrl =
     "https://play.google.com/store/apps/details?id=com.fitbasixco.fitbasix&hl=en&gl=US&pli=1";
   const iOSUrl = "https://apps.apple.com/tt/app/fitbasix/id1618003884";
@@ -20,7 +22,7 @@ const NewFooter = () => {
       <div className="newfooterheadcontainer">
         <Typography className="newfooterhead">CONTACT US</Typography>
       </div>
-      <Grid container className="newFooter-mob">
+      <Grid container className="newFooter-mob" sx={{marginBottom:matches?"3rem":"0rem"}}>
         {/* <Grid item sm={12} xs={12}>
           <img src={Fitba6Logo} alt="" />
         </Grid> */}
@@ -82,7 +84,7 @@ const NewFooter = () => {
               </div>
               <div>
                 <Link href="/privacy" color="#373737" underline="none">
-                  <Typography className="footerContent">
+                  <Typography className="footerContentPrivacyPolicy">
                     Privacy Policy
                   </Typography>
                 </Link>
@@ -114,7 +116,7 @@ const NewFooter = () => {
                     <img
                       src={facebookLogo}
                       alt=""
-                      style={{ marginRight: "2rem" }}
+                      style={{ marginRight: "1rem" }}
                     />
                   </a>
                 </div>

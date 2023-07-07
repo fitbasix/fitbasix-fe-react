@@ -63,7 +63,7 @@
   }
   .BookContainer {
     height: auto;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
     background-image: none;
   }
   .bookSubmit {
@@ -76,4 +76,11 @@
     padding-left: 0rem;
     padding-bottom: 0vh;
   }
+  .booking_container {
+   
+    margin-bottom: 0rem;
+    margin-top: 0px;
+    
+  }
+  
 }

@@ -22,6 +22,13 @@
   font-weight: 600 !important;
   font-family: Raleway !important;
 }
+.footerContentPrivacyPolicy {
+  font-size: 1rem !important;
+  color: #373737 !important;
+  margin-bottom: 0.1rem !important;
+  font-weight: 600 !important;
+  font-family: Raleway !important;
+}
 
 .newfooterheadcontainer {
   padding-top: 15vw;
@@ -111,6 +118,9 @@
   .footerContent {
     font-size: 8px !important;
     margin-bottom: 0.5rem !important;
+  }
+  .footerContentPrivacyPolicy{
+    font-size: 8px !important;
   }
 
   .thirdGrid {
