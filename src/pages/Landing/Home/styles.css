@@ -1,5 +1,5 @@
 .homeContainer {
-  background-image: url("../../../assets/newLanding/homeFirstScreen.png");
+  background-image: url("../../../assets/newLanding/HomeScreen.png");
   background-size: cover;
   background-repeat: no-repeat;
   
@@ -116,7 +116,7 @@
   .homeContainer {
     height: 103vh;
     width: auto;
-    background-image: url("../../../assets/newLanding/homeFirstScreenMobile.png");
+    background-image: url("../../../assets/newLanding/HomeMobile.png");
     background-size: cover;
     background-repeat: no-repeat;
   }

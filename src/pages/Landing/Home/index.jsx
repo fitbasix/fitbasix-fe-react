@@ -1,5 +1,5 @@
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import { Button, Grid, Tooltip, Typography } from "@mui/material";
+import { Box, Button, Grid, Tooltip, Typography, useMediaQuery } from "@mui/material";
 import React, { useState } from "react";
 import homelogo from "../../../assets/HomepageLogo.svg";
 // import whatsappLogo from "../../../assets/newLanding/whatsappLogo.png";
@@ -25,6 +25,7 @@ const useStyles = makeStyles(() => ({
 
 
 const Home = () => {
+  const matches = useMediaQuery('(max-width:600px)');
   const classes = useStyles()
   const [open, setOpen] = useState(false);
   const APKUrl =
@@ -44,7 +45,7 @@ const Home = () => {
                 }}
               >
                 <a href="https://wa.me/971528802831">
-                  <Button variant="contained" className="callUsBtn">
+                  <Button variant="contained" className="callUsBtn" style={{width:matches?"212px":"302px",height:matches?"40px":"auto"}}>
                     <span style={{textTransform:"none"}}>Call us </span>&nbsp;<span style={{textTransform:'uppercase',fontWeight:"bold"}}>NOW!</span>
                     <img
                       src={whatsappLogo}
@@ -76,8 +77,33 @@ const Home = () => {
                 </div>
               </div>
             </Grid>
+            {matches? <>
             <Grid item xs={12} sm={12} className="mob_Head_view">
-              <img src={FitbasixLogo} alt=''/>
+              <img src={FitbasixLogo} alt='' />
+              <Typography className="title" style={{ marginTop: "1rem" }}>
+              
+                <span className="title">
+                  THE FUTURE <br />
+                  OF <span style={{ color: "#49AD50" }}>FITNESS</span>
+                </span>
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={12} className="sub-title">
+              <Typography>
+                <span className="sub-title">
+                  Elevate Your Fitness <br />
+                  Journey With A Personal Touch!
+                </span>
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={12} className="knowMore-btn">
+              <Button variant="contained" onClick={() => setOpen(true)} style={{textTransform:"none", boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",textShadow: "1px 1px #000"}}>
+                Know more
+              </Button>
+            </Grid></> : <Box style={{height:"100vh",display:"flex",alignItems:"center"}}>
+              <Box style={{height:"400px"}}>
+            <Grid item xs={12} sm={12} className="mob_Head_view">
+              <img src={FitbasixLogo} alt='' />
               <Typography className="title" style={{ marginTop: "1rem" }}>
               
                 <span className="title">
@@ -99,6 +125,11 @@ const Home = () => {
                 Know more
               </Button>
             </Grid>
+            </Box>
+            </Box>}
+           
+           
+           
           </Grid>
         </Grid>
         {/* <Grid item xs={12} sm={12} className="homelogo-style">
