@@ -4,16 +4,15 @@ import { postDialog } from "../../api/services";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-function FormBooking() {
+const FormBooking = () => {
   const navigate = useNavigate();
   //Search Params String
   const [searchParams, setSearchParams] = useState(window.location.search);
-  const onFinish = (values) => {
-    console.log("Success:", values);
-    values.formType = "FreeTrial";
+  const onFinish = async (data) => {
+    console.log("Success:", data);
+    data.formType = "FreeTrial";
 
-    const response = postDialog(values, searchParams);
-
+    const response = await postDialog(data, searchParams);
     if (response?.resStr == "success") {
       navigate("/thankyou");
     } else {
@@ -24,7 +23,7 @@ function FormBooking() {
     console.log("Failed:", errorInfo);
   };
   return (
-    <Card className="w-full">
+    <Card className="w-full z-[999]">
       <Typography>
         <span className="text-[24px] font-bold">
           Book Your &nbsp;
@@ -42,11 +41,10 @@ function FormBooking() {
         className="w-full"
         layout="vertical"
         onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
+        onFinishFailed={(error) => console.log(error)}
         size={"large"}
       >
         <Form.Item
-          className="w-full"
           name="firstName"
           rules={[
             {
@@ -94,7 +92,7 @@ function FormBooking() {
         <Form.Item name="timeSlot">
           <Select placeholder="Preferred time to call back">
             <Select.Option value="Morning">Morning</Select.Option>
-            <Select.Option value="AfterNoon">AfterNoon</Select.Option>
+            <Select.Option value="Afternoon">AfterNoon</Select.Option>
             <Select.Option value="Evening">Evening</Select.Option>
             <Select.Option value="Night">Night</Select.Option>
           </Select>
@@ -103,6 +101,7 @@ function FormBooking() {
           <Button
             type="primary"
             htmlType="submit"
+            // onClick={() => console.log("console")}
             className="w-full bg-[#49AD50] !important"
           >
             Submit
@@ -111,6 +110,6 @@ function FormBooking() {
       </Form>
     </Card>
   );
-}
+};
 
 export default FormBooking;
