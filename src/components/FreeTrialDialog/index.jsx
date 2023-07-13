@@ -1,5 +1,5 @@
 import CloseIcon from "@mui/icons-material/Close";
-import { Grid, MenuItem, Select, TextField } from "@mui/material";
+import { Grid, InputLabel, MenuItem, Select, TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
@@ -100,7 +100,7 @@ export default function FreeTrialDialog({
             <Grid container>
               <Grid item md={12}>
                 <Grid container spacing={3}>
-                  <Grid item md={12}>
+                  <Grid item md={12} xs={9}>
                     <TextField
                       id="name"
                       className="textFieldMobile"
@@ -112,7 +112,7 @@ export default function FreeTrialDialog({
                     />
                   </Grid>
 
-                  <Grid item md={12}>
+                  <Grid item md={12} xs={9}>
                     <TextField
                       className="textFieldMobile"
                       id="mobileNo"
@@ -124,7 +124,7 @@ export default function FreeTrialDialog({
                     />
                   </Grid>
 
-                  <Grid item md={12}>
+                  <Grid item md={12} xs={9}>
                     <TextField
                       id="email"
                       type="email"
@@ -136,14 +136,30 @@ export default function FreeTrialDialog({
                     />
                   </Grid>
 
-                  <Grid item md={12}>
+                  <Grid item md={12} xs={11}>
+                    <TextField
+                      label={`Types of plan`}
+                      select
+                      // size={small}
+                      style={{ width: "80%", borderRadius: "40px" }}
+                      size="large"
+                      fullWidth
+                      {...register("workOutType")}
+                    >
+                      <MenuItem value={"Personal"}>Personal</MenuItem>
+                      <MenuItem value={"Yoga"}>Yoga</MenuItem>
+                      <MenuItem value={"Diet"}>Diet</MenuItem>
+                    </TextField>
+                    {/* <InputLabel>Types of plan</InputLabel>
                     <Select
                       displayEmpty={true}
                       className="textFieldMobile"
+                      label="workOutType"
                       style={{
                         width: "80%",
                         color: "#111",
                         backgroundColor: "#fff",
+                       
                       }}
                       {...register("workOutType")}
                     >
@@ -151,7 +167,7 @@ export default function FreeTrialDialog({
                       <MenuItem value={"Personal"}>Personal</MenuItem>
                       <MenuItem value={"Yoga"}>Yoga</MenuItem>
                       <MenuItem value={"Diet"}>Diet</MenuItem>
-                    </Select>
+                    </Select> */}
                   </Grid>
                 </Grid>
               </Grid>
@@ -161,7 +177,12 @@ export default function FreeTrialDialog({
             <Button
               autoFocus
               type="submit"
-              sx={{ backgroundColor: "#49AD50", color: "#fff" }}
+              sx={{
+                backgroundColor: "#49AD50",
+                color: "#fff",
+                marginRight: "1rem",
+                width: "160px",
+              }}
             >
               Submit
             </Button>

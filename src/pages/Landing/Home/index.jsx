@@ -1,5 +1,12 @@
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import { Button, Grid, Tooltip, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Grid,
+  Tooltip,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
 import React, { useState } from "react";
 import homelogo from "../../../assets/HomepageLogo.svg";
 // import whatsappLogo from "../../../assets/newLanding/whatsappLogo.png";
@@ -142,6 +149,8 @@ const Home = () => {
                 <FormBooking />
               </div>
             </Grid>
+            {/* </Box>
+            </Box>  */}
           </Grid>
         </Grid>
 
