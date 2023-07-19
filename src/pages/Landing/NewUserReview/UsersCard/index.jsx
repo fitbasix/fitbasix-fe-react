@@ -12,7 +12,9 @@ const NewUsersCard = ({ data, dataIndex }) => {
             <img src={data[dataIndex].logo} alt="" style={{ width: "3rem" }} />
           </div>
           <div className="content-name">
-            <p style={{ fontWeight: "bold" }}>{data[dataIndex].name}</p>
+            <p className="text-xl font-medium font-[Raleway]">
+              {data[dataIndex].name}
+            </p>
           </div>
           {/* <div className="col-div1">
             <img src={upInverted} alt="" style={{ width: "2rem" }} />

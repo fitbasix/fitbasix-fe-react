@@ -104,7 +104,8 @@ const Home = () => {
               {/* <img src={FitbasixLogo} alt="" /> */}
               <Typography className="title" style={{ marginTop: "6rem" }}>
                 <span className="title">
-                  PERSONAL TRAINING <br />
+                  PERSONAL
+                  <br /> TRAINING <br />
                   <span style={{ color: "#49AD50" }}>SIMPLIFIED</span>
                 </span>
               </Typography>
@@ -155,7 +156,7 @@ const Home = () => {
         </Grid>
 
         <Grid item xs={12} sm={12} className="explore-btn">
-          <Typography
+          {/* <Typography
             variant="subtitle1"
             style={{ marginBottom: "110px" }}
             onClick={() => {
@@ -168,7 +169,7 @@ const Home = () => {
             Explore
             <br />
             <KeyboardArrowDownIcon />
-          </Typography>
+          </Typography> */}
         </Grid>
         <Grid
           item
@@ -184,7 +185,7 @@ const Home = () => {
             sx={{ backgroundColor: "#fff" }}
           >
             <a href="https://wa.me/971528802831" className="float">
-              <img src={whatsappLogo} alt="" height={50} />
+              <img src={whatsappLogo} alt="" height={50} className="w-[50px]" />
             </a>
           </Tooltip>
         </Grid>
@@ -193,11 +194,11 @@ const Home = () => {
           open={open}
           title={"Get a FREE TRIAL!"}
         />
-        <img
+        {/* <img
           src={background}
           className=" flex self-end w-full h-[130px] bg-inherit"
           alt="bg"
-        />
+        /> */}
       </Grid>
     </div>
   );

@@ -31,7 +31,7 @@
 .user-div {
   /* width:30vw; */
   background-color: #ffffff;
-  height: 230px;
+  height: 290px;
   display: flex;
   justify-content: end;
   /* border-bottom: 1px solid #48d950; */
@@ -89,17 +89,35 @@
   width: 75%;
   position: relative;
   top: 10px;
-  left: 50px;
+  left: 40px;
+  font-size: 14px;
+  text-align: center;
+  color: #747474;
 }
 
 @media screen and (max-width: 450px) {
+  .user-div {
+    /* width:30vw; */
+    background-color: #ffffff;
+    height: 300px;
+    /* width: 310px; */
+    display: flex;
+    justify-content: end;
+    /* border-bottom: 1px solid #48d950; */
+  }
+  .content-name {
+    color: black;
+    width: 315px;
+    text-align: center;
+    margin-top: 30%;
+  }
   .img-div {
     position: absolute;
     /* width:235px;
     left:12px;
     top:0px */
     left: 44%;
-    top: 20%;
+    top: 24%;
   }
   .col-div1 {
     position: absolute;
@@ -116,6 +134,7 @@
     top: 35%;
   }
   .content-div {
+    height: 300px;
     margin-left: 10px;
     margin-right: 10px;
   }
